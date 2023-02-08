@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+#all-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 10%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-nav {
+    gap: 10%;
+    left: 40%;
+}
+
+.right-nav {
+    gap: 10%;
+}
+
+
+
+
