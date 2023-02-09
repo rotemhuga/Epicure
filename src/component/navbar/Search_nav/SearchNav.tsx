@@ -1,4 +1,4 @@
-import search from '../../../assets/NavbarAssets/search.svg';
+import search from '../../../assets/NavbarAssets/icons/search.svg';
 import "../Search_nav/SearchNav.css";
 import { useState, useRef, useEffect } from "react";
 

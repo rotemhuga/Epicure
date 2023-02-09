@@ -1,16 +1,17 @@
 import React from "react";
+import './navbar.css';
 import NavButton from "../../General/NavButton_nav/NavButton";
 import SearchNav from "../Search_nav/SearchNav";
 import ProfileNav from "../Profile_nav/PropfileNav";
 import BagNav from "../Bag_Nav/BagNav";
-import logo from '../../../assets/NavbarAssets/logo.svg';
+import logo from '../../../assets/NavbarAssets/icons/logo.svg';
 
 
 const Navbar: React.FC = () => {
     return (
         <div id="all-navbar">
             <div className="left-nav navbar">
-                <NavButton name = "" src={logo} class="logo" />
+                <NavButton name = "" src={logo} class="logo"  />
                 <NavButton name={"Restaurants"} class="Rest-button" />
                 <NavButton name={"Chefs"} class="Chefs-button" />
             </div>
@@ -24,3 +25,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar 
+
