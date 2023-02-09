@@ -1,5 +1,5 @@
 import React from "react";
-import NavButton from "../../component/General/NavButton_nav/NavButton";
+import NavButton from "../../General/NavButton_nav/NavButton";
 import SearchNav from "../Search_nav/SearchNav";
 import ProfileNav from "../Profile_nav/PropfileNav";
 import BagNav from "../Bag_Nav/BagNav";
