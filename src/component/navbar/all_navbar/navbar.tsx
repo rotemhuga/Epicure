@@ -1,11 +1,9 @@
 import React from "react";
-import LogoNav from "../Logo_nav/LogoNav";
-import NavButton from "../NavButton_nav/NavButton";
-import ChefsNav from "../Chefs_nav/ChefsNav";
+import NavButton from "../../component/General/NavButton_nav/NavButton";
 import SearchNav from "../Search_nav/SearchNav";
 import ProfileNav from "../Profile_nav/PropfileNav";
 import BagNav from "../Bag_Nav/BagNav";
-
+import logo from '../../../assets/NavbarAssets/logo.svg';
 
 
 
@@ -13,10 +11,10 @@ const Navbar: React.FC = () => {
     return (
         <div id="all-navbar">
             <div className="left-nav navbar">
-                <LogoNav />
+                <NavButton name = "" src={logo} class="logo" />
                 {/* <Route path="../" element={<LogoNav />} /> */}
-                <NavButton name={"Restaurants"} />
-                <NavButton name={"Chefs"} />
+                <NavButton name={"Restaurants"} class="Rest-button" />
+                <NavButton name={"Chefs"} class="Chefs-button" />
             </div>
             <div className="right-nav navbar">
                 <SearchNav />

@@ -1,20 +1,23 @@
-import React from "react";
 import search from '../../../assets/NavbarAssets/search.svg';
 import "../Search_nav/SearchNav.css";
+import { useState, useRef, useEffect } from "react";
 
 
-const searchNav: React.FC = () => {
+const SearchNav: React.FC = () => {
+const [showSearchInput, setshowSearchInput]  = useState<boolean>(false);  
+
+const setshowSearchInputFunc = (event: React.MouseEvent<HTMLElement>) => {
+    event.preventDefault()
+    setshowSearchInput(!showSearchInput)
+} 
+
     return (
-        <form id="button-search">
-            <input type="text" placeholder={`Search for restaurant cuisine, chef`} id="input-search"/>
-            <button type="submit"><img src={search} alt="search" id="button-icon"/></button>
+        <form id="button-box">
+            <input type="text" placeholder={`Search for restaurant cuisine, chef`} className={showSearchInput ?'show-search' : 'not-show-search'}/>
+            <button type="submit"><img src={search} alt="search" id="button-icon" onClick={setshowSearchInputFunc} /></button>
         </form> 
     )
 }
 
-{/* <form>
-  <input type="search" placeholder="Search...">
-  <button type="submit">Search</button>
-</form> */}
 
-export default searchNav
+export default SearchNav
