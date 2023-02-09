@@ -6,13 +6,11 @@ import BagNav from "../Bag_Nav/BagNav";
 import logo from '../../../assets/NavbarAssets/logo.svg';
 
 
-
 const Navbar: React.FC = () => {
     return (
         <div id="all-navbar">
             <div className="left-nav navbar">
                 <NavButton name = "" src={logo} class="logo" />
-                {/* <Route path="../" element={<LogoNav />} /> */}
                 <NavButton name={"Restaurants"} class="Rest-button" />
                 <NavButton name={"Chefs"} class="Chefs-button" />
             </div>
