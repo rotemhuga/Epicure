@@ -1,5 +1,5 @@
 import React from "react";
-import profile from '../../../assets/NavbarAssets/icons/profile.svg';
+import profile from '../../../assets/icons/profile.svg';
 
 
 const ProfileNav: React.FC = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import bag from '../../../assets/NavbarAssets/icons/bag.svg';
+import bag from '../../../assets/icons/bag.svg';
 import "./BagNav.css"
 
 const BagNav: React.FC = () => {
