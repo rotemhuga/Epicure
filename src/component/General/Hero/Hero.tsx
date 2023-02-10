@@ -1,17 +1,21 @@
 import React from "react";
 import "./Hero.css"
-import SearchNav from "../../navbar/Search_nav/SearchNav";
+import { useState } from "react";
+
 
 
 const Hero: React.FC = ()=> {
+    const [opacity, setOpacity] = useState(1);
+    const handleClick = () => {
+        setOpacity(opacity === 1 ? 0.4 : 1);
+      };
+
     return (
         <div id="hero-container">
                 <div id="hero-search">
                     <p id="hero-search-text">Epicure works with the top chef restaurants in Tel Aviv</p> 
                     <div id="hero-search-input">
-                        <img src ={"../../navbar/Search_nav/SearchNav"} alt="hero-search-image" />
-                        <input type="text" placeholder="Search for restaurant cuisine, chef"/>
-
+                        <input type="text" placeholder="Search for restaurant cuisine, chef" id="hero-input-text" style={{ opacity }} onClick={handleClick}/>
                     </div>
 
                 </div>            
@@ -20,5 +24,4 @@ const Hero: React.FC = ()=> {
 }
 
 export default Hero as React.FC;
-
 

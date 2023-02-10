@@ -25,13 +25,34 @@
     background: rgba(255, 255, 255, 0.88);    
     width: 50%;
     height: 25%;
+    gap: 10%;
+}
+
+#hero-search-input{
+    display: flex;
+    flex-direction: row;
 }
 
 #hero-search-text {
     display: flex;   
     flex-direction: row;
+    padding-top: 4%;
     font-size: 25px;
     color: black;
     width: 300px;
+    font-family: Helvetica Neue Thin;
+}
+
+#hero-input-text{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    font-family: Helvetica Neue Thin;
+    font-size: 18px;
+    padding-left: 10%;
+    background-color: rgba(255, 255, 255, 0.88);    
+    background: url(../../../assets/icons/search-icon.svg) no-repeat scroll 7px 7px;
+    border-radius: 4px;
+    background-size: 20px;
 
 }
