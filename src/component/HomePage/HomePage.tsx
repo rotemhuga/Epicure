@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.css"
 import Navbar from "../navbar/all_navbar/navbar";
 import Hero from "../General/Hero/Hero";
+import Icon_meaning from "../General/Icon_meaning/Icon_meaning";
 
 const HomePage: React.FC = () => {
     return (
@@ -12,7 +13,7 @@ const HomePage: React.FC = () => {
             <div><Hero /></div>
             <div>Most popular Resutaurant</div>
             <div>Signature Dish of</div>
-            <div>The Meaning of our ICONS</div>
+            <div><Icon_meaning /></div>
             <div>Chef of the week</div>
             <div>Chefs Restaurant</div>
             <div>About us</div>
