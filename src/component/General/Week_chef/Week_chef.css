@@ -35,6 +35,7 @@
     width: 20vw;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
+    position: relative;
 }
 
 #week-chef-name{
