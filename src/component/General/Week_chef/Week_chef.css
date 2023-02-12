@@ -8,21 +8,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     width: 100vw;
     height: 70vh;
 }
 
 #week-chef-title{
     display: flex;
-    margin-top: 3%;
+    margin-top: 6%;
     font-size: 20px;
 }
 
 #week-chef-all-content{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
-    justify-content: center;
     margin-top: 2%;
     gap: 5%;
 }
@@ -31,10 +32,14 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    position: absolute;
+    top: 50%;
+    left: 256px;
+    transform: translateY(-50%);
 }
 
 #week-chef-img {
-    width: 20vw;
+    width: 25vw;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 }
@@ -45,22 +50,24 @@
     bottom: 0;
     align-items: center;   
     justify-content: center; 
-    width: 20vw;
+    width: 25vw;
     height: 5vh;
     background: rgba(255, 255, 255, 0.8);
-    font-size: 20px;
+    font-size: 25px;
     font-family: Helvetica Neue Bold;
-
 }
 
 #week-chef-text{
     display: flex;
     flex-wrap: wrap;
-    width: 35%;
+    position: absolute;
+    width: 600px;
     line-height: 40px;
     letter-spacing: 1.25px;
     font-size: 20px;
-    max-height: 60vh;
+    top: 50%;
+    right: 256px;
+    transform: translateY(-50%);
 }
 
 
