@@ -1,0 +1,479 @@
+{
+    "chefs": [
+      {
+        "id": "1",
+        "name": "Asaf Granit",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": true
+      },
+      {
+        "id": "2",
+        "name": "Aviv Moshe",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": true
+      },
+      {
+        "id": "3",
+        "name": "Eyal Shani",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": true
+      },
+      {
+        "id": "4",
+        "name": "Meir Adoni",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "5",
+        "name": "Omer Miller",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "6",
+        "name": "Shahaf Shabatay",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "7",
+        "name": "Nitzan Raz",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "8",
+        "name": "Yossi Shitrit",
+        "info": "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": true,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "9",
+        "name": "Yuval Ben Neriah",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      }
+    ],
+    "restaurants": [
+      {
+        "id": "1",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "2",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "3",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "4",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "5",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "6",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "7",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "8",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "9",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "10",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "11",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "12",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "13",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "14",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "15",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "16",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "17",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "18",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "19",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      },
+      {
+        "id": "20",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []]
+      }
+    ],
+    "dishes": [
+      {
+        "id": "1",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "2",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "3",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "4",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "5",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "6",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "7",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "8",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "9",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "10",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "11",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "12",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "13",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "14",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "15",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      }
+    ]
+  }
+  
