@@ -19,7 +19,7 @@
     flex-direction: column;
     position: absolute;
     top: 50%;
-    left: 128px;
+    left: 256px;
     transform: translateY(-50%);
     width: 40vw;
     gap: 14px;
@@ -63,7 +63,7 @@
 #epicure-logo {
     position: absolute;
     top: 50%;
-    right: 128px;
+    right: 256px;
     transform: translateY(-50%);
 }
 
