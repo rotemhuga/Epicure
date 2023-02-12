@@ -6,6 +6,7 @@ import Icon_meaning from "../General/Icon_meaning/Icon_meaning";
 import Week_chef from "../General/Week_chef/Week_chef";
 import About_us from "../General/About_us/About_us";
 import Footer from "../General/Footer/Footer";
+import Popular_restaurant from "../General/Popular_restaurant/Popular_restaurant";
 
 const HomePage: React.FC = () => {
     return (
@@ -14,7 +15,7 @@ const HomePage: React.FC = () => {
                 <Navbar />
             </div>
             <div><Hero /></div>
-            <div>Most popular Resutaurant</div>
+            <div><Popular_restaurant /></div>
             <div>Signature Dish of</div>
             <div><Icon_meaning /></div>
             <div><Week_chef /></div>
