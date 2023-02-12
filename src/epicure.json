@@ -94,33 +94,37 @@
     "restaurants": [
       {
         "id": "1",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
+        "img": "claro-1.png",
+        "name": "Claro",
+        "chef": "Ran Shmueli",
+        "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": true
       },
       {
         "id": "2",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
+        "img": "Lumina-2.png",
+        "name": "Lumina",
+        "chef": "Meir Adoni",
+        "rating": "3",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": true
+
       },
       {
         "id": "3",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
+        "img": "tiger-lily-3.png",
+        "name": "Tiger Lilly",
+        "chef": "Yanir Green",
+        "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": true
       },
       {
         "id": "4",
@@ -130,7 +134,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "5",
@@ -140,7 +145,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "6",
@@ -150,7 +156,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "7",
@@ -160,7 +167,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "8",
@@ -170,7 +178,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "9",
@@ -180,7 +189,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "10",
@@ -190,7 +200,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "11",
@@ -200,7 +211,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "12",
@@ -210,7 +222,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "13",
@@ -220,7 +233,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "14",
@@ -230,7 +244,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "15",
@@ -240,7 +255,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "16",
@@ -250,7 +266,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "17",
@@ -260,7 +277,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "18",
@@ -270,7 +288,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "19",
@@ -280,7 +299,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       },
       {
         "id": "20",
@@ -290,7 +310,8 @@
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[], [], []]
+        "dishes": [[], [], []],
+        "isPopular": false
       }
     ],
     "dishes": [

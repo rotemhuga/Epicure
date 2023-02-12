@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+
+}
+
+.img-popular-card{
+    display: flex;
+    justify-content: center;
+}
+
+.name-popular-card {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.chef-popular-card {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.rating-popular-card {
+    width: 150px;
+    height: 20px;
+}

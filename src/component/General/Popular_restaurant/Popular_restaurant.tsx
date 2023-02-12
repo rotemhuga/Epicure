@@ -1,36 +1,35 @@
 import React from "react";
-// import cardRestaurant from 
-
+import "./Popular_restaurant.css"
+import CardRestaurant from "../../Card_restaurant/Card_restaurant"
+import data from "../../../epicure.json"
+import stars from "../../../assets/icons/star4.svg"
 
 const Popular_restaurant: React.FC = ()=> {
-    return (
-        <div id="Popular-rest-container">
-            <div id="first-rest-container">
-                <cardRestaurant src = {} class="" />
-                <cardRestaurant RestaurantName = {} class="" />
-                <cardRestaurant chef = {} class="" />
-                <cardRestaurant rating = {} class="" />
-            </div>
-            <div id="second-rest-container">
-                <cardRestaurant src = {} class="" />
-                <cardRestaurant RestaurantName = {} class="" />
-                <cardRestaurant chef = {} class="" />
-                <cardRestaurant rating = {} class="" />
-            </div>
-            <div id="third-rest-container">
-                <cardRestaurant src = {} class="" />
-                <cardRestaurant RestaurantName = {} class="" />
-                <cardRestaurant chef = {} class="" />
-                <cardRestaurant rating = {} class="" />
-            </div>
 
+
+const items = data.restaurants.map((item:any) => {
+    if (item.isPopular === true) {
+        return <CardRestaurant 
+        class= {item.name}
+        src= {require(`../../../assets/images/Restaurants/${item.img}`)}
+        RestaurantName = {item.name}
+        chef = {item.chef}
+        rating = {stars} 
+        />
+    
+    } else {
+        return null;
+ }   
+})
+    return (
+        <div className="all-rest-container" >
+            <div className="popular-rest-title">POPULAR RESTAURANT IN EPICURE</div>
+            <div className="all-rest-popular">
+                {items}
+            </div>
         </div>
     ) 
-
 }
 
 export default Popular_restaurant
-
-
-
 
