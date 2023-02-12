@@ -12,12 +12,14 @@ interface Iprops {
 
 const CardRestaurant: React.FC<Iprops> = (props:Iprops)=> {
     return (
-        <div className={`card ${props.class}`} >
+        <button className={`card ${props.class}`} >
             <img src={props.src} alt={props.alt} className="img-popular-card"/>
             <div className="name-popular-card">{props.RestaurantName} </div>
             <div className="chef-popular-card">{props.chef}</div>
-            <img src={props.rating} alt="" className="rating-popular-card" />
-        </div>
+            <div className="rating-popular-div">
+                <img src={props.rating} alt="" className="rating-popular-card" />
+            </div>
+        </button>
     ) 
 }
 
