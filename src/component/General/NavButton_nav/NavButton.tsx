@@ -6,6 +6,7 @@ interface Iprops {
     src?: string,
     alt?: string,
     class?:string,
+    onClick?:any;
 }
 
 const NavButton: React.FC<Iprops> = (props:Iprops) => {
@@ -14,6 +15,7 @@ const NavButton: React.FC<Iprops> = (props:Iprops) => {
             <button className={`button ${props.class}`}>
                     {props.name} 
                     <img src={props.src} alt={props.alt}/>
+                    {props.onClick}
             </button>
         </>
     )

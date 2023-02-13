@@ -27,18 +27,18 @@ const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
             <div className="rest-title-week-chef-card">{props.restTitle}</div>
             <div className="rest-week-chef-container">
                 <div className="all-rest-week-chef">
-                    <div className="one rest-card">
+                    <button className="one rest-card">
                         <img src={props.srcRest1} alt={props.alt} className="rest-img one"/>  
                         <div className="one-name rest-week">{props.restaurant1}</div>
-                    </div>
-                    <div className="two rest-card">
+                    </button>
+                    <button className="two rest-card">
                         <img src={props.srcRest2} alt={props.alt} className="rest-img two"/>  
                         <div className="two-name rest-week">{props.restaurant2}</div>
-                    </div>
-                    <div className="three rest-card">
+                    </button>
+                    <button className="three rest-card">
                         <img src={props.srcRest3} alt={props.alt} className="rest-img three"/>  
                         <div className="three-name rest-week">{props.restaurant3}</div>
-                    </div>
+                    </button>
 
                 </div>
             </div>
