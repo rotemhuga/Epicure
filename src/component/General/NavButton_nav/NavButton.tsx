@@ -1,4 +1,5 @@
 import React from "react";
+import "../NavButton_nav/NavButton.css"
 
 interface Iprops {
     name: string,
