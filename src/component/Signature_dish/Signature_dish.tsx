@@ -13,6 +13,7 @@ const items = data.dishes.map((item:any) => {
         class= {item.name}
         name = {item.name}
         src= {require(`../../assets/images/Dishes/${item.img}.png`)}
+        vegan = {require(`../../assets/icons/${item.isVegan}.svg`)}
         // vegan = {require(`../../assets/icons/${item.isVegan}.svg`)}
         ingredients = {item.ingredients}
         price = {item.price} 

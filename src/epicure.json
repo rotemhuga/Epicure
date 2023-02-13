@@ -322,7 +322,7 @@
         "ingredients": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
         "isSpicy": "spicy-icon.svg",
         "isVegitarian": "",
-        "isVegan": "",
+        "isVegan": "vegan-icon",
         "price": "78",
         "optionalSides": [],
         "optionalChanges": [],
@@ -361,7 +361,7 @@
         "ingredients": "",
         "isSpicy": "",
         "isVegitarian": "",
-        "isVegan": "vegan-icon",
+        "isVegan": "",
         "price": "",
         "optionalSides": [],
         "optionalChanges": []
