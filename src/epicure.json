@@ -1,0 +1,503 @@
+{
+    "chefs": [
+      {
+        "id": "1",
+        "name": "Asaf Granit",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": true
+      },
+      {
+        "id": "2",
+        "name": "Aviv Moshe",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": true
+      },
+      {
+        "id": "3",
+        "name": "Eyal Shani",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": true
+      },
+      {
+        "id": "4",
+        "name": "Meir Adoni",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "5",
+        "name": "Omer Miller",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "6",
+        "name": "Shahaf Shabatay",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "7",
+        "name": "Nitzan Raz",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "8",
+        "name": "Yossi Shitrit",
+        "info": "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.",
+        "portrait": "",
+        "restaurants": ["Onza","Kitchen Market", "Mashya"],
+        "isChefOfTheWeek": true,
+        "isNew": false,
+        "mostViewed": false
+      },
+      {
+        "id": "9",
+        "name": "Yuval Ben Neriah",
+        "info": "",
+        "portrait": "",
+        "restaurants": [],
+        "isChefOfTheWeek": false,
+        "isNew": false,
+        "mostViewed": false
+      }
+    ],
+    "restaurants": [
+      {
+        "id": "1",
+        "img": "claro-1.png",
+        "name": "Claro",
+        "chef": "Ran Shmueli",
+        "rating": "4",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": true
+      },
+      {
+        "id": "2",
+        "img": "Lumina-2.png",
+        "name": "Lumina",
+        "chef": "Meir Adoni",
+        "rating": "3",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": true
+
+      },
+      {
+        "id": "3",
+        "img": "tiger-lily-3.png",
+        "name": "Tiger Lilly",
+        "chef": "Yanir Green",
+        "rating": "4",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": true
+      },
+      {
+        "id": "4",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "5",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "6",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "7",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "8",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "9",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "10",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "11",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "12",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "13",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "14",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "15",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "16",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "17",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "18",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "19",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "20",
+        "img": "",
+        "name": "",
+        "chef": "",
+        "rating": "",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      }
+    ],
+    "dishes": [
+      {
+        "id": "1",
+        "img": "pad-ki-mao",
+        "name": "Pad Ki Mao",
+        "ingredients": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+        "isSpicy": "spicy-icon",
+        "isVegitarian": "vegitarian-icon",
+        "isVegan": "vegan-icon",
+        "price": "78",
+        "optionalSides": [],
+        "optionalChanges": [],
+        "isPopular": true
+      },
+      {
+        "id": "2",
+        "img": "garbanzo-frito",
+        "name": "Garbanzo Frito",
+        "ingredients": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
+        "isSpicy": "spicy-icon",
+        "isVegitarian": "vegitarian-icon",
+        "isVegan": "vegan-icon",
+        "price": "98",
+        "optionalSides": [],
+        "optionalChanges": [],
+        "isPopular": true
+      },
+      {
+        "id": "3",
+        "img": "smoked-pizza",
+        "name": "Smoked Pizza",
+        "ingredients": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
+        "isSpicy": "spicy-icon",
+        "isVegitarian": "vegitarian-icon",
+        "isVegan": "vegan-icon",
+        "price": "68",
+        "optionalSides": [],
+        "optionalChanges": [],
+        "isPopular": true
+      },
+      {
+        "id": "4",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "5",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "6",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "7",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "8",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "9",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "10",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "11",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "12",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "13",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "14",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      },
+      {
+        "id": "15",
+        "img": "",
+        "name": "",
+        "ingredients": "",
+        "isSpicy": "",
+        "isVegitarian": "",
+        "isVegan": "",
+        "price": "",
+        "optionalSides": [],
+        "optionalChanges": []
+      }
+    ]
+  }
+  
