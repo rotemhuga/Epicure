@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    cursor: pointer;
+    background: #F9F4EA;
+    height: 40vh;
+    gap: 15px;
+}
+
+/* .Claro {
+    position: absolute;
+    left:256px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.Lumina {
+    display: flex;
+    justify-content: center;
+}
+
+.Tiger {
+    position: absolute;
+    right:256px;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+
+.img-popular-card{
+    display: flex;
+    justify-content: center;
+}
+
+.name-popular-card {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-family: Helvetica-Neu-Bold
+}
+
+.chef-popular-card {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.rating-popular-card {
+    display: flex;
+    width: 180px;
+    height: 30px;
+}
+
+.rating-popular-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
