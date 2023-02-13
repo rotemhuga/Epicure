@@ -7,39 +7,23 @@
 .all-dish-container {
     display: flex;
     flex-direction: column;
-    gap: 2%;
-    height: 60vh;
+    position: relative;
+    gap: 30px;
+    height: 80vh;
 }
 
-.all-dish-popular {
+.all-dish-card {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2%;
 }
 
-.card-dish {
-    display: flex;
-    flex-direction: column;
-    max-width: 250px;
-    cursor: pointer;
-    background: #F9F4EA;
-    height: 55vh;
-    gap: 10px;
-
-}
-
 .popular-dish-title {
     display: flex;
     justify-content: center;
+    /* margin-top: 5%; */
     font-size: 20px;
 }
 
-.name-card-dish {
-    display: flex;
-    justify-content: center;
-    font-family: Helvetica-Neu-Bold;
-    font-size: 28px;
-    width: 80px;
-}
 
