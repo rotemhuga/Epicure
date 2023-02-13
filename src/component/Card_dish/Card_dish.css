@@ -19,6 +19,7 @@
 .name-card-dish {
     display: flex;
     font-family: Helvetica-Neu-Bold;
+    justify-content: center;
     text-align:center;
     font-size: 28px;
     width: 80px;

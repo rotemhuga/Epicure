@@ -1,10 +1,11 @@
 import React from "react";
+import "./RestaurantsPage.css"
 import Navbar from "../navbar/all_navbar/navbar";
 import Footer from "../General/Footer/Footer";
 
 const RestaurantsPage: React.FC = () => {
     return (
-        <div id="Home-page">
+        <div id="Restaurants-page">
             <div>                
                 <Navbar />
             </div>
@@ -15,8 +16,6 @@ const RestaurantsPage: React.FC = () => {
             <div><Week_chef /></div>
             <div>  <About_us /></div> */}
             <div><Footer /></div>
-
-
         </div>
     );
 };
