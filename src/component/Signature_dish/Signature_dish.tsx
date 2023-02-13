@@ -1,26 +1,40 @@
 import React from "react";
-import "./Signature_dish.css"
+import "../Signature_dish/Signature_dish.css"
+import CardDish from "../../component/Card_dish/Card_dish"
+import data from "../../epicure.json"
+// import vegan from "../../assets/icons/vegan-icon.svg"
 
-interface Iprops {
-    class?: string,
-    src?: string,
-    alt?:string,
-    name?:string,
-    vegan?: string,
-    ingredients?:string,
-    price?:string
-}
+const Signature_dish: React.FC = ()=> {
 
-const CardRestaurant: React.FC<Iprops> = (props:Iprops)=> {
+
+const items = data.dishes.map((item:any) => {
+    if (item.isPopular === true) {
+        return <CardDish 
+        class= {item.name}
+        name = {item.name}
+        src= {require(`../../assets/images/Dishes/${item.img}.png`)}
+        // vegan = {require(`../../assets/icons/${item.isVegan}.svg`)}
+        ingredients = {item.ingredients}
+        price = {item.price} 
+        />
+    
+    } else {
+        return null;
+ }   
+})
     return (
-        <button className={`card ${props.class}`} >
-            <img src={props.src} alt={props.alt} className="img-sign-rest"/>
-            <div className="name-sign-rest">{props.name} </div>
-            <div className="vegan-popular-card">{props.vegan}</div>
-            <div className="rating-popular-div">
+        
+        <div className="all-dish-container">
+            <div className="popular-dish-title">SIGNATURE DISH OF</div>
+            <div className="all-dish-popular">
+                {items}
             </div>
-        </button>
+            <button className="all-dish-path">
+                {/* All Restaurants <img src={vector} alt="vector" className="vector-rest"/> */}
+            </button>
+        </div>
     ) 
 }
 
-export default CardRestaurant
+export default Signature_dish
+

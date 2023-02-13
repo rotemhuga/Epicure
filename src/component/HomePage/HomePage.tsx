@@ -7,6 +7,7 @@ import Week_chef from "../General/Week_chef/Week_chef";
 import About_us from "../General/About_us/About_us";
 import Footer from "../General/Footer/Footer";
 import Popular_restaurant from "../General/Popular_restaurant/Popular_restaurant";
+import Signature_dish from "../Signature_dish/Signature_dish";
 
 const HomePage: React.FC = () => {
     return (
@@ -16,7 +17,7 @@ const HomePage: React.FC = () => {
             </div>
             <div><Hero /></div>
             <div><Popular_restaurant /></div>
-            <div>Signature Dish of</div>
+            <div><Signature_dish /></div>
             <div><Icon_meaning /></div>
             <div><Week_chef /></div>
             <div>Chefs Restaurant</div>

@@ -317,10 +317,10 @@
     "dishes": [
       {
         "id": "1",
-        "img": "Pad Ki Mao",
-        "name": "pad-ki-mao",
+        "img": "pad-ki-mao",
+        "name": "Pad Ki Mao",
         "ingredients": "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
-        "isSpicy": "yes",
+        "isSpicy": "spicy-icon.svg",
         "isVegitarian": "",
         "isVegan": "",
         "price": "78",
@@ -335,10 +335,11 @@
         "ingredients": "Polenta fingers, veal cheek, magic chili cured lemon cream, yellow laksa",
         "isSpicy": "",
         "isVegitarian": "",
-        "isVegan": "",
+        "isVegan": "vegan-icon",
         "price": "98",
         "optionalSides": [],
-        "optionalChanges": []
+        "optionalChanges": [],
+        "isPopular": true
       },
       {
         "id": "3",
@@ -347,10 +348,11 @@
         "ingredients": "Basil dough, cashew \"butter\", demi-glace, bison & radish",
         "isSpicy": "",
         "isVegitarian": "",
-        "isVegan": "3",
+        "isVegan": "vegan-icon",
         "price": "68",
         "optionalSides": [],
-        "optionalChanges": []
+        "optionalChanges": [],
+        "isPopular": true
       },
       {
         "id": "4",
@@ -359,7 +361,7 @@
         "ingredients": "",
         "isSpicy": "",
         "isVegitarian": "",
-        "isVegan": "",
+        "isVegan": "vegan-icon",
         "price": "",
         "optionalSides": [],
         "optionalChanges": []
