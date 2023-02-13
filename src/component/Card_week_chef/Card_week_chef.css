@@ -4,18 +4,23 @@
     padding: 0;
 }
 
+#week-chef-container {
+    position: relative;
+
+}
+
 .card-week-chef {
     display: flex;
     flex-direction: column;
     position: relative;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 256px;
     transform: translateY(-50%);
 }
 
-#img-week-chef-card {
-    width: 20vw;
+.img-week-chef-card {
+    width: 25vw;
     -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 }
@@ -26,7 +31,7 @@
     bottom: 0;
     align-items: center;    
     justify-content: center; 
-    width: 20vw;
+    width: 25vw;
     height: 5vh;
     background: rgba(255, 255, 255, 0.8);
     font-size: 25px;
@@ -41,7 +46,7 @@
     line-height: 40px;
     letter-spacing: 1.25px;
     font-size: 20px;
-    top: 30%;
+    top: 33%;
     right: 256px;
     transform: translateY(-50%);
 }
@@ -49,7 +54,7 @@
 .rest-title-week-chef-card {
     font-size: 24px;
     position: absolute;
-    top: 45vh;
+    top: 55vh;
     left: 256px;
 }
 
@@ -57,7 +62,7 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 55vh;
+    top: 65vh;
     left: 256px;
     gap: 2%;
 }
