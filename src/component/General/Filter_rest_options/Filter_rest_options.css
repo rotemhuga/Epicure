@@ -1,0 +1,19 @@
+.filter-options {
+    gap: 0;
+    background: #FAFAFA;
+    height: 8vh;
+}
+
+.button-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    width: 160px;
+    height: 50px;
+}
+
+.button-filter:hover {
+    background-color: #D0CFCF;
+}

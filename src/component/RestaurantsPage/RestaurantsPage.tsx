@@ -1,9 +1,9 @@
 import React from "react";
 import "./RestaurantsPage.css"
 import Navbar from "../navbar/all_navbar/navbar";
-import RestFilterLink from "../General/Rest_filter_link/Rest_filter_link"
+import RestFilterLink from "../General/Rest_filter_link/Rest_filter_link";
 import Footer from "../General/Footer/Footer";
-
+import FilterRestOptions from "../General/Filter_rest_options/Filter_rest_options";
 
 const RestaurantsPage: React.FC = () => {
     return (
@@ -12,6 +12,7 @@ const RestaurantsPage: React.FC = () => {
                 <Navbar />
             </div>
             <div><RestFilterLink /></div>
+            <div><FilterRestOptions /></div>
             {/* <div><Signature_dish /></div>
             <div><Icon_meaning /></div>
             <div><Week_chef /></div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Rest_filter_link.css"
+// import "../Rest_filter_link/Rest_filter_link.css"
 import NavButton from "../NavButton_nav/NavButton";
 
 const RestFilterLink: React.FC = () => {
