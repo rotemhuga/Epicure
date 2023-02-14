@@ -164,8 +164,8 @@
       {
         "id": "7",
         "img": "",
-        "name": "",
-        "chef": "",
+        "name": "Kab Kem",
+        "chef": "Yariv Malili",
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
@@ -175,8 +175,8 @@
       {
         "id": "8",
         "img": "",
-        "name": "",
-        "chef": "",
+        "name": "Messa",
+        "chef": "Aviv Moshe",
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
@@ -186,7 +186,7 @@
       {
         "id": "9",
         "img": "",
-        "name": "",
+        "name": "Nitan Thai",
         "chef": "",
         "rating": "",
         "openingHours": "",
@@ -197,8 +197,8 @@
       {
         "id": "10",
         "img": "",
-        "name": "",
-        "chef": "",
+        "name": "Ya Pan",
+        "chef": "Yuval Ben Moshe",
         "rating": "",
         "openingHours": "",
         "address": [0, 0],
@@ -208,7 +208,7 @@
       {
         "id": "11",
         "img": "",
-        "name": "",
+        "name": "", 
         "chef": "",
         "rating": "",
         "openingHours": "",
