@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.rest-page {
+    /* width: 100vw; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.all-rest-page-container {  
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    width:1000px;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+#rest-card {
+    width: 150px;
+    height: 1000px;
+}

@@ -4,6 +4,7 @@ import Navbar from "../navbar/all_navbar/navbar";
 import RestFilterLink from "../General/Rest_filter_link/Rest_filter_link";
 import Footer from "../General/Footer/Footer";
 import FilterRestOptions from "../General/Filter_rest_options/Filter_rest_options";
+import AllRestaurants from "../All_restaurants/All_restaurants";
 
 const RestaurantsPage: React.FC = () => {
     return (
@@ -13,11 +14,8 @@ const RestaurantsPage: React.FC = () => {
             </div>
             <div><RestFilterLink /></div>
             <div><FilterRestOptions /></div>
-            {/* <div><Signature_dish /></div>
-            <div><Icon_meaning /></div>
-            <div><Week_chef /></div>
-            <div>  <About_us /></div> */}
-            <div><Footer /></div>
+            <AllRestaurants />
+            <Footer />
         </div>
     );
 };

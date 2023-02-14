@@ -3,6 +3,7 @@ import "./Card_restaurant.css"
 
 interface Iprops {
     class?: string,
+    id?:string
     src?: string,
     alt?:string,
     RestaurantName?: string,
@@ -12,8 +13,8 @@ interface Iprops {
 
 const CardRestaurant: React.FC<Iprops> = (props:Iprops)=> {
     return (
-        <button className={`card ${props.class}`} >
-            <img src={props.src} alt={props.alt} className="img-popular-card"/>
+        <button className={`card popular-rest all-rest`} id={`rest-card ${props.id}`} >
+            <img src={props.src} alt={props.alt} className="img-card R-popular R-all"/>
             <div className="name-popular-card">{props.RestaurantName} </div>
             <div className="chef-popular-card">{props.chef}</div>
             <div className="rating-popular-div">

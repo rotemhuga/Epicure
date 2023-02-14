@@ -27,7 +27,7 @@
         "portrait": "",
         "restaurants": [],
         "isChefOfTheWeek": false,
-        "isNew": false,
+        "isNew": true,
         "mostViewed": true
       },
       {
@@ -37,7 +37,7 @@
         "portrait": "",
         "restaurants": [],
         "isChefOfTheWeek": false,
-        "isNew": false,
+        "isNew": true,
         "mostViewed": false
       },
       {
@@ -48,7 +48,7 @@
         "restaurants": [],
         "isChefOfTheWeek": false,
         "isNew": false,
-        "mostViewed": false
+        "mostViewed": true
       },
       {
         "id": "6",
@@ -57,7 +57,7 @@
         "portrait": "",
         "restaurants": [],
         "isChefOfTheWeek": false,
-        "isNew": false,
+        "isNew": true,
         "mostViewed": false
       },
       {
@@ -96,7 +96,7 @@
     "restaurants": [
       {
         "id": "1",
-        "img": "claro-1.png",
+        "img": "claro-1",
         "name": "Claro",
         "chef": "Ran Shmueli",
         "rating": "4",
@@ -107,7 +107,7 @@
       },
       {
         "id": "2",
-        "img": "Lumina-2.png",
+        "img": "lumina-2",
         "name": "Lumina",
         "chef": "Meir Adoni",
         "rating": "3",
@@ -119,7 +119,7 @@
       },
       {
         "id": "3",
-        "img": "tiger-lily-3.png",
+        "img": "tiger-lily-3",
         "name": "Tiger Lilly",
         "chef": "Yanir Green",
         "rating": "4",
@@ -133,7 +133,7 @@
         "img": "onza-4",
         "name": "Onza",
         "chef": "Yossi Shitrit ",
-        "rating": "",
+        "rating": "4",
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[], [], []],
@@ -144,7 +144,7 @@
         "img": "kitchen-market-5",
         "name": "Kitchen Market",
         "chef": "Yossi Shitrit",
-        "rating": "",
+        "rating": "4",
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[], [], []],
@@ -155,7 +155,7 @@
         "img": "mashya-6",
         "name": "Mashya",
         "chef": "Yossi Shitrit",
-        "rating": "",
+        "rating": "4",
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[], [], []],
@@ -163,10 +163,10 @@
       },
       {
         "id": "7",
-        "img": "",
+        "img": "kab-kem-7",
         "name": "Kab Kem",
         "chef": "Yariv Malili",
-        "rating": "",
+        "rating": "4",
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[], [], []],
@@ -174,10 +174,10 @@
       },
       {
         "id": "8",
-        "img": "",
+        "img": "messa-8",
         "name": "Messa",
         "chef": "Aviv Moshe",
-        "rating": "",
+        "rating": "4",
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[], [], []],
@@ -185,131 +185,10 @@
       },
       {
         "id": "9",
-        "img": "",
+        "img": "nitan-thai-9",
         "name": "Nitan Thai",
         "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "10",
-        "img": "",
-        "name": "Ya Pan",
-        "chef": "Yuval Ben Moshe",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "11",
-        "img": "",
-        "name": "", 
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "12",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "13",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "14",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "15",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "16",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "17",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "18",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "19",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
-        "openingHours": "",
-        "address": [0, 0],
-        "dishes": [[], [], []],
-        "isPopular": false
-      },
-      {
-        "id": "20",
-        "img": "",
-        "name": "",
-        "chef": "",
-        "rating": "",
+        "rating": "4",
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[], [], []],

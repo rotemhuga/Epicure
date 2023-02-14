@@ -10,31 +10,16 @@
     width: 280px;
     cursor: pointer;
     background: #F9F4EA;
-    height: 40vh;
+    height: 24vw;
     gap: 15px;
 }
 
-/* .Claro {
-    position: absolute;
-    left:256px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.Lumina {
+.img-card{
     display: flex;
     justify-content: center;
-}
-
-.Tiger {
-    position: absolute;
-    right:256px;
-    top: 50%;
-    transform: translateY(-50%);
-} */
-
-.img-popular-card{
-    display: flex;
-    justify-content: center;
+    width: 280px;
+    height: 173px;
+    object-fit:cover;
 }
 
 .name-popular-card {
