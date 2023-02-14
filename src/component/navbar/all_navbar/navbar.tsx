@@ -6,7 +6,6 @@ import ProfileNav from "../Profile_nav/PropfileNav";
 import BagNav from "../Bag_Nav/BagNav";
 import logo from '../../../assets/icons/logo.svg';
 import {useNavigate} from "react-router-dom";
-import RestaurantsPage from "../../RestaurantsPage/RestaurantsPage";
 
 
 const Navbar: React.FC = () => {
