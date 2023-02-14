@@ -9,7 +9,7 @@
 
 }
 
-.card-week-chef {
+.card-week-chef { 
     display: flex;
     flex-direction: column;
     position: relative;

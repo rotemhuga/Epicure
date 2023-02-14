@@ -25,7 +25,7 @@ const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
     // console.log(props.restaurants)
     return (
         <div>
-            <button className={`card-week-chef ${props.class}`} >
+            <button className={`card-week-chef ${props.class}`} id="all-chefs-card" >
                 <img src={props.srcChef} alt={props.alt} className="img-week-chef-card"/>  
                 <div className="name-week-chef-card">{props.ChefName} </div>
             </button>
