@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
             <div className="left-nav navbar">
                 <NavButton name = "" src={logo} class="logo" onClick={() => navigate("/")} />
                 <NavButton name={"Restaurants"} class="Rest-button" onClick={() => navigate("/RestaurantsPage")} />
-                <NavButton name={"Chefs"} class="Chefs-button" />
+                <NavButton name={"Chefs"} class="Chefs-button" onClick={() => navigate("/ChefsPage")} />
             </div>
             <div className="right-nav navbar">
                 <SearchNav />

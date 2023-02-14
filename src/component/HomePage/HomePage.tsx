@@ -8,7 +8,6 @@ import About_us from "../General/About_us/About_us";
 import Footer from "../General/Footer/Footer";
 import Popular_restaurant from "../General/Popular_restaurant/Popular_restaurant";
 import Signature_dish from "../Signature_dish/Signature_dish";
-import RestFilterLink from "../General/Rest_filter_link/Rest_filter_link";
 
 const HomePage: React.FC = () => {
     return (
@@ -23,8 +22,6 @@ const HomePage: React.FC = () => {
             <div><Week_chef /></div>
             <div>  <About_us /></div>
             <div><Footer /></div>
-            <div><RestFilterLink /></div>
-
 
         </div>
     );

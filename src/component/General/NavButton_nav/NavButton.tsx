@@ -12,10 +12,9 @@ interface Iprops {
 const NavButton: React.FC<Iprops> = (props:Iprops) => {
     return (
         <>
-            <button className={`button ${props.class}`}>
+            <button className={`button ${props.class}`} onClick ={props.onClick} >
                     {props.name} 
-                    <img src={props.src} alt={props.alt}/>
-                    {props.onClick}
+                    <img src={props.src} alt={props.alt}/> 
             </button>
         </>
     )

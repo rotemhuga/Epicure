@@ -17,6 +17,12 @@ interface Iprops {
 }
 
 const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
+    // const rest= data.restaurants
+    // rest.map((restObj)=> {
+    //     props.restaurants.includes(restObj.id)
+       
+    // })
+    // console.log(props.restaurants)
     return (
         <div>
             <button className={`card-week-chef ${props.class}`} >
@@ -27,7 +33,7 @@ const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
             <div className="rest-title-week-chef-card">{props.restTitle}</div>
             <div className="rest-week-chef-container">
                 <div className="all-rest-week-chef">
-                    <button className="one rest-card">
+                    <button className="one rest-card">         
                         <img src={props.srcRest1} alt={props.alt} className="rest-img one"/>  
                         <div className="one-name rest-week">{props.restaurant1}</div>
                     </button>

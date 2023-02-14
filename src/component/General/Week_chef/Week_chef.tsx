@@ -15,6 +15,7 @@ const Week_chef: React.FC = ()=> {
             ChefName = {item.name}
             info = {item.info}
             restTitle = {`${item.firstName}'s Restaurants`}
+            // restaurants= {item.restaurants}
             restaurant1 = {item.restaurants[0]} 
             srcRest1 = {require(`../../../assets/images/Restaurants/${item.restaurantsImg[0]}.png`)}
             restaurant2 = {item.restaurants[1]} 
