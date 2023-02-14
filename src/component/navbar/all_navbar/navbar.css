@@ -28,6 +28,7 @@
 
 .right-nav {
     gap: 10%;
+    align-items: center;
 }
 
 .Rest-button {
