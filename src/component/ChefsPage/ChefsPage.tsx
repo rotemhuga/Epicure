@@ -10,7 +10,6 @@ const ChefsPage: React.FC = () => {
         <div id="Chefs-page">
             <Navbar />
             <FilterChefPage />
-            <AllChefs />
             <Footer />
         </div>
     );
