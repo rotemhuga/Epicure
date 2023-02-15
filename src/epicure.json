@@ -6,6 +6,7 @@
         "info": "",
         "portrait": "asaf-granit-1",
         "restaurants": [],
+        "restaurantId": [],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": true
@@ -16,6 +17,7 @@
         "info": "",
         "portrait": "aviv-moshe-2",
         "restaurants": [],
+        "restaurantId": [8],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": true
@@ -26,6 +28,7 @@
         "info": "",
         "portrait": "eyal-shani-3",
         "restaurants": [],
+        "restaurantId": [],
         "isChefOfTheWeek": false,
         "isNew": true,
         "mostViewed": true
@@ -36,6 +39,7 @@
         "info": "",
         "portrait": "meir-adoni-4",
         "restaurants": [],
+        "restaurantId": [2],
         "isChefOfTheWeek": false,
         "isNew": true,
         "mostViewed": false
@@ -46,6 +50,7 @@
         "info": "",
         "portrait": "omer-miller-5",
         "restaurants": [],
+        "restaurantId": [],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": true
@@ -56,6 +61,7 @@
         "info": "",
         "portrait": "shahaf-shabtay-6",
         "restaurants": [],
+        "restaurantId": [],
         "isChefOfTheWeek": false,
         "isNew": true,
         "mostViewed": false
@@ -66,6 +72,7 @@
         "info": "",
         "portrait": "nitzan-raz-7",
         "restaurants": [],
+        "restaurantId": [],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": false
@@ -78,6 +85,7 @@
         "portrait": "yossi-shitrit-8",
         "restaurants": ["Onza","Kitchen Market", "Mashya"],
         "restaurantsImg": ["onza-4","kitchen-market-5", "mashya-6"],
+        "restaurantId": [4,5,6],
         "isChefOfTheWeek": true,
         "isNew": false,
         "mostViewed": false
@@ -88,6 +96,7 @@
         "info": "",
         "portrait": "yuval-ben-neriah-9",
         "restaurants": [],
+        "restaurantId": [],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": false
@@ -115,7 +124,6 @@
         "address": [0, 0],
         "dishes": [[], [], []],
         "isPopular": true
-
       },
       {
         "id": "3",
@@ -188,6 +196,17 @@
         "img": "nitan-thai-9",
         "name": "Nitan Thai",
         "chef": "",
+        "rating": "4",
+        "openingHours": "",
+        "address": [0, 0],
+        "dishes": [[], [], []],
+        "isPopular": false
+      },
+      {
+        "id": "10",
+        "img": "",
+        "name": "Lotte",
+        "chef": "Asaf Granit",
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
