@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
             <div><Signature_dish /></div>
             <div><Icon_meaning /></div>
             <div><Week_chef /></div>
-            <div>  <About_us /></div>
+            <div><About_us /></div>
             <div><Footer /></div>
 
         </div>

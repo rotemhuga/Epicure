@@ -11,13 +11,12 @@
 }
 
 .all-chef-page-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 3%;
-    /* justify-content: center; */
-    width: 900px;
-    gap: 5%;
+    display: grid;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* width: 810px; */
+    grid-template-columns: 30% 30% 30%;
+    gap: 2%;
 }
 
 .card-all-chef{
@@ -28,17 +27,7 @@
 
 .img-all-chef-card{
     width: 270px;
-    height: 220px;
+    height: 240px;
     object-fit: cover;
     padding: 10px;
-}
-.name-all-chef-card{
-    position: absolute;
-    bottom: 0;
-    left: 135px;
-    transform: translate(-50%);
-    width: 260px;
-    height: 50px;
-    align-items: center;    
-    background-color: beige;
 }
