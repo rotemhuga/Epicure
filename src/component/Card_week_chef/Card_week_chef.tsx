@@ -1,6 +1,5 @@
 import React from "react";
 import "./Card_week_chef.css"
-import data from "../../epicure.json"
 
 interface Iprops {
     class?: string,
@@ -19,30 +18,10 @@ interface Iprops {
 }
 
 const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
-    // const rest= data.restaurants
-    // rest.map((restObj)=> {
-    // props.includes(restObj.id)
-    // // props.restaurants.includes(restObj.id)
-       
-    // })
-    // console.log("hello")'
-    // function getRestaurantFromChef(chef: IChef, restaurantId: number): IRestaurant | undefined {
-    //     const restaurant = data.restaurants.find((r) => r.id === restaurantId);
-    //     if (restaurant && chef.restaurants.includes(restaurant.id)) {
-    //       return restaurant;
-    //     }
-    //     return undefined;
-    //   }
-
-
-
-
-
     return (
         <div>
             <button className={`card-week-chef ${props.class}`} id="all-chefs-card" >
                 <img src={props.srcChef} alt={props.alt} className="img-week-chef-card"/>  
-                {/* <div className="name-week-chef-card">{props.ChefName} </div> */}
             </button>
             <div className="info-week-chef-card">{props.info}</div>
             <div className="rest-title-week-chef-card">{props.restTitle}</div>

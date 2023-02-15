@@ -1,9 +1,7 @@
 import React from "react";
 import "../Week_chef/Week_chef.css"
-// import yossi_shitrit from "../../../assets/images/yossi-shitrit.png"
 import data from "../../../epicure.json"
 import CardWeekChef from "../../Card_week_chef/Card_week_chef"
-// import restChef from "../../../assets/images/Restaurants/onza-4.png"
  
 
 const Week_chef: React.FC = ()=> {
@@ -15,7 +13,6 @@ const Week_chef: React.FC = ()=> {
             ChefName = {item.name}
             info = {item.info}
             restTitle = {`${item.firstName}'s Restaurants`}
-            // restaurants= {item.restaurants}
             restaurant1 = {item.restaurants[0]} 
             srcRest1 = {require(`../../../assets/images/Restaurants/${item.restaurantsImg[0]}.png`)}
             restaurant2 = {item.restaurants[1]} 
@@ -43,3 +40,22 @@ const Week_chef: React.FC = ()=> {
 export default Week_chef
 
 
+    // const rest= data.restaurants
+    // rest.map((restObj)=> {
+    // props.includes(restObj.id)
+    // // props.restaurants.includes(restObj.id)
+       
+    // })
+    //     if ()
+    //     const rest = data.restaurants.find((r) => r.name === restaurantId);
+    //     if (restaurant && chef.restaurants.includes(restaurant.id)) {
+    //       return restaurant;
+    //     }
+    //     return undefined;
+
+    // if (item.isChefOfTheWeek === true)
+    //     const chefweekname = {item.name}
+    //     const rest = data.restaurants 
+    //     const chefRest = rest.find{item.name}
+    //     return 
+    
