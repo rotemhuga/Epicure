@@ -31,7 +31,6 @@ const items = data.dishes.map((item:any) => {
                 {items}
             </div>
             <button className="all-dish-path">
-                {/* All Restaurants <img src={vector} alt="vector" className="vector-rest"/> */}
             </button>
         </div>
     ) 

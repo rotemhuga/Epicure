@@ -8,12 +8,10 @@ import AllRestaurants from "../All_restaurants/All_restaurants";
 
 const RestaurantsPage: React.FC = () => {
     return (
-        <div id="Restaurants-page">
-            <div>                
-                <Navbar />
-            </div>
-            <div><RestFilterLink /></div>
-            <div><FilterRestOptions /></div>
+        <div id="Restaurants-page">               
+            <Navbar />
+            <RestFilterLink />
+            <FilterRestOptions />
             <AllRestaurants />
             <Footer />
         </div>

@@ -7,7 +7,6 @@ const AllRestaurants: React.FC = () => {
 const rests = data.restaurants.map((rest:any, index: number) => {
         return <CardRestaurant 
         class= {rest.name}
-        // id= {rest.id}
         src= {require(`../../assets/images/Restaurants/${rest.img}.png`)}
         RestaurantName = {rest.name}
         chef = {rest.chef}

@@ -12,9 +12,6 @@
 
 .all-chef-page-container{
     display: grid;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
-    /* width: 810px; */
     grid-template-columns: 30% 30% 30%;
     gap: 2%;
 }

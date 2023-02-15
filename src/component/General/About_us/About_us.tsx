@@ -1,6 +1,4 @@
 import React from "react"
-import appStore from "../../../assets/icons/app-store-icon.svg"
-import googlePlay from "../../../assets/icons/apple-icon.svg"
 import aboutUs from "../../../assets/icons/Epicure-about-us-logo.svg"
 import "../About_us/About_us.css"
 import appStoreImg from "../../../assets/icons/app-store-img.svg"
