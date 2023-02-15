@@ -12,16 +12,15 @@ import Signature_dish from "../Signature_dish/Signature_dish";
 const HomePage: React.FC = () => {
     return (
         <div id="Home-page">
-            <div>                
-                <Navbar />
-            </div>
-            <div><Hero /></div>
-            <div><Popular_restaurant /></div>
-            <div><Signature_dish /></div>
-            <div><Icon_meaning /></div>
-            <div><Week_chef /></div>
-            <div><About_us /></div>
-            <div><Footer /></div>
+                            
+            <Navbar />
+            <Hero />
+            <Popular_restaurant />
+            <Signature_dish />
+            <Icon_meaning />
+            <Week_chef />
+            <About_us />
+            <Footer />
 
         </div>
     );

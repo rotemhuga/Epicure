@@ -54,6 +54,10 @@
     cursor: pointer;
 }
 
+.app-Store-Img {
+    display: flex;
+}
+
 #download-google-play {
     display: flex;
     flex-direction: row;

@@ -23,10 +23,10 @@ const About_us: React.FC = ()=> {
                 </div>
                 <div id="download-apps">
                     <button id="download-app-store">
-                        <img src={appStoreImg} alt="app-Store-Img" />
+                        <img src={appStoreImg} alt="app-Store-Img" className="app-Store-Img" />
                     </button>
                     <button id="download-google-play">
-                        <img src={googlePlayImg} alt="google-Play-Img" />
+                        <img src={googlePlayImg} alt="google-Play-Img" className="google-Play-Img" />
                     </button>
                 </div >
             </div>
