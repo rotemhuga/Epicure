@@ -103,7 +103,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[1], [], []],
-        "isPopular": true
+        "isPopular": true,        
+        "isNew": false
       },
       {
         "id": "2",
@@ -114,7 +115,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[9], [], []],
-        "isPopular": true
+        "isPopular": true,        
+        "isNew": false
 
       },
       {
@@ -126,7 +128,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[7], [], []],
-        "isPopular": true
+        "isPopular": true,        
+        "isNew": false
       },
       {
         "id": "4",
@@ -137,7 +140,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[8], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": true
       },
       {
         "id": "5",
@@ -148,7 +152,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[11], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "6",
@@ -159,7 +164,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[10], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": true
       },
       {
         "id": "7",
@@ -170,7 +176,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[14], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "8",
@@ -181,7 +188,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[12], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "9",
@@ -192,7 +200,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[13], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "10",
@@ -203,7 +212,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[15], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "11",
@@ -214,7 +224,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[6], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "12",
@@ -225,7 +236,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[2], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "13",
@@ -236,7 +248,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[3], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "14",
@@ -247,7 +260,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[5], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       },
       {
         "id": "15",
@@ -258,7 +272,8 @@
         "openingHours": "",
         "address": [0, 0],
         "dishes": [[16], [], []],
-        "isPopular": false
+        "isPopular": false,        
+        "isNew": false
       }
     ],
     "dishes": [

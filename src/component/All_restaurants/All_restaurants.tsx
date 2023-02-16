@@ -1,10 +1,15 @@
 import React from "react";
-import data from "../../epicure.json"
+// import data from "../../epicure.json"
+import { useSelector } from "react-redux";
 import CardRestaurant from "../Card_restaurant/Card_restaurant";
 import "./All_restaurants.css";
 
 const AllRestaurants: React.FC = () => {
-const rests = data.restaurants.map((rest:any, index: number) => {
+const restaurants = useSelector(
+        (state:any) => state.restaurants.value
+    );
+
+const rests = restaurants.map((rest:any, index: number) => {
         return <CardRestaurant 
         class= {rest.name}
         src= {require(`../../assets/images/Restaurants/${rest.img}.png`)}

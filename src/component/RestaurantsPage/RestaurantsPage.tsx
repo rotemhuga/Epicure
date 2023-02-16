@@ -7,6 +7,7 @@ import FilterRestOptions from "../General/Filter_rest_options/Filter_rest_option
 import AllRestaurants from "../All_restaurants/All_restaurants";
 
 const RestaurantsPage: React.FC = () => {
+    
     return (
         <div id="Restaurants-page">               
             <Navbar />

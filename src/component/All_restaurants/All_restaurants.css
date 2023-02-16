@@ -15,8 +15,8 @@
     display: grid;
     grid-template-columns: 30% 30% 30%;
     margin-top: 2%;
-    gap: 5%;
-    height: 100vh;
+    /* gap: 5%; */
+    /* height: 100vh; */
 }
 
 #rest-card {
