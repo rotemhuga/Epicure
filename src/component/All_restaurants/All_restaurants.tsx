@@ -9,7 +9,7 @@ const restaurants = useSelector(
         (state:any) => state.restaurants.value
     );
 
-const rests = restaurants.map((rest:any, index: number) => {
+const rests = restaurants.map((rest:any) => {
         return <CardRestaurant 
         class= {rest.name}
         src= {require(`../../assets/images/Restaurants/${rest.img}.png`)}
@@ -19,7 +19,6 @@ const rests = restaurants.map((rest:any, index: number) => {
         />  
 })
     return (
-        
         <div className="rest-page" >
             <div className="all-rest-page-container">
                 {rests}

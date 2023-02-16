@@ -4,7 +4,7 @@ import data from "../../epicure.json"
 export const restaurantsSlice = createSlice({
   name: "restaurants",
   initialState: {
-    value: data.restaurants
+    value: data.restaurants,
   },
   reducers: {
     restaurantPageFilter: (state, action) => {
