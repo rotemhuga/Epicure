@@ -2,6 +2,23 @@ import React from "react";
 import "./Filter_chef_page.css"
 import NavButton from "../NavButton_nav/NavButton";
 
+// const dispatch = useDispatch ()
+// const restFilter = useSelector((state: any) => state.restaurants.value)
+// const [activeButton, setActiveButton] = useState ("all")
+
+// const handleAllClick = () => {
+//     dispatch(restaurantPageFilter("all"));
+//     setActiveButton("all")
+// }
+// const handleNewClick = () => {
+//     dispatch(restaurantPageFilter("new"));
+//     setActiveButton("new")
+// }
+// const handleMostPopularClick = () => {
+//     dispatch(restaurantPageFilter("mostPopular"));
+//     setActiveButton("mostPopular")
+// }
+
 const FilterChefPage: React.FC = () => {
     return (
         <div className="all-buttons">

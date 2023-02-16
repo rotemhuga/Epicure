@@ -5,7 +5,7 @@
         "name": "Asaf Granit",
         "info": "Assaf Granit's lectures touch not only the world of restaurateurs, food research and the integration of cultures, but also the world business and entrepreneurship in general. choose a lecture or a workshop to fit your team.",
         "portrait": "asaf-granit-1",
-        "restaurants": [10],
+        "restaurants": ["10"],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": true
@@ -15,7 +15,7 @@
         "name": "Aviv Moshe",
         "info": "Chef Aviv Moshe, 45, has been cooking since the age of 16 and has been able to cook for many of the world's most important people",
         "portrait": "aviv-moshe-2",
-        "restaurants": [8],
+        "restaurants": ["8"],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": true
@@ -25,7 +25,7 @@
         "name": "Eyal Shani",
         "info": "Celebrating the riches of the Mediterranean land and sea, HASALON brings together Chef Eyal Shani's distinctive culinary creativity and the finest international cuisines. Using pure ingredients of exceptional quality, sourced locally wherever possible, this fun and energetic dining experience reflects the spirit and tastes of both its origins in Tel Aviv with the vibrancy of the destination.",
         "portrait": "eyal-shani-3",
-        "restaurants": [11],
+        "restaurants": ["11"],
         "isChefOfTheWeek": false,
         "isNew": true,
         "mostViewed": true
@@ -35,7 +35,7 @@
         "name": "Meir Adoni",
         "info": "As a chef, the first thing He bring to the table is tradition. He respect the original flavors and ingredients. Only then do He ad His crazy interpretation, launching the dish off to new and uncharted territory.",
         "portrait": "meir-adoni-4",
-        "restaurants": [2],
+        "restaurants": ["2"],
         "isChefOfTheWeek": false,
         "isNew": true,
         "mostViewed": false
@@ -45,7 +45,7 @@
         "name": "Omer Miller",
         "info": "In recent years, chef Omer Miller became a synonym for modern culinary experiences, innovative and interesting.The man who turned an hamburger into a culinary masterpiece and brought some chutzpah into the restaurant field, something daring and different..",
         "portrait": "omer-miller-5",
-        "restaurants": [12],
+        "restaurants": ["12"],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": true
@@ -55,7 +55,7 @@
         "name": "Shahaf Shabtay",
         "info": "Celebrity chef Yonatan Roshfeld, owner of the Herbert Samuel restaurant at the Ritz Carlton Herzliya, has recently opened a kosher restaurant in Northern Israel near the base of Har Hermon, near the Hermon ski resort and Syrian border. The restaurant is called Roshfeld, paying homage to himself.",
         "portrait": "shahaf-shabtay-6",
-        "restaurants": [],
+        "restaurants": ["14"],
         "isChefOfTheWeek": false,
         "isNew": true,
         "mostViewed": false
@@ -65,7 +65,7 @@
         "name": "Nitzan Raz",
         "info": "Chef Nitzan Raz started his career in the field of culinary right after he was released from one of IDF's most prestigious units. After a debut at the Chimichanga restaurant in Tel Aviv, he moved to New York where he studied at the French Culinary Institute",
         "portrait": "nitzan-raz-7",
-        "restaurants": [13],
+        "restaurants": ["13"],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": false
@@ -76,8 +76,7 @@
         "name": "Yossi Shitrit",
         "info": "Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including running the kitchen in his first restaurant, the fondly-remembered Violet, located in Moshav  Udim. Shitrit's creativity and culinary  acumen born of long experience  are expressed in the every detail of each and every dish.",
         "portrait": "yossi-shitrit-8",
-        "restaurants": ["Onza","Kitchen Market", "Mashya"],
-        "restaurantsImg": ["onza-4","kitchen-market-5", "mashya-6"],
+        "restaurants": ["4","5", "6"],
         "isChefOfTheWeek": true,
         "isNew": false,
         "mostViewed": false
@@ -87,7 +86,7 @@
         "name": "Yuval Ben Neriah",
         "info": "At a, Chef Yuval Ben Neriah realizes his vision to combine elements primal and advanced, Primal and prime ancient and modern, earthy and refined. To experience his culinary ideals and explore the possibilities. ",
         "portrait": "yuval-ben-neriah-9",
-        "restaurants": [14],
+        "restaurants": ["14"],
         "isChefOfTheWeek": false,
         "isNew": false,
         "mostViewed": false
@@ -104,7 +103,9 @@
         "address": [0, 0],
         "dishes": [[1], [], []],
         "isPopular": true,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": true,
+        "map": true
       },
       {
         "id": "2",
@@ -116,7 +117,8 @@
         "address": [0, 0],
         "dishes": [[9], [], []],
         "isPopular": true,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": true
 
       },
       {
@@ -129,7 +131,8 @@
         "address": [0, 0],
         "dishes": [[7], [], []],
         "isPopular": true,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": true
       },
       {
         "id": "4",
@@ -141,7 +144,8 @@
         "address": [0, 0],
         "dishes": [[8], [], []],
         "isPopular": false,        
-        "isNew": true
+        "isNew": true,
+        "isOpen": true
       },
       {
         "id": "5",
@@ -153,7 +157,8 @@
         "address": [0, 0],
         "dishes": [[11], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": true
       },
       {
         "id": "6",
@@ -165,7 +170,8 @@
         "address": [0, 0],
         "dishes": [[10], [], []],
         "isPopular": false,        
-        "isNew": true
+        "isNew": true,
+        "isOpen": false
       },
       {
         "id": "7",
@@ -177,7 +183,8 @@
         "address": [0, 0],
         "dishes": [[14], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       },
       {
         "id": "8",
@@ -189,7 +196,8 @@
         "address": [0, 0],
         "dishes": [[12], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       },
       {
         "id": "9",
@@ -201,7 +209,8 @@
         "address": [0, 0],
         "dishes": [[13], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       },
       {
         "id": "10",
@@ -213,7 +222,8 @@
         "address": [0, 0],
         "dishes": [[15], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       },
       {
         "id": "11",
@@ -225,7 +235,8 @@
         "address": [0, 0],
         "dishes": [[6], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       },
       {
         "id": "12",
@@ -237,7 +248,8 @@
         "address": [0, 0],
         "dishes": [[2], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       },
       {
         "id": "13",
@@ -249,7 +261,8 @@
         "address": [0, 0],
         "dishes": [[3], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       },
       {
         "id": "14",
@@ -261,7 +274,8 @@
         "address": [0, 0],
         "dishes": [[5], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       },
       {
         "id": "15",
@@ -273,7 +287,8 @@
         "address": [0, 0],
         "dishes": [[16], [], []],
         "isPopular": false,        
-        "isNew": false
+        "isNew": false,
+        "isOpen": false
       }
     ],
     "dishes": [

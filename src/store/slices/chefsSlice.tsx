@@ -7,13 +7,16 @@ export const chefsSlice = createSlice({
     value: data.chefs,
   },
   reducers: {
+    // chefsPageFilter: (state,action) => {
+    //   const chefFilterType = action.payload;
+    //     switch (chefFilterType){
+    //       case 
+    //     }
+    // }
 //       setRestaurants: (state, action) => {
 //         state.value = action.payload;
 //       },
   },
 });
-
-// Action creators are generated for each case reducer function
-// export const { setRestaurants } = restaurantsSlice.actions;
 
 export default chefsSlice.reducer;

@@ -8,13 +8,8 @@ export const dishesSlice = createSlice({
   },
   reducers: {
 
-//       setRestaurants: (state, action) => {
-//         state.value = action.payload;
-//       },
   },
 });
 
-// Action creators are generated for each case reducer function
-// export const { setRestaurants } = restaurantsSlice.actions;
 
 export default dishesSlice.reducer;

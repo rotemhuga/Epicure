@@ -6,7 +6,7 @@ interface Iprops {
     src?: string,
     alt?: string,
     class?:string,
-    onClick?:any;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const NavButton: React.FC<Iprops> = (props:Iprops) => {
