@@ -1,5 +1,4 @@
 import react from "react"
-// import data from "../../epicure.json"
 import "./All_chefs.css"
 import CardAllChef from "../Card_all_chef/Card_all_chef"
 import { useSelector } from "react-redux"

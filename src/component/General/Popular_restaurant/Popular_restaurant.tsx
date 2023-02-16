@@ -2,11 +2,11 @@ import React from "react";
 import "./Popular_restaurant.css"
 import CardRestaurant from "../../Card_restaurant/Card_restaurant"
 import data from "../../../epicure.json"
+import {useNavigate} from "react-router-dom";
 import vector from "../../../assets/icons/vector.svg"
 
 const Popular_restaurant: React.FC = ()=> {
-
-
+const navigate = useNavigate();
 const items = data.restaurants.map((item:any) => {
     if (item.isPopular === true) {
         return <CardRestaurant 
@@ -29,7 +29,7 @@ const items = data.restaurants.map((item:any) => {
                 {items}
             </div>
             <button className="all-rest-path">
-                All Restaurants <img src={vector} alt="vector" className="vector-rest"/>
+                All Restaurants <img src={vector} alt="vector" className="vector-rest" onClick={() => navigate("/RestaurantsPage")} />
             </button>
         </div>
     ) 

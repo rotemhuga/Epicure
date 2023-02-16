@@ -5,7 +5,6 @@
 }
 
 .rest-page {
-    height: 100%;
     display: flex;
     justify-content: center;
 
@@ -13,10 +12,9 @@
 
 .all-rest-page-container {  
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: auto auto auto ;
     margin-top: 2%;
-    /* gap: 5%; */
-    /* height: 100vh; */
+    gap: 2%;
 }
 
 #rest-card {
