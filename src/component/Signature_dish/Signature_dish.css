@@ -21,8 +21,20 @@
 
 .popular-dish-title {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 4%;
     font-size: 20px;
 }
 
 
+@media (min-width: 375px) and (max-width: 700px) {
+    .all-dish-container{
+        overflow: auto;
+        white-space: nowrap;  
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        gap:20px;
+
+    }
+}

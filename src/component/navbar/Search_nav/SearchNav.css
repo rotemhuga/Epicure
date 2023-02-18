@@ -41,3 +41,15 @@ button {
     right:0;
 }
 
+@media (min-width: 375px) and (max-width: 700px) {
+    #button-box {
+        display: flex;
+        position: relative;
+        width: 70vw;
+        height: 42px;
+        justify-content:space-between;
+        border-radius: 5px;
+        align-items: start;
+    }
+    
+}

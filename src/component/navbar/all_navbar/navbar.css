@@ -47,6 +47,11 @@
     display: none;
     }
 
+    .right-nav {
+        width: 100vw;
+        gap: 4%;
+    }
+
 
     .logo-icon {
         display: flex;

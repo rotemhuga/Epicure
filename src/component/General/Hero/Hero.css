@@ -56,5 +56,50 @@
     background: url(../../../assets/icons/search-icon.svg) no-repeat scroll 7px 7px;
     border-radius: 4px;
     background-size: 20px;
+}
+
+
+@media (min-width: 375px) and (max-width: 700px) {
+
+    #hero-container {
+        background: url("../../../assets/images/hero-picture.png") center/cover;
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
+        background-position:center;
+        background-size:contain;
+        width: 100vw;
+        height: 31vh;
+    }
+
+    #hero-search {
+        position: absolute;
+        position: relative;
+        display: flex;
+        width: 70%;
+        height: 55%;
+    }
+
+ 
+    #hero-search-text {
+        text-align: center;
+        padding-top: 4%;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    #hero-search-input{
+        width: 90%;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        letter-spacing: 1.5px;
+    }
+
+    #hero-input-text{
+        font-size: 14px;
+        padding-left: 15%;
+    }
+
 
 }

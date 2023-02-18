@@ -4,11 +4,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* gap: 2%; */
     width: 280px;
     cursor: pointer;
     background: #F9F4EA;
-    height: 50vh;
+    height: 60vh;
 }
 
 .img-card-dish{
@@ -54,4 +53,32 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+    .card-dish {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 280px;
+        cursor: pointer;
+        background: #F9F4EA;
+    }
+
+    .name-card-dish {
+        justify-content:end
+    }
+
+
+    .ingredients-card-dish{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        font-size: 15px;
+        width: 250px;
+        inline-size: 250px; 
+        height: 100px;
+    }
 }
