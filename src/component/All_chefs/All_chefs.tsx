@@ -2,16 +2,19 @@ import react from "react"
 import "./All_chefs.css"
 import CardAllChef from "../Card_all_chef/Card_all_chef"
 import { useSelector } from "react-redux"
+import { Interface } from "readline"
+import { IchefsValue, IRootState } from "../../interfaces"
 
 const All_chefs:React.FC = () => {
 const chefs = useSelector(
-    (state:any) => state.chefs.value
-)
-    const chef = chefs.map((chef:any) => {
+    (state:IRootState) => state.chefs.value
+);
+    const chef = chefs.map((chef:IchefsValue) => {
         return <CardAllChef 
         class= {chef.name}
         ChefName = {chef.name}  
         srcChef = {require(`../../assets/images/Chefs/${chef.portrait}.png`)}
+        key = {chef.id}
         />  
 })
     return ( 
@@ -25,4 +28,3 @@ const chefs = useSelector(
 
 export default All_chefs
 
-//"attribute": ["spicy": true, "img":"vegan": false],

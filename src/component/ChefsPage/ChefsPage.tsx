@@ -7,7 +7,7 @@ import All_chefs from "../All_chefs/All_chefs"
 
 const ChefsPage: React.FC = () => {
     return (
-        <div id="Chefs-page">
+        <div id="chefs-page">
             <Navbar />
             <FilterChefPage />
             <All_chefs />

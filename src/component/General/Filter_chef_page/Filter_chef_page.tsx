@@ -3,15 +3,15 @@ import "./Filter_chef_page.css"
 import NavButton from "../NavButton_nav/NavButton";
 import { useState } from "react";
 import { useSelector , useDispatch } from "react-redux";
+import { IRootState } from "../../../interfaces";
 import {
     chefsPageFilter
 } from "../../../store/slices/chefsSlice"
 
 const FilterChefPage: React.FC = () => {
     const dispatch = useDispatch ()
-    const restFilter = useSelector((state: any) => state.restaurants.value)
+    const restFilter = useSelector((state: IRootState) => state.restaurants.value)
     const [activeButton, setActiveButton] = useState ("all")
-
     const handleAllClick = () => {
         dispatch(chefsPageFilter("all"));
         setActiveButton("all")

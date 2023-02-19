@@ -1,6 +1,5 @@
 import React from "react";
 import "./Card_week_chef.css"
-// import image from "../../assets/images/Restaurants"
 
 interface Iprops {
     class?: string,
@@ -14,7 +13,6 @@ interface Iprops {
 }
 
 const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
-console.log(props.chefResturants)
     return (
         <div>
             <button className={`card-week-chef ${props.class}`} id="all-chefs-card" >

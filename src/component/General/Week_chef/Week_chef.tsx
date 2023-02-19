@@ -2,17 +2,23 @@ import React from "react";
 import "../Week_chef/Week_chef.css"
 import data from "../../../epicure.json"
 import CardWeekChef from "../../Card_week_chef/Card_week_chef"
- 
+import { IchefsValue, IRootState, IrestaurantsValue} from "../../../interfaces";
+import { useSelector } from "react-redux";
 
+ 
 const Week_chef: React.FC = ()=> {
-    const items = data.chefs.map((item:any) => {
+const chefs = useSelector(
+        (state:IRootState) => state.chefs.value
+    );  
+const restaurants = useSelector(
+        (state:IRootState) => state.restaurants.value
+    );  
+    const items = chefs.map((item:IchefsValue) => {
         const chefRest = item.restaurants
-       const choosen =  chefRest.map((restid:string) => {
-            const choosenObj = data.restaurants.filter((restObj) => restObj.id === restid)[0]
-            console.log(choosenObj)
+        const choosen =  chefRest!.map((restid:string) => {
+            const choosenObj = restaurants.filter((restObj) => restObj.id === restid)[0]
             return choosenObj
         })
-        console.log(choosen)
         if (item.isChefOfTheWeek === true) { 
                  return < CardWeekChef
             class= {item.name}
@@ -21,12 +27,12 @@ const Week_chef: React.FC = ()=> {
             info = {item.info}
             restTitle = {`${item.firstName}'s Restaurants`}
             chefResturants = {choosen} 
+            key = {item.id}
             /> 
         } else {
             return null;
         }   
     })
- 
     return (
         <div id="week-chef-container">
             <div id="week-chef-title">CHEF OF THE WEEK:</div>
@@ -35,7 +41,6 @@ const Week_chef: React.FC = ()=> {
             </div>
         </div>
     ) 
-
 }
 
 export default Week_chef

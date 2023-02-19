@@ -3,13 +3,14 @@ import "./Rest_filter_link.css"
 import { useState } from "react";
 import NavButton from "../NavButton_nav/NavButton";
 import { useDispatch, useSelector } from "react-redux";
+import { IRootState } from "../../../interfaces";
 import {
     restaurantPageFilter
   } from "../../../store/slices/restaurantsSlice"
 
 const RestFilterLink: React.FC = () => {
     const dispatch = useDispatch ()
-    const restFilter = useSelector((state: any) => state.restaurants.value)
+    const restFilter = useSelector((state: IRootState) => state.restaurants.value)
     const [activeButton, setActiveButton] = useState ("all")
     
     const handleAllClick = () => {

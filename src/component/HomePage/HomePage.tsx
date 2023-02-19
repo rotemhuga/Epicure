@@ -11,8 +11,7 @@ import Signature_dish from "../Signature_dish/Signature_dish";
 
 const HomePage: React.FC = () => {
     return (
-        <div id="Home-page">
-                            
+        <div id="Home-page"> 
             <Navbar />
             <Hero />
             <Popular_restaurant />
@@ -21,7 +20,6 @@ const HomePage: React.FC = () => {
             <Week_chef />
             <About_us />
             <Footer />
-
         </div>
     );
 };

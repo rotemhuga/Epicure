@@ -2,8 +2,6 @@ import React from "react";
 import "./Hero.css"
 import { useState } from "react";
 
-
-
 const Hero: React.FC = ()=> {
     const [opacity, setOpacity] = useState(1);
     const handleClick = () => {
@@ -23,5 +21,5 @@ const Hero: React.FC = ()=> {
     ) 
 }
 
-export default Hero as React.FC;
+export default Hero;
 

@@ -1,13 +1,18 @@
 import React from "react";
 import "./Popular_restaurant.css"
 import CardRestaurant from "../../Card_restaurant/Card_restaurant"
-import data from "../../../epicure.json"
 import {useNavigate} from "react-router-dom";
+import { useSelector } from "react-redux";
 import vector from "../../../assets/icons/vector.svg"
+import { IrestaurantsValue , IRootState } from "../../../interfaces";
 
 const Popular_restaurant: React.FC = ()=> {
+const restaurants = useSelector(
+    (state:IRootState) => state.restaurants.value
+);
+
 const navigate = useNavigate();
-const items = data.restaurants.map((item:any) => {
+const items = restaurants.map((item:IrestaurantsValue) => {
     if (item.isPopular === true) {
         return <CardRestaurant 
         class= {item.name}
@@ -15,6 +20,7 @@ const items = data.restaurants.map((item:any) => {
         RestaurantName = {item.name}
         chef = {item.chef}
         rating = {require(`../../../assets/icons/star${item.rating}.svg`)} 
+        key = {item.id}
         />
     
     } else {

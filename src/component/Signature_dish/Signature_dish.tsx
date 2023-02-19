@@ -2,11 +2,12 @@ import React from "react";
 import "../Signature_dish/Signature_dish.css"
 import CardDish from "../../component/Card_dish/Card_dish"
 import data from "../../epicure.json"
+import { Idishes } from "../../interfaces";
 
 const Signature_dish: React.FC = ()=> {
 
 
-const items = data.dishes.map((item:any) => {
+const items = data.dishes.map((item:Idishes) => {
     if (item.isPopular === true) {
         return <CardDish 
         class= {item.name}
@@ -17,6 +18,7 @@ const items = data.dishes.map((item:any) => {
         // vegan = {require(`../../assets/icons/${item.isVegan}.svg`)}
         ingredients = {item.ingredients}
         price = {item.price} 
+        key = {item.id}
         />
     
     } else {
