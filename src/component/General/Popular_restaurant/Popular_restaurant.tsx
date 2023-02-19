@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 import vector from "../../../assets/icons/vector.svg"
 import { IrestaurantsValue , IRootState } from "../../../interfaces";
 import {BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom';
-// import All_restaurants from "../../All_restaurants/All_restaurants"
 import RestaurantsPage from "../../RestaurantsPage/RestaurantsPage";
 
 const Popular_restaurant: React.FC = ()=> {
@@ -36,12 +35,9 @@ const items = restaurants.map((item:IrestaurantsValue) => {
             <div className="all-rest-popular">
                 {items}
             </div>
-            <button className="all-rest-path">
+            <button className="all-rest-path" onClick={() => navigate("/RestaurantsPage")}>
                 All Restaurants <img src={vector} alt="vector" className="vector-rest" />
             </button>
-                <Routes>
-                    <Route path="/RestaurantsPage" element={<RestaurantsPage />} />
-                </Routes>
         </div>
     ) 
 }
