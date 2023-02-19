@@ -70,15 +70,16 @@
         justify-content:end
     }
 
-
     .ingredients-card-dish{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        text-align: center;
         font-size: 15px;
-        width: 250px;
-        inline-size: 250px; 
+        word-break: break-all !important;
+        width: 200px;
+    }
+
+    .ingredients-text {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
         height: 100px;
     }
 }

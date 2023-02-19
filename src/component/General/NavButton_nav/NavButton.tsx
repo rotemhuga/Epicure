@@ -15,7 +15,6 @@ const NavButton: React.FC<Iprops> = (props:Iprops) => {
             <button className={`button ${props.class}`} onClick ={props.onClick} >
                     {props.name} 
                     <img src={props.src} alt={props.alt}/> 
-                    <img src={props.src} alt={props.alt}/> 
             </button>
         </>
     )

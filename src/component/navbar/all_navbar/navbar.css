@@ -21,7 +21,12 @@
     flex-direction: row;
 }
 
-.left-nav {
+.logo-icon {
+    display: flex;
+    align-items:center
+}
+
+.left-nav-hidden {
     gap: 8%;
     left: 40%;
 }
@@ -41,9 +46,10 @@
 
     #all-navbar {
         width: 100vw;
+        justify-content: center;
     }
 
-    .left-nav {
+    .left-nav-hidden {
     display: none;
     }
 
@@ -52,9 +58,9 @@
         gap: 4%;
     }
 
-
     .logo-icon {
-        display: flex;
         justify-content: center;
+        align-items:center
     }
 }
+
