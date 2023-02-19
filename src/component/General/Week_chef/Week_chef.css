@@ -13,10 +13,21 @@
     font-size: 20px;
 }
 
-#week-chef-all-content{
+/* #week-chef-all-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     gap: 5%;
+} */
+
+
+@media (min-width: 375px) and (max-width: 700px) {
+    #week-chef-all-content{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 5%; */
+    }
 }

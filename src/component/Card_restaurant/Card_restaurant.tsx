@@ -8,7 +8,8 @@ interface Iprops {
     alt?:string,
     RestaurantName?: string,
     chef?:string,
-    rating?:string
+    rating?:string,
+    onClick?: any
 }
 
 const CardRestaurant: React.FC<Iprops> = (props:Iprops)=> {

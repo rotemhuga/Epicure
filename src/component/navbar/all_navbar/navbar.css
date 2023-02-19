@@ -21,10 +21,16 @@
     flex-direction: row;
 }
 
-.left-nav {
-    gap: 10%;
+.logo-icon {
+    display: flex;
+    align-items:center
+}
+
+.left-nav-hidden {
+    gap: 8%;
     left: 40%;
 }
+
 
 .right-nav {
     gap: 10%;
@@ -35,4 +41,26 @@
     cursor: pointer;
 }
 
+
+@media (min-width: 375px) and (max-width: 700px) {
+
+    #all-navbar {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .left-nav-hidden {
+    display: none;
+    }
+
+    .right-nav {
+        width: 100vw;
+        gap: 4%;
+    }
+
+    .logo-icon {
+        justify-content: center;
+        align-items:center
+    }
+}
 

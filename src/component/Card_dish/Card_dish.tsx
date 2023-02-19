@@ -21,7 +21,9 @@ const CardDish: React.FC<Iprops> = (props:Iprops)=> {
             <img src={props.spicy} className="spicy-card-dish" />
             <img src={props.vegitarian} className="vegan-card-dish" />
             <img src={props.vegan} className="vegitarian-card-dish" />
-            <div className="ingredients-card-dish">{props.ingredients}</div>
+            <div className="ingredients-card-dish">
+                    {props.ingredients}
+            </div>
             <div className="price-card-dish">{props.price}</div>
         </button>
     ) 
