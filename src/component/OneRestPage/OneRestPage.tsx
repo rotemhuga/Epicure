@@ -1,10 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { IRootState, IdishesValue, IOneRest } from "../../interfaces";
+import { IRootState, IdishesValue } from "../../interfaces";
 import CardDish from "../Card_dish/Card_dish"
 import "../OneRestPage/OneRestPage.css"
 import Navbar from "../navbar/all_navbar/navbar";
 import Footer from "../General/Footer/Footer";
+import OneRestDetails from "../General/One_rest_details/One_rest_details";
 
 const OneRestPage: React.FC = () => {
 const dishes = useSelector(
@@ -26,7 +27,7 @@ const allDishes = dishes.map((dish:IdishesValue) => (
             <div><Navbar /></div>
             <div>
                 <div>
-                    <img src="" alt="" />
+                <OneRestDetails />               
                 </div>
             </div>
             <div className="all-buttons-one-rest">

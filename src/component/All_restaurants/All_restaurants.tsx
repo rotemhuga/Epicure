@@ -14,7 +14,7 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
         return <CardRestaurant 
         class= {rest.name}
         src= {require(`../../assets/images/Restaurants/${rest.img}.png`)}
-        RestaurantName = {rest.name}
+        restaurantName = {rest.name}
         chef = {rest.chef}
         rating = {require(`../../assets/icons/star${rest.rating}.svg`)} 
         key = {rest.id}

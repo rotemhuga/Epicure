@@ -11,16 +11,17 @@ export interface Irestaurants {
 export interface IrestaurantsValue {
     id?:string,
     img?:string,
+    alt?:string,
     name?: string,
     chef?: string,
     rating?: string,
     openingHours?: string,
     address?:string,
     dishes?: number[],
-    isPopular?: Boolean,
-    isNew?: Boolean,
-    isOpen?: Boolean,
-    map?: Boolean,
+    isPopular?: boolean,
+    isNew?: boolean,
+    isOpen?: boolean,
+    map?: boolean,
 }
 
 export interface Ichefs {
@@ -34,9 +35,9 @@ export interface IchefsValue {
     info?: string,
     portrait?: string,
     restaurants?: string[],
-    isChefOfTheWeek?: Boolean,
-    isNew?: Boolean,
-    mostViewed?:Boolean,
+    isChefOfTheWeek?: boolean,
+    isNew?: boolean,
+    mostViewed?:boolean,
 }
 
 export interface Idishes {
@@ -55,7 +56,7 @@ export interface IdishesValue {
     price?: string,
     optionalSides?: string[],
     optionalChanges?: string[],
-    isPopular?: Boolean
+    isPopular?: boolean
 }
 
 
@@ -71,9 +72,11 @@ export interface Iprops {
     price?:string
 }
 
-export interface IOneRest {
-    img?: string,
-    name?: string,
-    chefName?: string,
-    isOpen?: Boolean,
-}
+// export interface IOneRestDetails {
+//     id?:string,
+//     img?: string,
+//     alt?: string,
+//     name?: string,
+//     chef?: string,
+//     isOpen?: boolean,
+// }
