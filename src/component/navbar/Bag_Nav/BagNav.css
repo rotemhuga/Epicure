@@ -1,5 +1,5 @@
 button {
-    all:unset;
+    /* all:unset; */
     height: 30px;
     cursor: pointer;
 }

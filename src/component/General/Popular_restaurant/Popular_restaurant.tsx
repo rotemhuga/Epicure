@@ -29,13 +29,12 @@ const items = restaurants.map((item:IrestaurantsValue) => {
  }   
 })
     return (
-        
         <div className="all-rest-container" >
             <div className="popular-rest-title">POPULAR RESTAURANT IN EPICURE</div>
             <div className="all-rest-popular">
                 {items}
             </div>
-            <button className="all-rest-path" onClick={() => navigate("/RestaurantsPage")}>
+            <button className="all-rest-path" onClick={() => {navigate("/RestaurantsPage");window.scrollTo(0, 0);}} >
                 All Restaurants <img src={vector} alt="vector" className="vector-rest" />
             </button>
         </div>

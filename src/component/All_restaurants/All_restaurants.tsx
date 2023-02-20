@@ -27,5 +27,4 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
     ) 
 }    
 
-
 export default AllRestaurants

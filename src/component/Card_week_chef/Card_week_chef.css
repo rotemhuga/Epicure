@@ -96,8 +96,6 @@
     font-size: 22px;
 }
 
-
-
 @media (min-width: 375px) and (max-width: 700px) {
     .all-rest-week-chef{
         overflow: auto;
@@ -126,7 +124,3 @@
 
 
 }
-
-
-
-
