@@ -4,8 +4,7 @@ import CardRestaurant from "../../Card_restaurant/Card_restaurant"
 import { useSelector } from "react-redux";
 import vector from "../../../assets/icons/vector.svg"
 import { IrestaurantsValue , IRootState } from "../../../interfaces";
-import {BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom';
-import RestaurantsPage from "../../RestaurantsPage/RestaurantsPage";
+import { useNavigate} from 'react-router-dom';
 
 const Popular_restaurant: React.FC = ()=> {
 const restaurants = useSelector(
@@ -18,7 +17,7 @@ const items = restaurants.map((item:IrestaurantsValue) => {
         return <CardRestaurant 
         class= {item.name}
         src= {require(`../../../assets/images/Restaurants/${item.img}.png`)}
-        RestaurantName = {item.name}
+        restaurantName = {item.name}
         chef = {item.chef}
         rating = {require(`../../../assets/icons/star${item.rating}.svg`)} 
         key = {item.id}
