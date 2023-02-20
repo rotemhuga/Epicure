@@ -40,6 +40,10 @@ export interface IchefsValue {
 }
 
 export interface Idishes {
+    value: IdishesValue[]
+}
+
+export interface IdishesValue {
     id?:string,
     img?: string,
     name?: string,
@@ -55,3 +59,9 @@ export interface Idishes {
 }
 
 
+export interface IOneRest {
+    img?: string,
+    name?: string,
+    chefName?: string,
+    isOpen?: Boolean,
+}

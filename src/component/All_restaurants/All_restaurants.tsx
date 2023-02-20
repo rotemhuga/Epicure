@@ -3,8 +3,10 @@ import { useSelector } from "react-redux";
 import CardRestaurant from "../Card_restaurant/Card_restaurant";
 import "./All_restaurants.css";
 import { IrestaurantsValue, IRootState } from "../../interfaces"
+import { useNavigate } from "react-router-dom";
 
 const AllRestaurants: React.FC = () => {
+const navigate = useNavigate();
 const restaurants = useSelector(
         (state:IRootState) => state.restaurants.value
     );
@@ -20,7 +22,7 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
 })
     return (
         <div className="rest-page" >
-            <div className="all-rest-page-container">
+            <div className="all-rest-page-container" onClick={() => {navigate("/OneRestPage");window.scrollTo(0, 0);}}>
                 {rests}
             </div>
         </div>
@@ -28,3 +30,5 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
 }    
 
 export default AllRestaurants
+
+

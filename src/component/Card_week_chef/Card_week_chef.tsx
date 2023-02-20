@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 import "./Card_week_chef.css"
 
 interface Iprops {
@@ -38,3 +39,5 @@ const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
 }
 
 export default CardWeekChef
+
+// onClick={Navigate `/`}
