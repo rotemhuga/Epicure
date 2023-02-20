@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.rest-page {
+    display: flex;
+    justify-content: center;
+}
+
+.all-rest-page-container {  
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    margin-top: 2%;
+    gap: 2%;
+}
+
+#rest-card {
+    width: 150px;
+    height: 1000px;
+}
