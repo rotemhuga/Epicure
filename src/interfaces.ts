@@ -59,6 +59,18 @@ export interface IdishesValue {
 }
 
 
+export interface Iprops {
+    class?: string,
+    src?: string,
+    alt?:string,
+    name?:string,
+    spicy?: string,
+    vegitarian?: string,
+    vegan?: string,
+    ingredients?:string,
+    price?:string
+}
+
 export interface IOneRest {
     img?: string,
     name?: string,

@@ -22,7 +22,7 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
 })
     return (
         <div className="rest-page" >
-            <div className="all-rest-page-container" onClick={() => {navigate("/OneRestPage");window.scrollTo(0, 0);}}>
+            <div className="all-rest-page-container" onClick={() => {navigate("/RestaurantsPage/id");window.scrollTo(0, 0);}}>
                 {rests}
             </div>
         </div>

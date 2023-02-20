@@ -1,17 +1,6 @@
 import React from "react";
 import "./Card_dish.css"
-
-interface Iprops {
-    class?: string,
-    src?: string,
-    alt?:string,
-    name?:string,
-    spicy?: string,
-    vegitarian?: string,
-    vegan?: string,
-    ingredients?:string,
-    price?:string
-}
+import {Iprops} from "../../interfaces"
 
 const CardDish: React.FC<Iprops> = (props:Iprops)=> {
     return (
