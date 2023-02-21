@@ -24,7 +24,7 @@ const OneRestDetails: React.FC = ()=> {
     console.log(newArrDishes)
     const dishCard = newArrDishes?.map((dish:any) => (
             <CardDish 
-                id= {"single-rest-card-dish"}
+                class= {"single-rest-card-dish"}
                 name = {dish.name}
                 src= {require(`../../../assets/images/Dishes/${dish.img}.png`)}
                 ingredients = {dish.ingredients}
@@ -42,7 +42,7 @@ return (
             <div className="chef-rest-details-card">{restobj?.chef}</div> 
             <div className="open-rest-details-card">
                 <img src={clockLogo} alt="clock-icon" />
-                <span>{restobj?.isOpen? "open now":""}</span>
+                <span>{restobj?.isOpen? "open now":"close"}</span>
             </div> 
         </div>
         <div className="all-buttons-one-rest">
