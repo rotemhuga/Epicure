@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.one-rest-details-all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.one-rest-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20%;
+    /* justify-content: center; */
+}
+
+.img-one-rest {
+    object-fit: contain;
+}
+
+.name-rest-details-card{
+    font-size: 40px;
+    font-family: Helvetica-Neu-Bold;
+}
+
+.chef-rest-details-card {
+    font-size: 20px;
+}
+
+.open-rest-details-card {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+/* p {
+  width: 100px;
+} */
+
+.all-dish-cards {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 2%;
+    /* flex-wrap: wrap;
+    justify-content: center; */
+    /* width: 1200px; */
+}
+
+.single-rest-card-dish {
+    gap: 0px;
+}

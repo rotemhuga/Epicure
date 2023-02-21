@@ -16,6 +16,7 @@ const items = restaurants.map((item:IrestaurantsValue) => {
     if (item.isPopular === true) {
         return <CardRestaurant 
         class= {item.name}
+        id = {item.id}
         src= {require(`../../../assets/images/Restaurants/${item.img}.png`)}
         restaurantName = {item.name}
         chef = {item.chef}

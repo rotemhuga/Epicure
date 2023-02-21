@@ -1,7 +1,6 @@
 import React from "react";
 import "../Signature_dish/Signature_dish.css"
 import CardDish from "../../component/Card_dish/Card_dish"
-// import data from "../../epicure.json"
 import { IdishesValue, IRootState } from "../../interfaces";
 import { useSelector } from "react-redux";
 

@@ -101,7 +101,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[1], [], []],
+        "dishes": [1, 7, 8, 5, 6, 12, 14],
         "isPopular": true,        
         "isNew": false,
         "isOpen": true,
@@ -115,7 +115,7 @@
         "rating": "3",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[9], [], []],
+        "dishes": [9],
         "isPopular": true,        
         "isNew": false,
         "isOpen": true
@@ -129,7 +129,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[7], [], []],
+        "dishes": [4,7],
         "isPopular": true,        
         "isNew": false,
         "isOpen": true
@@ -142,7 +142,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[8], [], []],
+        "dishes": [8],
         "isPopular": false,        
         "isNew": true,
         "isOpen": true
@@ -155,7 +155,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[11], [], []],
+        "dishes": [11],
         "isPopular": false,        
         "isNew": false,
         "isOpen": true
@@ -168,7 +168,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[10], [], []],
+        "dishes": [10],
         "isPopular": false,        
         "isNew": true,
         "isOpen": false
@@ -181,7 +181,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[14], [], []],
+        "dishes": [14],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
@@ -194,7 +194,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[12], [], []],
+        "dishes": [12],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
@@ -207,7 +207,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[13], [], []],
+        "dishes": [13],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
@@ -220,7 +220,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[15], [], []],
+        "dishes": [15],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
@@ -233,7 +233,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[6], [], []],
+        "dishes": [6],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
@@ -246,7 +246,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[2], [], []],
+        "dishes": [2],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
@@ -259,7 +259,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[3], [], []],
+        "dishes":[3],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
@@ -272,7 +272,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[5], [], []],
+        "dishes":[5],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
@@ -285,7 +285,7 @@
         "rating": "4",
         "openingHours": "",
         "address": [0, 0],
-        "dishes": [[16], [], []],
+        "dishes":[16],
         "isPopular": false,        
         "isNew": false,
         "isOpen": false
