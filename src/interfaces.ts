@@ -55,8 +55,10 @@ export interface IdishesValue {
     isVegitarian?: string,
     isVegan?: string,
     isBreakfast: boolean,
-    isLanch: boolean,
+    isLunch: boolean,
     isDinner: boolean,
+    sideDishes: string[]
+    changes: string[]
     price?: string,
     optionalSides?: string[],
     optionalChanges?: string[],
@@ -74,7 +76,8 @@ export interface Iprops {
     vegitarian?: string,
     vegan?: string,
     ingredients?:string,
-    price?:string
+    price?:string,
+    onClick?:  React.MouseEventHandler<HTMLButtonElement> 
 }
 
 // export interface IOneRestDetails {

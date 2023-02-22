@@ -5,7 +5,7 @@ import shekel from "../../assets/icons/shekel-icon.svg"
 
 const CardDish: React.FC<Iprops> = (props:Iprops)=> {
     return (
-        <button className={`card-dish ${props.class}`} >
+        <button className={`card-dish ${props.class}`} onClick={props.onClick} >
             <div className="up-part-card-dish">
                 <img src={props.src} alt={props.alt} className="img-card-dish"/>
                 <div className="name-card-dish">{props.name} </div>
