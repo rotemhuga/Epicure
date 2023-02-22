@@ -1,28 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CardDish from "../../Card_dish/Card_dish";
 import "./One_rest_details.css"
 import { IRootState, IrestaurantsValue, IdishesValue } from "../../../interfaces"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import clockLogo from "../../../assets/icons/clock-icon.svg"
 import restImg from "../../../assets/images/hero-rest-img.png"
+import Navlink_button from "../Navlink_button/Navlink_button";
+import { dishesPageFilter } from "../../../store/slices/dishesSlice";
+import NavButton from "../NavButton_nav/NavButton";
 
 const OneRestDetails: React.FC = ()=> {
+    const dispatch = useDispatch()
+    const [activeButton, setActiveButton] = useState("all")
+    
     const allRestaurants = useSelector(
             (state:IRootState) => state.restaurants.value
         );
     const allDishes = useSelector(
+            (state:IRootState) => state.dishes.valueRestDishes
+        );
+        const allDishesState = useSelector(
             (state:IRootState) => state.dishes.value
         );
+    const [dishCard, setDishCard] = useState<any>()
+
     const detailsrest = useParams()
 
     const restobj = allRestaurants.find((rest:IrestaurantsValue) => detailsrest.id == rest.id)
     const newArrDishes = restobj?.dishes?.map((dishId:any) => {
-        const singleDish = allDishes.find((dishObj:IdishesValue) => dishObj.id == dishId)
+        const singleDish = allDishesState.find((dishObj:IdishesValue) => dishObj.id == dishId)
         return singleDish
     })
-    console.log(newArrDishes)
-    const dishCard = newArrDishes?.map((dish:any) => (
+
+    console.log(newArrDishes)  
+    useEffect(()=> {
+    dispatch(dishesPageFilter({type: "all", data: newArrDishes}))
+    },[])      
+
+    useEffect(() => {
+        console.log(allDishes)
+        setDishCard(allDishes?.map((dish:any) => (
             <CardDish 
                 class= {"single-rest-card-dish"}
                 name = {dish.name}
@@ -31,8 +49,29 @@ const OneRestDetails: React.FC = ()=> {
                 price = {dish.price} 
                 key = {dish.id}  
             />
-    ))
-    
+        ))) 
+    },[allDishes])
+
+    // setActiveButton(newArrDishes)
+
+
+    const breakfastDishesClick = () => {
+        dispatch(dishesPageFilter({type: "breakfast", data: newArrDishes}))
+        setActiveButton("breakfast")
+    }
+    const lanchDishesClick = () => {
+        dispatch(dishesPageFilter({type: "lanch", data: newArrDishes}))
+        setActiveButton("lanch")
+    }
+    const dinnerDishesClick = () => {
+        dispatch(dishesPageFilter({type: "dinner", data: newArrDishes}))
+        setActiveButton("dinner")
+    }
+
+    // const update=(e:any)=>{
+    //     dispatch(dishesPageFilter(e.target.value))
+    //     setActiveButton(e.target.value)
+    // }
 return (
     <div className={"one-rest-details-all"}>
         <div className={`one-rest-details-container`} id={`rest-card ${restobj?.id}`} >
@@ -46,15 +85,17 @@ return (
             </div> 
         </div>
         <div className="all-buttons-one-rest">
-                <button className="breakfast button-all">Breakfast</button>
-                <button className="lanch button-all">Lanch</button>
-                <button className="dinner button-all">Dinner</button>
+                <button value={"Breakfast"} onClick={breakfastDishesClick} >Breakfast</button>
+                <button value={"Lanch"}   onClick={lanchDishesClick}>Lanch</button>
+                <button value={"Dinner"} onClick={dinnerDishesClick} >Dinner</button>
+                {/* <Navlink_button name={"Breakfast"} navigate="" onClick={breakfastDishesClick} />
+                <Navlink_button name={"Lanch"}  navigate=""  onClick={lanchDishesClick}/>
+                <Navlink_button name={"Dinner"} navigate="" onClick={dinnerDishesClick} /> */}
         </div>
-            <div className="all-dish-cards">
-                {dishCard}
-            </div>
+        <div className="all-dish-cards">
+            {dishCard}
+        </div>
     </div>
 )
 }   
 export default OneRestDetails
-

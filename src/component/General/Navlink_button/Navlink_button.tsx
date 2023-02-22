@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 interface Iprops {
     name: string,
     navigate: string,
+    onClick?: React.MouseEventHandler<HTMLButtonElement> 
 }
 
 const Navlink_button: React.FC<Iprops> = (props:Iprops) => {

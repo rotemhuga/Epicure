@@ -64,7 +64,6 @@
 
 .single-rest-card-dish {
     height: 450px;
-    gap: 0px;
 }
 
 .img-card-dish{
@@ -78,5 +77,42 @@
     letter-spacing: 1.97px;
     width: 200px;
     line-height: 24px;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+
+    .img-one-rest {
+        object-fit: contain;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .all-dish-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .single-rest-card-dish {
+        gap: 10px;
+        height: 370px;
+    }
+
+    .card-dish {
+        align-items: start;
+    }
+
+    .up-part-card-dish {
+        justify-content: start;
+        align-items: start;
+    }
+
+    .ingredients-card-dish {
+        font-size: 14px;
+        letter-spacing: 1.97px;
+        width: 250px;
+        line-height: 24px;
+        margin-left: 20px;
+    }
 
 }

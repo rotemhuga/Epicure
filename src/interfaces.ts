@@ -41,7 +41,8 @@ export interface IchefsValue {
 }
 
 export interface Idishes {
-    value: IdishesValue[]
+    value: IdishesValue[],
+    valueRestDishes: IdishesValue[] 
 }
 
 export interface IdishesValue {
@@ -53,6 +54,9 @@ export interface IdishesValue {
     isSpicy?: string,
     isVegitarian?: string,
     isVegan?: string,
+    isBreakfast: boolean,
+    isLanch: boolean,
+    isDinner: boolean,
     price?: string,
     optionalSides?: string[],
     optionalChanges?: string[],

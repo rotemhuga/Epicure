@@ -9,7 +9,7 @@ import {
   } from "../../../store/slices/restaurantsSlice"
 
 const RestFilterLink: React.FC = () => {
-    const dispatch = useDispatch ()
+    const dispatch = useDispatch()
     const restFilter = useSelector((state: IRootState) => state.restaurants.value)
     const [activeButton, setActiveButton] = useState ("all")
     
