@@ -8,6 +8,7 @@ import clockLogo from "../../../assets/icons/clock-icon.svg"
 import restImg from "../../../assets/images/hero-rest-img.png"
 import { dishesPageFilter } from "../../../store/slices/dishesSlice";
 
+
 const OneRestDetails: React.FC = ()=> {
     const dispatch = useDispatch()
     const [activeButton, setActiveButton] = useState("all")
