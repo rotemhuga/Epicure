@@ -15,6 +15,9 @@ const CardDish: React.FC<Iprops> = (props:Iprops)=> {
                 <div className="ingredients-card-dish">
                     {props.ingredients}</div>
             </div>
+            <div>
+                {/* sideDishes ={props.sideDishes} */}
+            </div>
             <div className="price-div">
                 <hr className="hr-left" />
                 <img src={shekel} alt="" />

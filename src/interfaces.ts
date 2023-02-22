@@ -77,6 +77,8 @@ export interface Iprops {
     vegan?: string,
     ingredients?:string,
     price?:string,
+    sideDishes?: string[],
+    changes?: string[],
     onClick?:  React.MouseEventHandler<HTMLButtonElement> 
 }
 

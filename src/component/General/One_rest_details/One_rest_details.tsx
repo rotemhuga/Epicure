@@ -55,14 +55,16 @@ const OneRestDetails: React.FC = ()=> {
         console.log(allDishes)
         setDishCard(allDishes?.map((dish:any) => (
             <CardDish 
-                class= {"single-rest-card-dish"}
-                name = {dish.name}
-                src= {require(`../../../assets/images/Dishes/${dish.img}.png`)}
-                ingredients = {dish.ingredients}
-                price = {dish.price} 
-                key = {dish.id}  
-                onClick = {() => toggleModal(dish)}
-            />
+                class={"single-rest-card-dish"}
+                name={dish.name}
+                src={require(`../../../assets/images/Dishes/${dish.img}.png`)}
+                ingredients={dish.ingredients}
+                price={dish.price}
+                key={dish.id}
+                onClick={() => toggleModal(dish)} 
+                // sideDishes={[dish.sideDishes]} 
+                // changes={[dish.changes]}
+                />
         ))) 
     },[allDishes])
 
@@ -100,15 +102,17 @@ return (
             <div onClick={toggleModal} className="overlay"></div>
                 <div className="modal-content">
                 <CardDish 
-                    class= {"single-rest-card-dish"}
-                    name = {clickedDish?.name}
-                    src= {require(`../../../assets/images/Dishes/${clickedDish?.img}.png`)}
-                    ingredients = {clickedDish?.ingredients}
-                    price = {clickedDish?.price} 
-                    key = {clickedDish?.id}  
-                    onClick = {() => toggleModal(clickedDish)}
+                    class={"single-rest-dish-modal"}
+                    name={clickedDish?.name}
+                    src={require(`../../../assets/images/Dishes/${clickedDish?.img}.png`)}
+                    ingredients={clickedDish?.ingredients}
+                    price={clickedDish?.price}
+                    key={clickedDish?.id}
+                    onClick={() => toggleModal(clickedDish)} 
+                    // sideDishes={clickedDish?.sideDishes} 
+                    // changes={clickedDish.changes}
                 />
-                <button className="close-modal" onClick={toggleModal}>X</button>                    
+                    <button className="close-modal" onClick={toggleModal}>X</button>                    
                 </div>
             </div>
         )}
