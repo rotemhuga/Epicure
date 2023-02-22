@@ -6,9 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import clockLogo from "../../../assets/icons/clock-icon.svg"
 import restImg from "../../../assets/images/hero-rest-img.png"
-import Navlink_button from "../Navlink_button/Navlink_button";
 import { dishesPageFilter } from "../../../store/slices/dishesSlice";
-import NavButton from "../NavButton_nav/NavButton";
 
 const OneRestDetails: React.FC = ()=> {
     const dispatch = useDispatch()
@@ -52,26 +50,13 @@ const OneRestDetails: React.FC = ()=> {
         ))) 
     },[allDishes])
 
-    // setActiveButton(newArrDishes)
-
-
-    const breakfastDishesClick = () => {
-        dispatch(dishesPageFilter({type: "breakfast", data: newArrDishes}))
-        setActiveButton("breakfast")
+    const [clicked, setClicked] = useState("all");
+    const update=(e:React.MouseEvent<unknown>)=>{
+        const type = (e.target as HTMLInputElement).name        
+        dispatch(dishesPageFilter({type:type, data:newArrDishes}))
+        setActiveButton(type )
+        setClicked(type)
     }
-    const lanchDishesClick = () => {
-        dispatch(dishesPageFilter({type: "lanch", data: newArrDishes}))
-        setActiveButton("lanch")
-    }
-    const dinnerDishesClick = () => {
-        dispatch(dishesPageFilter({type: "dinner", data: newArrDishes}))
-        setActiveButton("dinner")
-    }
-
-    // const update=(e:any)=>{
-    //     dispatch(dishesPageFilter(e.target.value))
-    //     setActiveButton(e.target.value)
-    // }
 return (
     <div className={"one-rest-details-all"}>
         <div className={`one-rest-details-container`} id={`rest-card ${restobj?.id}`} >
@@ -85,12 +70,9 @@ return (
             </div> 
         </div>
         <div className="all-buttons-one-rest">
-                <button value={"Breakfast"} onClick={breakfastDishesClick} >Breakfast</button>
-                <button value={"Lanch"}   onClick={lanchDishesClick}>Lanch</button>
-                <button value={"Dinner"} onClick={dinnerDishesClick} >Dinner</button>
-                {/* <Navlink_button name={"Breakfast"} navigate="" onClick={breakfastDishesClick} />
-                <Navlink_button name={"Lanch"}  navigate=""  onClick={lanchDishesClick}/>
-                <Navlink_button name={"Dinner"} navigate="" onClick={dinnerDishesClick} /> */}
+                <button value={"Breakfast"} name="breakfast" onClick= {(e:any)=> update(e)} className={clicked === "breakfast" ? "clicked" : "not-clicked"} >Breakfast</button>
+                <button value={"Lanch"} name="lanch" onClick= {(e:any)=> update(e)} className={clicked === "lanch" ? "clicked" : "not-clicked"}>Lanch</button>
+                <button value={"Dinner"} name="dinner" onClick= {(e:any)=> update(e)} className={clicked === "dinner"? "clicked" : "not-clicked"} >Dinner</button>
         </div>
         <div className="all-dish-cards">
             {dishCard}
@@ -99,3 +81,4 @@ return (
 )
 }   
 export default OneRestDetails
+

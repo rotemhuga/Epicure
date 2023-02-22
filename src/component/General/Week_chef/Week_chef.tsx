@@ -36,9 +36,7 @@ const restaurants = useSelector(
     return (
         <div id="week-chef-container">
             <div id="week-chef-title">CHEF OF THE WEEK:</div>
-            {/* <div id="week-chef-all-content"> */}
                 {items}
-            {/* </div> */}
         </div>
     ) 
 }

@@ -54,6 +54,19 @@
     letter-spacing: 1.92px;
 }
 
+.clicked {
+    cursor: pointer;
+    border-bottom: 1.8px solid rgba(222, 146, 0, 0.9);
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.not-clicked {
+    all:unset;
+    cursor: pointer;
+}
+
 .all-dish-cards {
     display: grid;
     justify-content: center;
