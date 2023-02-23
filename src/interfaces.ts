@@ -2,6 +2,15 @@ export interface IRootState {
     chefs :Ichefs,
     restaurants :Irestaurants,
     dishes :Idishes,
+    counter: Icounter
+}
+
+export interface Icounter {
+    value: any;
+}
+
+export interface IcounterValue {
+    value: any;
 }
 
 export interface Irestaurants {

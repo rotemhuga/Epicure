@@ -2,8 +2,27 @@ import React from "react";
 import "./Card_dish_modal.css"
 import {Iprops} from "../../interfaces"
 import shekel from "../../assets/icons/shekel-icon.svg"
+import minusIcon from "../../assets/icons/minus-icon.svg"
+import plusIcon from "../../assets/icons/plus-icon.svg"
+import {
+    increment,
+    decrement
+} from "../../store/slices/Counter/CounterSlice"
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { IRootState } from "../../interfaces";
 
 const CardDishModal: React.FC<Iprops> = (props:Iprops)=> {
+        const dispatch = useDispatch();
+        const [Quantity, setQuantity] = useState (1)
+        const counter = useSelector((state: IRootState) => state.counter);
+
+    const handlePlusClick = () => {
+        setQuantity(Quantity+1)
+    }
+    const handleMinusClick = () => {
+        setQuantity(Quantity-1)
+    }
     return (
         <button className={`modal-dish-card ${props.class}`} onClick={props.onClick} >
             <div className="up-part-card-dish">
@@ -38,9 +57,18 @@ const CardDishModal: React.FC<Iprops> = (props:Iprops)=> {
                 <div className="quantity-title">
                     Quantity
                 </div>
-                <button className="button-bag-modal">
-                    ADD TO BAG
+            <div className="counter-continer">
+                <button onClick={handlePlusClick}>
+                    <img src={minusIcon} alt="minus-icon" />
                 </button>
+                <p>{Quantity}</p>
+                <button onClick={handleMinusClick}>
+                   <img src={plusIcon} alt="plus-icon" /> 
+                </button>
+            </div>
+            <button className="button-bag-modal">
+                ADD TO BAG
+            </button>
             </div>
         </button>
     ) 

@@ -36,6 +36,7 @@
     align-items: center;
     margin-top: 0px;
     width: 50%;
+    margin-left: 25%
 }
 
 .hr-left{
@@ -93,6 +94,13 @@
     color: black;
     padding: 5px;
     margin-bottom: 50px;
+}
+
+.counter-continer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:40px;
 }
 
 .button-bag-modal {
