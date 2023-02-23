@@ -6,6 +6,7 @@ import { IRootState, IrestaurantsValue, IdishesValue } from "../../../interfaces
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import clockLogo from "../../../assets/icons/clock-icon.svg"
+import closeModal from "../../../assets/icons/close-icon-modal.svg"
 import restImg from "../../../assets/images/hero-rest-img.png"
 import { dishesPageFilter } from "../../../store/slices/dishesSlice";
 import  "../../dish_modal/dish_modal.css"
@@ -129,7 +130,9 @@ return (
                     ))
                 } 
                 />
-                    <button className="close-modal" onClick={toggleModal}>X</button>                    
+                    <button className="close-modal" onClick={toggleModal}>
+                        <img src={closeModal} alt="icon-close-modal" />
+                    </button>                    
                 </div>
             </div>   
         )}

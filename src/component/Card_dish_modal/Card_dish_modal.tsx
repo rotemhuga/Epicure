@@ -32,8 +32,16 @@ const CardDishModal: React.FC<Iprops> = (props:Iprops)=> {
                 <div className="title-changes-dish">Changes</div>
                 <div className="changes-content">                    
                 {props.changes}
-            </div>
                 </div>
+            </div>
+            <div className="quantity-container">
+                <div className="quantity-title">
+                    Quantity
+                </div>
+                <button className="button-bag-modal">
+                    ADD TO BAG
+                </button>
+            </div>
         </button>
     ) 
 }
