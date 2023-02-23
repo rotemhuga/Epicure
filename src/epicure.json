@@ -304,7 +304,7 @@
         "isBreakfast": false,
         "isLunch": true,
         "isDinner": true,
-        "sideDishes": ["White bread", "sticky rice"],
+        "sideDishes": ["White bread", "sticky rice", "potato chips"],
         "changes": ["Without peanuts", "sticky less spicy"],
         "price": "78",
         "optionalSides": [],

@@ -9,14 +9,11 @@ const CardDish: React.FC<Iprops> = (props:Iprops)=> {
             <div className="up-part-card-dish">
                 <img src={props.src} alt={props.alt} className="img-card-dish"/>
                 <div className="name-card-dish">{props.name} </div>
-                <img src={props.spicy} className="spicy-card-dish" />
+                {/* <img src={props.spicy} className="spicy-card-dish" />
                 <img src={props.vegitarian} className="vegan-card-dish" />
-                <img src={props.vegan} className="vegitarian-card-dish" />
+                <img src={props.vegan} className="vegitarian-card-dish" /> */}
                 <div className="ingredients-card-dish">
                     {props.ingredients}</div>
-            </div>
-            <div>
-                {/* sideDishes ={props.sideDishes} */}
             </div>
             <div className="price-div">
                 <hr className="hr-left" />

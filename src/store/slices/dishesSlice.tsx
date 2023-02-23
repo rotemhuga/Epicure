@@ -20,7 +20,7 @@ export const dishesSlice = createSlice({
           state.valueRestDishes = action.payload.data.filter(
             (dish:IdishesValue) => dish.isBreakfast === true);
           break;
-        case "lunch":
+        case "Lunch":
           state.valueRestDishes = action.payload.data.filter(
             (dish:IdishesValue) => dish.isLunch === true);
           break;

@@ -20,7 +20,8 @@ const items = dishes.map((item:IdishesValue) => {
             // vegan = {require(`../../assets/icons/${item.isVegan}.svg`)}
             ingredients={item.ingredients}
             price={item.price}
-            key={item.id} sideDishes={[]} changes={[]}        />
+            key={item.id}    
+            />
     
     } else {
         return null;

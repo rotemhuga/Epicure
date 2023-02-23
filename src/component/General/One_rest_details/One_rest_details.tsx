@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CardDish from "../../Card_dish/Card_dish";
+import CardDishModal from "../../Card_dish_modal/Card_dish_modal"
 import "./One_rest_details.css"
 import { IRootState, IrestaurantsValue, IdishesValue } from "../../../interfaces"
 import { useDispatch, useSelector } from "react-redux";
@@ -90,7 +91,7 @@ return (
         </div>
         <div className="all-buttons-one-rest">
                 <button value={"Breakfast"} name="breakfast" onClick= {(e:React.MouseEvent<unknown>)=> update(e)} className={clicked === "breakfast" ? "clicked" : "not-clicked"} >Breakfast</button>
-                <button value={"Lunch"} name="isLunch" onClick= {(e:React.MouseEvent<unknown>)=> update(e)} className={clicked === "Lunch" ? "clicked" : "not-clicked"}>Lunch</button>
+                <button value={"Lunch"} name="Lunch" onClick= {(e:React.MouseEvent<unknown>)=> update(e)} className={clicked === "Lunch" ? "clicked" : "not-clicked"}>Lunch</button>
                 <button value={"Dinner"} name="dinner" onClick= {(e:React.MouseEvent<unknown>)=> update(e)} className={clicked === "dinner"? "clicked" : "not-clicked"} >Dinner</button>
         </div>
         <div className="all-dish-cards">
@@ -101,7 +102,7 @@ return (
             <div className="modal">
             <div onClick={toggleModal} className="overlay"></div>
                 <div className="modal-content">
-                <CardDish 
+                <CardDishModal 
                     class={"single-rest-dish-modal"}
                     name={clickedDish?.name}
                     src={require(`../../../assets/images/Dishes/${clickedDish?.img}.png`)}
@@ -109,12 +110,28 @@ return (
                     price={clickedDish?.price}
                     key={clickedDish?.id}
                     onClick={() => toggleModal(clickedDish)} 
-                    // sideDishes={clickedDish?.sideDishes} 
-                    // changes={clickedDish.changes}
+                    sideDishes={clickedDish?.sideDishes.map((side:string[]) => (
+                        <div>
+                            <label>
+                                <input type="radio" />
+                                <span>{side}</span>
+                            </label>
+                        </div>
+                    ))
+                    }
+                    changes={clickedDish?.changes.map((changes:string[]) => (
+                        <div>
+                            <label>
+                                <input type="checkbox" />
+                                <span>{changes}</span>
+                            </label>
+                        </div>
+                    ))
+                } 
                 />
                     <button className="close-modal" onClick={toggleModal}>X</button>                    
                 </div>
-            </div>
+            </div>   
         )}
         </div>
     </div>
