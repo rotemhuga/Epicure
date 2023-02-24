@@ -16,6 +16,9 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    height: fit-content;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .img-card-dish{
@@ -112,7 +115,6 @@
 
     .ingredients-card-dish{
         font-size: 10px;
-        /* word-break: break-all !important; */
         word-break: break-word; 
         justify-content: start;
         text-align: start;

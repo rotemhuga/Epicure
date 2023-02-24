@@ -4,10 +4,6 @@ import {Iprops} from "../../interfaces"
 import shekel from "../../assets/icons/shekel-icon.svg"
 import minusIcon from "../../assets/icons/minus-icon.svg"
 import plusIcon from "../../assets/icons/plus-icon.svg"
-import {
-    increment,
-    decrement
-} from "../../store/slices/Counter/CounterSlice"
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { IRootState } from "../../interfaces";
@@ -25,21 +21,23 @@ const CardDishModal: React.FC<Iprops> = (props:Iprops)=> {
     }
     return (
         <button className={`modal-dish-card ${props.class}`} onClick={props.onClick} >
-            <div className="up-part-card-dish">
-                <img src={props.src} alt={props.alt} className="img-card-dish-modal"/>
-                <div className="name-card-dish">{props.name} </div>
-                {/* <img src={props.spicy} className="spicy-card-dish" />
-                <img src={props.vegitarian} className="vegan-card-dish" />
-                <img src={props.vegan} className="vegitarian-card-dish" /> */}
-                <div className="ingredients-card-dish-modal">
-                    {props.ingredients}</div>
-            </div>
-            <div className="price-div-modal">
-                <hr className="hr-left" />
-                <img src={shekel} alt="" />
-                <div className="price-card-dish">{props.price}</div>
-                <hr className="hr-right"/>
-                <hr className="hr-mobile" />
+            <div className="all-details-dish">
+                <div className="up-part-card-dish">
+                    <img src={props.src} alt={props.alt} className="img-card-dish-modal"/>
+                    <div className="name-card-dish">{props.name} </div>
+                    {/* <img src={props.spicy} className="spicy-card-dish" />
+                    <img src={props.vegitarian} className="vegan-card-dish" />
+                    <img src={props.vegan} className="vegitarian-card-dish" /> */}
+                    <div className="ingredients-card-dish-modal">
+                        {props.ingredients}</div>
+                </div>
+                <div className="price-div-modal">
+                    <hr className="hr-left" />
+                    <img src={shekel} alt="" />
+                    <div className="price-card-dish">{props.price}</div>
+                    <hr className="hr-right"/>
+                    <hr className="hr-mobile" />
+                </div>
             </div>
             <div className="side-dish-container">
                 <div className="title-side-dish"> Choose a side </div>
@@ -59,7 +57,7 @@ const CardDishModal: React.FC<Iprops> = (props:Iprops)=> {
                 </div>
             <div className="counter-continer">
                 <button onClick={handlePlusClick}>
-                    <img src={minusIcon} alt="minus-icon" />
+                    <img src={minusIcon} alt="minus-icon" className="minus-button" />
                 </button>
                 <p>{Quantity}</p>
                 <button onClick={handleMinusClick}>

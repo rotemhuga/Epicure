@@ -7,17 +7,23 @@
 .modal-dish-card {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     width: 100%;
     height: 100%;
+}
+
+.all-details-dish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .img-card-dish-modal{
     display: flex;
     width: 100%;
-    height: 45%;
+    height: 170px;
     object-fit: cover;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 }
 
 .ingredients-card-dish-modal{
@@ -26,7 +32,7 @@
     font-size: 14px;
     letter-spacing: 1.97px;
     line-height: 18px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .price-div-modal {
@@ -34,9 +40,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
     width: 50%;
-    margin-left: 25%
+    margin-bottom: 10px;
 }
 
 .hr-left{
@@ -58,7 +63,7 @@
     border-bottom: 1.8px solid rgba(222, 146, 0, 0.9);
     text-decoration: none;
     color: black;
-    padding: 5px;
+    margin-bottom: 10px;
 }
 
 .changes-container{
@@ -66,7 +71,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .title-changes-dish {
@@ -83,7 +88,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .quantity-title {
@@ -93,14 +97,19 @@
     text-decoration: none;
     color: black;
     padding: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .counter-continer{
     display: flex;
     flex-direction: row;
+     gap:20px;
+    margin-bottom: 10px;
+}
+
+.minus-button{
+    display: flex;
     align-items: center;
-    gap:40px;
 }
 
 .button-bag-modal {

@@ -10,10 +10,6 @@ import closeModal from "../../../assets/icons/close-icon-modal.svg"
 import restImg from "../../../assets/images/hero-rest-img.png"
 import { dishesPageFilter } from "../../../store/slices/dishesSlice";
 import  "../../dish_modal/dish_modal.css"
-import {
-    increment,
-    decrement
-} from "../../../store/slices/Counter/CounterSlice"
 
 const OneRestDetails: React.FC = ()=> {
     const dispatch = useDispatch()
