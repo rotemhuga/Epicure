@@ -40,7 +40,7 @@ const SignUpPage:React.FC = () => {
             </div>
         </div>
         <div>
-            <div className="password-container">
+            <div className="password-confirm-container">
                 <input type="text" className="user-password" placeholder={"Confirm Password"}/>
             </div>
         </div>
