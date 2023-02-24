@@ -5,6 +5,7 @@ import HomePage from './component/HomePage/HomePage';
 import RestaurantsPage from './component/RestaurantsPage/RestaurantsPage';
 import ChefsPage from './component/ChefsPage/ChefsPage';
 import OneRestPage from '../src/component/OneRestPage/OneRestPage';
+import SignInPage from './component/SignInPage/SignInPage';
 import { useParams } from 'react-router-dom';
 
 const App: React.FC = ()=> {
@@ -15,9 +16,9 @@ const App: React.FC = ()=> {
       <Route path="/RestaurantsPage" element={<RestaurantsPage />} />
       <Route path="/ChefsPage" element={<ChefsPage />} />
       <Route path="RestaurantsPage/:id" element={<OneRestPage />} />
+      <Route path="/SignIn" element={<SignInPage />} />
     </Routes>
   </BrowserRouter>
-
   );
 }
 

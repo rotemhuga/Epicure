@@ -4,6 +4,7 @@ import NavButton from "../../General/NavButton_nav/NavButton";
 import Navlink_button from "../../General/Navlink_button/Navlink_button"
 import SearchNav from "../Search_nav/SearchNav";
 import ProfileNav from "../Profile_nav/PropfileNav";
+import propfileIcon from '../../../assets/icons/profile.svg';
 import BagNav from "../Bag_Nav/BagNav";
 import logoName from '../../../assets/icons/epicure-logo-name.svg';
 import logoIcon from "../../../assets/icons/epicure-logo-icon.svg"
@@ -25,7 +26,8 @@ const Navbar: React.FC = () => {
             </div>
             <div className="right-nav navbar">
                 <SearchNav />
-                <ProfileNav />
+                <NavButton name = "" src={propfileIcon} class="logo-name" onClick={() => navigate("/SignIn")} />
+                {/* <ProfileNav /> */}
                 <BagNav />
             </div>
         </div>
