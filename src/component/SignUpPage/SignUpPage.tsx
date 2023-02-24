@@ -1,11 +1,11 @@
 import React from "react";
-import "./SignInPage.css";
+import "./SignUpPage.css";
 import validator from 'validator';
 import PasswordChecklist from "react-password-checklist"
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate} from 'react-router-dom';
 
-const SignInPage:React.FC = () => {
+const SignUpPage:React.FC = () => {
         const navigate = useNavigate();
         const [emailError, setEmailError] = useState('')
         const [password, setPassword] = useState("")
@@ -20,8 +20,13 @@ const SignInPage:React.FC = () => {
     }
  return (
     <div className="Sign-in-container">
-        <div className="sign-in-title">SIGN IN</div>
+        <div className="sign-in-title">SIGN UP</div>
         <div className="sign-in-sub-title">To conitnue order, please sign in</div>
+        <div>
+            <div className="first-name-container">
+                <input type="text" className="user-first-name" placeholder={"First Name"}/>
+            </div>
+        </div>
         <div>
             <div className="email-container">
                 <input type="text" className="user-email" placeholder={"Email Adress"}
@@ -34,8 +39,13 @@ const SignInPage:React.FC = () => {
                 <input type="text" className="user-password" placeholder={"Password"}/>
             </div>
         </div>
+        <div>
+            <div className="password-container">
+                <input type="text" className="user-password" placeholder={"Confirm Password"}/>
+            </div>
+        </div>
         <div className="log-in-container">
-            <button className="log-in-button">LOGIN</button>
+            <button className="log-in-button">SIGN UP</button>
         </div>
         <div className="forget-password-container">
             <button className="forget-password">Forget password?</button>
@@ -46,23 +56,10 @@ const SignInPage:React.FC = () => {
             <hr className="hr-or-right" />
         </div>
         <div className="sign-up-container">
-            <button className="sign-up-button" onClick={() => {navigate("/SignUp");window.scrollTo(0, 0);}}>SIGN UP</button>
+            <button className="sign-up-button" >SIGN UP</button>
         </div>
     </div>
  )   
 }
-export default SignInPage 
+export default SignUpPage 
 
-
-// <label>Password:</label>
-// <input type="password" onChange={e => setPassword(e.target.value)}/>
-// <label>Password Again:</label>
-// <input type="password" onChange={e => setPasswordAgain(e.target.value)}/>
-
-// <PasswordChecklist
-//     rules={["minLength","specialChar","number","capital","match"]}
-//     minLength={5}
-//     value={password}
-//     valueAgain={passwordAgain}
-//     onChange={(isValid) => {}}
-// />
