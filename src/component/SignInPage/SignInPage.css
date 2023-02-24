@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 .sign-in-title {
@@ -24,13 +23,13 @@
     margin-bottom: 74px;
 }
 
-input {
+.user-password , .user-email {
     display: flex;
     justify-content: center;
-border: 0;
-  outline: 0;
-  border-bottom: 1px solid black;
-  font-size: 1.4rem;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.4rem;
 }
 
 .email-container {
