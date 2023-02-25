@@ -166,9 +166,10 @@
     .single-rest-card-dish {
         gap: 10px;
         /* height: 370px; */
+        width: 335px;
         min-height: 25vw;
         max-height: 70vh;
-        height: 60vw;
+        height: 80vw;
     }
 
     .card-dish {
@@ -183,7 +184,7 @@
     .ingredients-card-dish {
         font-size: 14px;
         letter-spacing: 1.97px;
-        width: 250px;
+        width: 300px;
         line-height: 24px;
         margin-left: 20px;
     }

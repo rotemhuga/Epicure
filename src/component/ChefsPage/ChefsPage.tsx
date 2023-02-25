@@ -9,6 +9,9 @@ const ChefsPage: React.FC = () => {
     return (
         <div id="chefs-page">
             <Navbar />
+            <div className="chef-title">
+                CHEFS
+            </div>
             <FilterChefPage />
             <All_chefs />
             <Footer />

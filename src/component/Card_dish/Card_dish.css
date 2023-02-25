@@ -17,8 +17,6 @@
     text-align: center;
     width: 100%;
     height: fit-content;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 
 .img-card-dish{
@@ -58,10 +56,17 @@
 
 .ingredients-card-dish{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     font-size: 15px;
     width: 180px;
+    /* display: flex;
+    font-size: 10px;
+    word-break: break-word; 
+    justify-content: start;
+    text-align: start;
+    width: 200px; */
 }
 
 .price-div{
@@ -134,7 +139,9 @@
     }
 
     .hr-left {
-        display: none;    
+        display: none; 
+        width: 0px;
+        margin-right: 0;   
     }
     
     .hr-right {

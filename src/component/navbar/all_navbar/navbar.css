@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: row;
     align-items:center;
-    padding-bottom: 10px;
 }
 
 .logo-icon {
@@ -30,6 +29,10 @@
 .left-nav-hidden {
     gap: 8%;
     left: 40%;
+}
+
+.burger-icon{
+    display: none;
 }
 
 .right-nav {
@@ -53,22 +56,41 @@
 @media (min-width: 375px) and (max-width: 700px) {
 
     #all-navbar {
+        align-items: center;
         width: 100vw;
-        justify-content: center;
+        justify-content: start;
+        position: relative;
+    }
+
+    .burger-icon{
+        display: flex;
+        margin-left: 5%;
+        height: 70%;
     }
 
     .left-nav-hidden {
     display: none;
     }
 
+    .nav-bar-sides{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
     .right-nav {
-        width: 100vw;
-        gap: 4%;
+        display: flex;
+        gap: 16%;
+        margin-right: 5%;
     }
 
     .logo-icon {
-        justify-content: center;
-        align-items:center
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
