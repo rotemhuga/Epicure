@@ -22,9 +22,12 @@ const SignUpPage:React.FC = () => {
     <div className="Sign-in-container">
         <div className="sign-in-title">SIGN UP</div>
         <div className="sign-in-sub-title">To conitnue order, please sign in</div>
-        <div>
+        <div className="names-container">
             <div className="first-name-container">
                 <input type="text" className="user-first-name" placeholder={"First Name"}/>
+            </div>
+            <div className="last-name-container">
+                <input type="text" className="user-last-name" placeholder={"Last Name"}/>
             </div>
         </div>
         <div>
@@ -32,6 +35,11 @@ const SignUpPage:React.FC = () => {
                 <input type="text" className="user-email" placeholder={"Email Adress"}
                     onChange={(e) => validateEmail(e)}></input>
                     {emailError}
+            </div>
+        </div>
+        <div>
+            <div className="address-container">
+                <input type="text" className="user-address" placeholder="Shipping Address"/>
             </div>
         </div>
         <div>
@@ -43,17 +51,6 @@ const SignUpPage:React.FC = () => {
             <div className="password-confirm-container">
                 <input type="text" className="user-password" placeholder={"Confirm Password"}/>
             </div>
-        </div>
-        <div className="log-in-container">
-            <button className="log-in-button">SIGN UP</button>
-        </div>
-        <div className="forget-password-container">
-            <button className="forget-password">Forget password?</button>
-        </div>
-        <div className="or-option-container">
-            <hr className="hr-or-left" />
-            <p className="or-text">or</p>
-            <hr className="hr-or-right" />
         </div>
         <div className="sign-up-container">
             <button className="sign-up-button" >SIGN UP</button>

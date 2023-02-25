@@ -23,13 +23,54 @@
     margin-bottom: 74px;
 }
 
-.first-name-container {
+.names-container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-bottom: 70px;
+    gap: 10%;
 }
 
-.user-password .user-email .user-first-name {
+.first-name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-first-name{
+    display: flex;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1.97px;
+    width: 100%;
+}
+
+.last-name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-last-name{
+    display: flex;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1.97px;
+    width: 100%;
+}
+
+.user-password .user-email{
     display: flex;
     justify-content: center;
     border: 0;
@@ -38,24 +79,13 @@
     font-size: 1.4rem;
 }
 
-.user-first-name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 1.97px;
-    margin-bottom: 50px;
-}
-
 .email-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.user-email{
+.user-email {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,13 +93,33 @@
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 1.97px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.address-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-address{
+    display: flex;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1.97px;
+    width: 40%;
 }
 
 .password-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .user-password {
@@ -85,66 +135,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
-}
-
-.log-in-container {
-    display: flex;
-    justify-content: center;
-}
-
-.log-in-button{
-    width: 206px;
-    height: 48px;
-    background-color: #979797;
-    color: white;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 2.67px;
-    text-align: center;
-}
-
-.forget-password-container{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.forget-password{
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 1px;
-    font-family: Helvetica-Neu-Bold;
-}
-
-.or-option-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-}
-
-.hr-or-left{
-    margin-left: 35%;
-    width: 600px;
-    height: 1px;
-}
-
-.or-text{
-    display: flex;
-    justify-content: center;
-    color: #979797;
-    width: 30px;
-    font-size: 14px;
-    margin:1%
-}
-
-.hr-or-right{
-    display: flex;
-    justify-content: center;
-    margin-right: 35%;
-    width: 600px;
-    height: 1px;
 }
 
 .sign-up-container{
