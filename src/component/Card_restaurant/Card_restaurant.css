@@ -49,7 +49,27 @@
 
 @media (min-width: 375px) and (max-width: 700px) {
 
+    .rating-popular-card {
+        display: none;
+    }
 
-    .card {
+    .chef-popular-card {
+        display: flex;
+        justify-content: start;
+        margin-left: 5%;
+        font-Size:14px;
+        line-height: 21.47px;
+        letter-spacing: 2.67px;
+    }
+
+    .name-popular-card {
+        display: flex;
+        justify-content: start;
+        font-size: 20px;
+        line-height: 21.47px;
+        letter-spacing: 2.67px;
+        font-family: Helvetica-Neu-Bold;
+        margin-left: 5%;
     }
 }
+

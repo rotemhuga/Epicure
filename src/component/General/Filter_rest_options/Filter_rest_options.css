@@ -16,3 +16,23 @@
 .button-filter:hover {
     background-color: #D0CFCF;
 }
+
+@media (min-width: 375px) and (max-width: 700px) {
+
+    .all-buttons {
+        display: flex;
+        justify-content: start;
+        margin-left:10%;
+        font-Size:18px;
+        Line-height: 21.76px;
+        letter-spacing:1.92px
+    }
+
+    .filter-options{
+        display: none;
+    }
+
+    .button-map-view{
+        display: none;
+    }
+}
