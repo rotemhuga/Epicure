@@ -101,21 +101,74 @@
 
 @media (min-width: 375px) and (max-width: 700px) {
 
+    .one-rest-details-all {
+        justify-content: start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .one-rest-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20%;
+    }
+
     .img-one-rest {
         object-fit: contain;
         width: 100%;
         margin-bottom: 32px;
     }
 
+    .name-rest-details-card{
+        margin-left: 5%;
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 21.47px;
+        letter-spacing: 1.5px;
+    }
+
+    .chef-rest-details-card {
+        margin-left: 5%;
+        font-size: 16px;
+        line-height: 21.47px;
+        letter-spacing: 1.5px;
+        margin-bottom: 16px;
+    }
+    
+    .open-rest-details-card {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 32px;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+
+    .all-buttons-one-rest{
+        margin-left: 5%;
+        margin-bottom: 24px;
+    }
+
+    .clicked{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
     .all-dish-cards{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 10px;
     }
 
     .single-rest-card-dish {
         gap: 10px;
-        height: 370px;
+        /* height: 370px; */
+        min-height: 25vw;
+        max-height: 70vh;
+        height: 60vw;
     }
 
     .card-dish {

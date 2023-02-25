@@ -99,6 +99,7 @@ return (
         <div className="all-dish-cards">
             {dishCard}
         </div>
+
         <div>
         {modal && (
             <div className="modal">

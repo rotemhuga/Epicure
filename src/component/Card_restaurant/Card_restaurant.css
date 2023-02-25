@@ -71,5 +71,15 @@
         font-family: Helvetica-Neu-Bold;
         margin-left: 5%;
     }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        cursor: pointer;
+        background: #F9F4EA;
+        height: 250px;
+        gap: 15px;
+    }
 }
 

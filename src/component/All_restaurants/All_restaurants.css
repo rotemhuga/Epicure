@@ -25,6 +25,8 @@
     .rest-page {
         display: flex;
         justify-content: start;
+        gap: 20%;
+
     }
     
     .all-rest-page-container {  
@@ -32,6 +34,7 @@
         flex-direction: column;
         justify-content: start;
         margin-left: 10%;
+        gap: 20%;
     }
 
 }
