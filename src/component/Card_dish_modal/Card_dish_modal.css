@@ -50,6 +50,13 @@
     justify-content: center
 }
 
+label {
+    display: flex;
+    gap: 8%;
+    width: 150px;
+    font-size: 14px;
+ }
+
 .side-dish-container{
     display: flex;
     flex-direction: column;
@@ -121,4 +128,62 @@
     height: 30px;
     background-color: black;
     color: white;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+
+    .up-part-card-dish{
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+
+    .ingredients-card-dish-modal{
+        display: flex;
+        justify-content: start;
+        text-align: start;
+        font-size: 10px;
+        letter-spacing: 1.97px;
+        line-height: 14px;
+        margin-bottom: 10px;
+        margin-left: 5%;
+        width: 80%;
+    }
+
+    
+    .price-div-modal {
+        display: none;
+    }
+
+    .side-dish-container{
+        align-items: start;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    .title-side-dish {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    
+    .changes-container{
+        justify-content: start;
+        align-items: start;
+        margin-left: 5%;
+    }
+
+    .title-changes-dish{
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .quantity-container{
+        align-items: start;
+        margin-left: 5%;
+    }
+
+    .quantity-title {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
 }

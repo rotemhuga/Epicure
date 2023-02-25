@@ -15,9 +15,6 @@ const items = dishes.map((item:IdishesValue) => {
             class={item.name}
             name={item.name}
             src={require(`../../assets/images/Dishes/${item.img}.png`)}
-            // spicy = {require(`../../assets/icons/${item.isSpicy}.svg`)}
-            // vegitarian = {require(`../../assets/icons/${item.isVegitarian}.svg`)}
-            // vegan = {require(`../../assets/icons/${item.isVegan}.svg`)}
             ingredients={item.ingredients}
             price={item.price}
             key={item.id}    

@@ -34,4 +34,3 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
 export default AllRestaurants
 
 
-// window.scrollTo(0, 0)

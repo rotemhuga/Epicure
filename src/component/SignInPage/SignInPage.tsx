@@ -54,15 +54,3 @@ const SignInPage:React.FC = () => {
 export default SignInPage 
 
 
-// <label>Password:</label>
-// <input type="password" onChange={e => setPassword(e.target.value)}/>
-// <label>Password Again:</label>
-// <input type="password" onChange={e => setPasswordAgain(e.target.value)}/>
-
-// <PasswordChecklist
-//     rules={["minLength","specialChar","number","capital","match"]}
-//     minLength={5}
-//     value={password}
-//     valueAgain={passwordAgain}
-//     onChange={(isValid) => {}}
-// />

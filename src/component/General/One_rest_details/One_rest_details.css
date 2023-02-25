@@ -160,12 +160,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 10px;
+        width: 100%;
     }
 
     .single-rest-card-dish {
         gap: 10px;
-        /* height: 370px; */
         width: 335px;
         min-height: 25vw;
         max-height: 70vh;
@@ -188,5 +189,4 @@
         line-height: 24px;
         margin-left: 20px;
     }
-
 }

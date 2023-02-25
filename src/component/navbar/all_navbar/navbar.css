@@ -23,7 +23,8 @@
 
 .logo-icon {
     display: flex;
-    align-items:center
+    align-items:center;
+    margin-right: 15px;
 }
 
 .left-nav-hidden {

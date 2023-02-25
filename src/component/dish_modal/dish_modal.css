@@ -1,5 +1,5 @@
 body.active-modal {
-    overflow-y: hidden;
+    overflow:scroll;
 }
 
 .btn-modal {
@@ -40,4 +40,16 @@ body.active-modal {
     top: -32px;
     left: 0;
     padding: 5px 7px;
+}
+
+@media (min-width: 375px) and (max-width: 700px) {
+    
+    .modal-content{
+        width: 80%;
+        background: white;
+    }
+
+    .modal, .overlay {
+    height: 700px;
+    }
 }

@@ -6,7 +6,7 @@
 @media (min-width: 375px) and (max-width: 700px) {
     .restaurant-title {
         display: flex;
-        margin-left: 10%;
+        margin-left: 5%;
         font-size: 18px;
         line-height: 21.76px;
         letter-spacing: 1.92px;

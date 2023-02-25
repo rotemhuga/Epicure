@@ -7,7 +7,6 @@ import ChefsPage from './component/ChefsPage/ChefsPage';
 import OneRestPage from '../src/component/OneRestPage/OneRestPage';
 import SignInPage from './component/SignInPage/SignInPage';
 import SignUpPage from './component/SignUpPage/SignUpPage';
-import { useParams } from 'react-router-dom';
 
 const App: React.FC = ()=> {
   return (

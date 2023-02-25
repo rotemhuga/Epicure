@@ -65,8 +65,6 @@ const OneRestDetails: React.FC = ()=> {
                 price={dish.price}
                 key={dish.id}
                 onClick={() => toggleModal(dish)} 
-                // sideDishes={[dish.sideDishes]} 
-                // changes={[dish.changes]}
                 />
         ))) 
     },[allDishes])

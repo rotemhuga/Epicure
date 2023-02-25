@@ -33,7 +33,6 @@ const Navbar: React.FC = () => {
                 <div className="right-nav navbar">
                     <SearchNav />
                     <NavButton name = "" src={propfileIcon} class="logo-name" onClick={() => navigate("/SignIn")} />
-                    {/* <ProfileNav /> */}
                     <BagNav />
                 </div>
             </div>
