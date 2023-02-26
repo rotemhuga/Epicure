@@ -5,6 +5,8 @@ import HomePage from './component/HomePage/HomePage';
 import RestaurantsPage from './component/RestaurantsPage/RestaurantsPage';
 import ChefsPage from './component/ChefsPage/ChefsPage';
 import OneRestPage from '../src/component/OneRestPage/OneRestPage';
+import SignInPage from './component/SignInPage/SignInPage';
+import SignUpPage from './component/SignUpPage/SignUpPage';
 
 const App: React.FC = ()=> {
   return (
@@ -13,11 +15,11 @@ const App: React.FC = ()=> {
       <Route path="/" element={<HomePage />} />
       <Route path="/RestaurantsPage" element={<RestaurantsPage />} />
       <Route path="/ChefsPage" element={<ChefsPage />} />
-      <Route path="/id" element={<OneRestPage />} />
+      <Route path="RestaurantsPage/:id" element={<OneRestPage />} />
+      <Route path="/SignIn" element={<SignInPage />} />
+      <Route path="/SignUp" element={<SignUpPage />} />
     </Routes>
   </BrowserRouter>
-
-
   );
 }
 

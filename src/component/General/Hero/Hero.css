@@ -32,6 +32,7 @@
 #hero-search-input{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 #hero-search-text {
@@ -98,6 +99,4 @@
         font-size: 14px;
         padding-left: 15%;
     }
-
-
 }

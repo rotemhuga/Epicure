@@ -20,14 +20,14 @@ const restaurants = useSelector(
             return choosenObj
         })
         if (item.isChefOfTheWeek === true) { 
-                 return < CardWeekChef
-            class= {item.name}
-            srcChef= {require(`../../../assets/images/${item.portrait}.png`)}
-            ChefName = {item.name}
-            info = {item.info}
-            restTitle = {`${item.firstName}'s Restaurants`}
-            chefResturants = {choosen} 
-            key = {item.id}
+            return < CardWeekChef
+                class= {item.name}
+                srcChef= {require(`../../../assets/images/${item.portrait}.png`)}
+                ChefName = {item.name}
+                info = {item.info}
+                restTitle = {`${item.firstName}'s Restaurants`}
+                chefResturants = {choosen} 
+                key = {item.id}
             /> 
         } else {
             return null;
@@ -36,9 +36,7 @@ const restaurants = useSelector(
     return (
         <div id="week-chef-container">
             <div id="week-chef-title">CHEF OF THE WEEK:</div>
-            {/* <div id="week-chef-all-content"> */}
                 {items}
-            {/* </div> */}
         </div>
     ) 
 }

@@ -20,12 +20,16 @@ const About_us: React.FC = ()=> {
                 eu ipsum. Cras porta malesuada eros.
                 </div>
                 <div id="download-apps">
-                    <button id="download-app-store">
-                        <img src={appStoreImg} alt="app-Store-Img" className="app-Store-Img" />
-                    </button>
-                    <button id="download-google-play">
-                        <img src={googlePlayImg} alt="google-Play-Img" className="google-Play-Img" />
-                    </button>
+                    <div>
+                        <button id="download-app-store">
+                            <img src={appStoreImg} alt="app-Store-Img" className="app-store-img" />
+                        </button>
+                    </div>
+                    <div>
+                        <button id="download-google-play">
+                            <img src={googlePlayImg} alt="google-Play-Img" className="google-Play-Img" />
+                        </button>
+                    </div>
                 </div >
             </div>
             <div id="abous-us-right">

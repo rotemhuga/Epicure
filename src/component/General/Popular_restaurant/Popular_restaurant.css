@@ -47,7 +47,6 @@
         flex-direction: row;
         justify-content: flex-start;
         margin-left: 4%;
-        /* position: relative; */
         gap: 8%;
         width: 380px;
         overflow: auto;

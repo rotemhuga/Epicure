@@ -5,6 +5,7 @@ import "./All_restaurants.css";
 import { IrestaurantsValue, IRootState } from "../../interfaces"
 import { useNavigate } from "react-router-dom";
 
+
 const AllRestaurants: React.FC = () => {
 const navigate = useNavigate();
 const restaurants = useSelector(
@@ -13,6 +14,7 @@ const restaurants = useSelector(
 const rests = restaurants.map((rest:IrestaurantsValue) => {
         return <CardRestaurant 
         class= {rest.name}
+        id = {rest.id}
         src= {require(`../../assets/images/Restaurants/${rest.img}.png`)}
         restaurantName = {rest.name}
         chef = {rest.chef}
@@ -22,7 +24,7 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
 })
     return (
         <div className="rest-page" >
-            <div className="all-rest-page-container" onClick={() => {navigate("/OneRestPage");window.scrollTo(0, 0);}}>
+            <div className="all-rest-page-container">
                 {rests}
             </div>
         </div>

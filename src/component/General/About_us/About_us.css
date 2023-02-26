@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 
-.app-Store-Img {
+.app-store-img {
     display: flex;
 }
 
@@ -75,26 +75,56 @@
     
     #about-us-container{
         flex-direction: column;
+        height: 700px;
+        position: relative;
     }
     
-
+    #epicure-logo {
+        position: absolute;
+        top: 8%;
+        left: 20px;
+        transform: translateY(-50%);
+        width: 20%;
+    }
+    
     #about-us-left{
         display: flex;
         flex-direction: column;
-        position: none;
+        position: relative;
         left: 0;
-        width: 40vw;
-        gap: 14px;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #download-apps {
+        flex-direction: column-reverse;
+        position: absolute;
+        top: 22%;
+        left: 20px;
+        transform: translateY(-50%);
+        gap: 20%;
+        height: 80px;
+    }
+
+    .app-store-img {
+        display: flex;
+    }
+
+    #about-us-title{
+        font-size: 16px;
+        position: absolute;
+        top: 38%;
+        left: 20px;
+        transform: translateY(-50%);
     }
 
     #about-us-content {
         line-height: 30px;
         letter-spacing: 1.5px;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    #epicure-logo {
-        position: none;
+        width: 70vw;
+        position: absolute;
+        top: 72%;
+        left: 20px;
+        transform: translateY(-50%);
     }
 }

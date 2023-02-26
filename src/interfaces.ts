@@ -2,6 +2,15 @@ export interface IRootState {
     chefs :Ichefs,
     restaurants :Irestaurants,
     dishes :Idishes,
+    counter: Icounter
+}
+
+export interface Icounter {
+    value: any;
+}
+
+export interface IcounterValue {
+    value: any;
 }
 
 export interface Irestaurants {
@@ -11,16 +20,17 @@ export interface Irestaurants {
 export interface IrestaurantsValue {
     id?:string,
     img?:string,
+    alt?:string,
     name?: string,
     chef?: string,
     rating?: string,
     openingHours?: string,
     address?:string,
     dishes?: number[],
-    isPopular?: Boolean,
-    isNew?: Boolean,
-    isOpen?: Boolean,
-    map?: Boolean,
+    isPopular?: boolean,
+    isNew?: boolean,
+    isOpen?: boolean,
+    map?: boolean,
 }
 
 export interface Ichefs {
@@ -34,13 +44,14 @@ export interface IchefsValue {
     info?: string,
     portrait?: string,
     restaurants?: string[],
-    isChefOfTheWeek?: Boolean,
-    isNew?: Boolean,
-    mostViewed?:Boolean,
+    isChefOfTheWeek?: boolean,
+    isNew?: boolean,
+    mostViewed?:boolean,
 }
 
 export interface Idishes {
-    value: IdishesValue[]
+    value: IdishesValue[],
+    valueRestDishes: IdishesValue[] 
 }
 
 export interface IdishesValue {
@@ -52,16 +63,28 @@ export interface IdishesValue {
     isSpicy?: string,
     isVegitarian?: string,
     isVegan?: string,
+    isBreakfast: boolean,
+    isLunch: boolean,
+    isDinner: boolean,
+    sideDishes: string[]
+    changes: string[]
     price?: string,
     optionalSides?: string[],
     optionalChanges?: string[],
-    isPopular?: Boolean
+    isPopular?: boolean
 }
 
 
-export interface IOneRest {
-    img?: string,
-    name?: string,
-    chefName?: string,
-    isOpen?: Boolean,
+export interface Iprops {
+    class?: string,
+    id?:string,
+    src?: string,
+    alt?:string,
+    name?:string,
+    ingredients?:string,
+    price?:string,
+    sideDishes?: string[],
+    changes?: string[],
+    onClick?:  React.MouseEventHandler<HTMLButtonElement> 
 }
+

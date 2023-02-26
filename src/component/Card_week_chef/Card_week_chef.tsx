@@ -1,5 +1,4 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
 import "./Card_week_chef.css"
 
 interface Iprops {
@@ -15,8 +14,8 @@ interface Iprops {
 
 const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
     return (
-        <div>
-            <div id="week-ched-details">
+        <>
+            <div className="week-chef-details">
                 <button className={`card-week-chef ${props.class}`} id="all-chefs-card" >
                     <img src={props.srcChef} alt={props.alt} className="img-week-chef-card"/>  
                 </button>
@@ -34,10 +33,9 @@ const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
                     )
                 }      
             </div>
-        </div>
+        </>
     ) 
 }
 
 export default CardWeekChef
 
-// onClick={Navigate `/`}

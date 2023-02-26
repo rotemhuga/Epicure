@@ -26,7 +26,6 @@
         align-items: start;
         height: 20vh;
         gap: 20%;
-        margin-left: 2%;
-        margin-top: 5%;
+        margin: 5% 5% 5% 5%;
     }
 }

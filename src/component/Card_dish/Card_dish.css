@@ -2,17 +2,27 @@
 .card-dish {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 280px;
     cursor: pointer;
     background: #F9F4EA;
-    height: 60vh;
+    height: 50vh;
+}
+
+.up-part-card-dish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
 }
 
 .img-card-dish{
     display: flex;
     width: 280px;
+    margin-bottom: 24px;
 }
 
 .name-card-dish {
@@ -21,46 +31,56 @@
     justify-content: center;
     text-align:center;
     font-size: 28px;
-    width: 80px;
+    white-space: nowrap;
+    margin-bottom: 8px;
 }
-
-/* .spicy-card-dish {
-    display: flex;
-    justify-content: center;
-    font-size: 17px;
-}
-
-.vegan-card-dish {
-    display: flex;
-    width: 180px;
-    height: 30px;
-}
-
-.vegitarian-card-dish{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
 
 .ingredients-card-dish{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     font-size: 15px;
     width: 180px;
 }
 
+.price-div{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap:3px;
+    width: 100%;
+}
+
+.hr-left {
+    width: 30%;
+    margin-right: 12px;
+}
+
+.hr-right {
+    width: 30%;
+    margin-left: 12px;
+}
+
+.hr-mobile {
+    display: none;
+}
+
 .price-card-dish{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 18px;
+    font-family: Helvetica-Neu-Bold;
 }
 
 @media (min-width: 375px) and (max-width: 700px) {
     .card-dish {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 280px;
         cursor: pointer;
@@ -68,12 +88,16 @@
     }
 
     .name-card-dish {
-        justify-content:end
+        justify-content:end;
+        margin-left: 20px;
+        font-size: 20px;
     }
 
     .ingredients-card-dish{
-        font-size: 15px;
-        word-break: break-all !important;
+        font-size: 10px;
+        word-break: break-word; 
+        justify-content: start;
+        text-align: start;
         width: 200px;
     }
 
@@ -82,5 +106,28 @@
         flex-wrap: wrap;
         width: 80vw;
         height: 100px;
+    }
+
+    .price-div{
+        margin-left: 20px;
+        justify-content: start;
+    }
+
+    .hr-left {
+        display: none; 
+        width: 0px;
+        margin-right: 0;   
+    }
+    
+    .hr-right {
+        display: none;    
+    }
+
+    .hr-mobile {
+        display: block;
+        width:70%;
+        text-align:left;
+        height: 1px;
+        margin-left: 5px;
     }
 }

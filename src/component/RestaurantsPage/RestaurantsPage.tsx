@@ -11,6 +11,9 @@ const RestaurantsPage: React.FC = () => {
     return (
         <div id="Restaurants-page">               
             <Navbar />
+        <div className="restaurant-title">
+            RESTAURANTS
+        </div>
             <RestFilterLink />
             <FilterRestOptions />
             <AllRestaurants />
