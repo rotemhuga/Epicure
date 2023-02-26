@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 
-.app-Store-Img {
+.app-store-img {
     display: flex;
 }
 
@@ -106,7 +106,7 @@
         height: 80px;
     }
 
-    .app-Store-Img {
+    .app-store-img {
         display: flex;
     }
 

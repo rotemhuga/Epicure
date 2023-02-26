@@ -88,11 +88,3 @@ export interface Iprops {
     onClick?:  React.MouseEventHandler<HTMLButtonElement> 
 }
 
-// export interface IOneRestDetails {
-//     id?:string,
-//     img?: string,
-//     alt?: string,
-//     name?: string,
-//     chef?: string,
-//     isOpen?: boolean,
-// }

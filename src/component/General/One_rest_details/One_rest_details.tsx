@@ -14,22 +14,12 @@ import  "../../dish_modal/dish_modal.css"
 const OneRestDetails: React.FC = ()=> {
     const dispatch = useDispatch()
     const [activeButton, setActiveButton] = useState("all")
+    const [clickedDish, setClickedDish] = useState<any>(null);
+    const [dishCard, setDishCard] = useState<any>()
+    const [clicked, setClicked] = useState("all");
     
     //Modal
     const [modal, setModal] = useState(false);
-    const toggleModal = (dish:any) => {
-        setClickedDish(dish);
-        setModal(!modal);
-      };
-    
-      if(modal) {
-        document.body.classList.add('active-modal')
-      } else {
-        document.body.classList.remove('active-modal')
-      }
-    
-    const [clickedDish, setClickedDish] = useState<any>(null);
-
     const allRestaurants = useSelector(
         (state:IRootState) => state.restaurants.value
     );
@@ -39,37 +29,42 @@ const OneRestDetails: React.FC = ()=> {
     const allDishesState = useSelector(
         (state:IRootState) => state.dishes.value
     );
-    const [dishCard, setDishCard] = useState<any>()
-
     const detailsrest = useParams()
-
+    
     const restobj = allRestaurants.find((rest:IrestaurantsValue) => detailsrest.id == rest.id)
     const newArrDishes = restobj?.dishes?.map((dishId:any) => {
         const singleDish = allDishesState.find((dishObj:IdishesValue) => dishObj.id == dishId)
         return singleDish
     })
-
-    console.log(newArrDishes)  
+    
     useEffect(()=> {
-    dispatch(dishesPageFilter({type: "all", data: newArrDishes}))
+        dispatch(dishesPageFilter({type: "all", data: newArrDishes}))
     },[])      
-
+    
     useEffect(() => {
-        console.log(allDishes)
         setDishCard(allDishes?.map((dish:any) => (
             <CardDish 
-                class={"single-rest-card-dish"}
-                name={dish.name}
-                src={require(`../../../assets/images/Dishes/${dish.img}.png`)}
-                ingredients={dish.ingredients}
-                price={dish.price}
-                key={dish.id}
-                onClick={() => toggleModal(dish)} 
-                />
-        ))) 
-    },[allDishes])
-
-    const [clicked, setClicked] = useState("all");
+            class={"single-rest-card-dish"}
+            name={dish.name}
+            src={require(`../../../assets/images/Dishes/${dish.img}.png`)}
+            ingredients={dish.ingredients}
+            price={dish.price}
+            key={dish.id}
+            onClick={() => toggleModal(dish)} 
+            />
+            ))) 
+        },[allDishes])
+        
+        const toggleModal = (dish:any) => {
+            setClickedDish(dish);
+            setModal(!modal);
+          };
+        
+          if(modal) {
+            document.body.classList.add('active-modal')
+          } else {
+            document.body.classList.remove('active-modal')
+          }
     const update=(e:React.MouseEvent<unknown>)=>{
         const type = (e.target as HTMLInputElement).name        
         dispatch(dishesPageFilter({type:type, data:newArrDishes}))

@@ -22,7 +22,7 @@ const About_us: React.FC = ()=> {
                 <div id="download-apps">
                     <div>
                         <button id="download-app-store">
-                            <img src={appStoreImg} alt="app-Store-Img" className="app-Store-Img" />
+                            <img src={appStoreImg} alt="app-Store-Img" className="app-store-img" />
                         </button>
                     </div>
                     <div>
