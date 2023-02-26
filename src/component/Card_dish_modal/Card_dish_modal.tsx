@@ -11,13 +11,16 @@ import { IRootState } from "../../interfaces";
 const CardDishModal: React.FC<Iprops> = (props:Iprops)=> {
         const dispatch = useDispatch();
         const [Quantity, setQuantity] = useState (1)
+        const minQuantity = 1;
         const counter = useSelector((state: IRootState) => state.counter);
 
     const handlePlusClick = () => {
         setQuantity(Quantity+1)
     }
     const handleMinusClick = () => {
+        if (Quantity > minQuantity) {
         setQuantity(Quantity-1)
+        }
     }
     return (
         <button className={`modal-dish-card ${props.class}`} onClick={props.onClick} >
@@ -53,11 +56,11 @@ const CardDishModal: React.FC<Iprops> = (props:Iprops)=> {
                     Quantity
                 </div>
             <div className="counter-continer">
-                <button onClick={handlePlusClick}>
+                <button onClick={handleMinusClick}>
                     <img src={minusIcon} alt="minus-icon" className="minus-button" />
                 </button>
                 <p>{Quantity}</p>
-                <button onClick={handleMinusClick}>
+                <button onClick={handlePlusClick}>
                    <img src={plusIcon} alt="plus-icon" /> 
                 </button>
             </div>

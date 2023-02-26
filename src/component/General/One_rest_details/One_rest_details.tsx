@@ -105,11 +105,11 @@ return (
                     ingredients={clickedDish?.ingredients}
                     price={clickedDish?.price}
                     key={clickedDish?.id}
-                    onClick={() => toggleModal(clickedDish)} 
+                    // onClick={() => toggleModal(clickedDish)} 
                     sideDishes={clickedDish?.sideDishes.map((side:string[]) => (
                         <div>
                             <label>
-                                <input type="radio" />
+                                <input type="radio" name="side-dishes" />
                                 <span>{side}</span>
                             </label>
                         </div>

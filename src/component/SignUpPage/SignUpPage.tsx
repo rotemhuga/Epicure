@@ -13,7 +13,7 @@ const SignUpPage:React.FC = () => {
         const validateEmail = (e:any) => {
         const email = e.target.value
         if (validator.isEmail(email)) {
-        setEmailError('Valid Email :)')
+        setEmailError('Valid Email')
         } else {
         setEmailError('Enter valid Email!')
         }
