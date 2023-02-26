@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 const Signature_dish: React.FC = ()=> {
 const dishes = useSelector(
-        (state:IRootState) => state.dishes.value
+        (state:IRootState) => state.dishes.valueHomeRestDishes
     );
 
 const items = dishes.map((item:IdishesValue) => {

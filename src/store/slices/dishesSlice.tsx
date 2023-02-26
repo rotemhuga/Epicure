@@ -6,7 +6,8 @@ export const dishesSlice = createSlice({
   name: "dishes",
   initialState: {
     value: data.dishes,
-    valueRestDishes: data.dishes
+    valueRestDishes: data.dishes,
+    valueHomeRestDishes: data.dishes
   },
   reducers: {
     dishesPageFilter: (state,action) => {
@@ -14,6 +15,7 @@ export const dishesSlice = createSlice({
         case "all":
           state.value = action.payload.data;
           state.valueRestDishes =  action.payload.data;
+          state.valueRestDishes = action.payload.data;
           break;
         case "breakfast":
           console.log(action.payload.data)

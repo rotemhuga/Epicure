@@ -51,7 +51,8 @@ export interface IchefsValue {
 
 export interface Idishes {
     value: IdishesValue[],
-    valueRestDishes: IdishesValue[] 
+    valueRestDishes: IdishesValue[],
+    valueHomeRestDishes:IdishesValue[] 
 }
 
 export interface IdishesValue {
