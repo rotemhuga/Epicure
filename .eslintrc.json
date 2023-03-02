@@ -1,0 +1,10 @@
+{
+    "extends": [
+      "react-app",
+      "plugin:unused-imports/recommended"
+    ],
+    "plugins": ["unused-imports"],
+    "rules": {
+      "unused-imports/no-unused-imports": "error"
+    }
+  }

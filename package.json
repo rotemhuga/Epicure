@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/validator": "^13.7.12"
+    "@types/validator": "^13.7.12",
+    "eslint-plugin-unused-imports": "^2.0.0"
   }
 }

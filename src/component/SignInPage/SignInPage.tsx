@@ -1,7 +1,6 @@
 import React from "react";
 import "./SignInPage.css";
 import validator from 'validator';
-import PasswordChecklist from "react-password-checklist"
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
