@@ -10,16 +10,17 @@ import { useNavigate } from "react-router-dom";
 
 const AllRestaurants: React.FC = () => {
 const navigate = useNavigate();
+const [restaurants1, setRestaurants1] = useState()
 
 useEffect(() => {
     fetch("http://localhost:8000/epicure")
       .then((response) => response.json())
       .then((data) => {
         console.log(data)
-        // setStudents(data.studentsData);
+        setRestaurants1(data);
       });
   }, []);
-  
+
 const restaurants = useSelector(
         (state:IRootState) => state.restaurants.value
     );
