@@ -1,13 +1,25 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import react, { useEffect, useState } from "react";
 import CardRestaurant from "../Card_restaurant/Card_restaurant";
 import "./All_restaurants.css";
 import { IrestaurantsValue, IRootState } from "../../interfaces"
 import { useNavigate } from "react-router-dom";
 
 
+
 const AllRestaurants: React.FC = () => {
 const navigate = useNavigate();
+
+useEffect(() => {
+    fetch("http://localhost:8000/epicure")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data)
+        // setStudents(data.studentsData);
+      });
+  }, []);
+  
 const restaurants = useSelector(
         (state:IRootState) => state.restaurants.value
     );
