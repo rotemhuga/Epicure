@@ -3,5 +3,5 @@ import {getAllRestaurants} from "../controllers/controllers"
 
 const router = express.Router();
 
-router.get('/epicure', getAllRestaurants);
+router.get('/', getAllRestaurants);
 export default router;
