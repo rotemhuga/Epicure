@@ -7,23 +7,12 @@ import { IrestaurantsValue, IRootState } from "../../interfaces"
 import { useNavigate } from "react-router-dom";
 
 
-
 const AllRestaurants: React.FC = () => {
 const navigate = useNavigate();
-const [restaurants1, setRestaurants1] = useState()
-
-useEffect(() => {
-    fetch("http://localhost:8000/epicure")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data)
-        setRestaurants1(data);
-      });
-  }, []);
 
 const restaurants = useSelector(
         (state:IRootState) => state.restaurants.value
-    );
+);
 const rests = restaurants.map((rest:IrestaurantsValue) => {
         return <CardRestaurant 
         class= {rest.name}
