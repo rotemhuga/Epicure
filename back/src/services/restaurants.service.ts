@@ -1,4 +1,4 @@
-import {restaurantModel} from "../model/model"
+import {restaurantModel} from "../model/restaurants.model"
 
 export const getRestaurants = async () => {
     try {
@@ -10,12 +10,3 @@ export const getRestaurants = async () => {
     }
 };
 
-// export const getChefs = async () => {
-//     try {
-//         const chefs = await chefModel.find();
-//         console.log(chefs)
-//         return chefs
-//     } catch (e) {
-//         throw Error('Error while Paginating Users')
-//     }
-// };

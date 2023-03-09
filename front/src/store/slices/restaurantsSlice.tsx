@@ -10,7 +10,6 @@ const getData = fetch("http://localhost:8000/epicure/restaurantsPage")
     });
 
 const restaurant:any = await getData;
-console.log(restaurant)
 
 export const restaurantsSlice = createSlice({
     name: "restaurants",

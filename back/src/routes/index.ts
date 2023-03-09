@@ -5,7 +5,7 @@ import restaurantsRoutes from "../routes/restaurants.routes";
 
 const router = express.Router();
 
-// router.use("/epicure", chefsRoutes);
+router.use("/epicure", chefsRoutes);
 router.use("/epicure", restaurantsRoutes);
 // router.use("/DishesPage", DishesRoutes);
 

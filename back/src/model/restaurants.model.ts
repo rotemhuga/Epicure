@@ -34,28 +34,3 @@ export const restaurantSchema = new Schema<IrestaurantBack>({
 }, { suppressReservedKeysWarning: true });
    
 export const restaurantModel = mongoose.model<IrestaurantBack>("restaurants", restaurantSchema);
-
-// export interface IchefBack {
-//     id?:string,
-//     name?: string,
-//     info?: string,
-//     portrait?: string,
-//     restaurants?: string[],
-//     isChefOfTheWeek?: boolean,
-//     isNew?: boolean,
-//     mostViewed?:boolean,
-// }
-
-// export const chefSchema = new Schema<IrestaurantBack>({
-//     id:{type:String},
-//     name:{type:String},
-//     info: {type:String},
-//     portrait: {type:String},
-//     restaurants: {type:Array<String>},
-//     isChefOfTheWeek: {type:Boolean},
-//     isNew: {type:Boolean},
-//     mostViewed:{type:Boolean},
-
-// }, { suppressReservedKeysWarning: true });
-   
-// export const chefModel = mongoose.model<IchefBack>("chefs", chefSchema);

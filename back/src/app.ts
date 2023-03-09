@@ -4,7 +4,8 @@ import routes from "../src/routes/index";
 import bodyParser from "body-parser";
 import cors from "cors";
 import { connectToDB } from "./connections";
-// require('dotenv').config()
+import dotenv from "dotenv"
+dotenv.config() 
 
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
