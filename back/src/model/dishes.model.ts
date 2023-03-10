@@ -21,8 +21,6 @@ export interface IdishBack {
     isPopular?: boolean
 }
 
-
-
 export const dishSchema = new Schema<IdishBack>({
     id:{type:String},
     name:{type:String},
