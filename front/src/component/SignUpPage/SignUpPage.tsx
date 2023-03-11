@@ -4,6 +4,7 @@ import validator from 'validator';
 import PasswordChecklist from "react-password-checklist"
 import { useState } from "react";
 import { useNavigate} from 'react-router-dom';
+import Navbar from "../navbar/all_navbar/navbar";
 
 const SignUpPage:React.FC = () => {
         const navigate = useNavigate();
@@ -19,6 +20,10 @@ const SignUpPage:React.FC = () => {
         }
     }
  return (
+    <>
+    <div>
+        <Navbar />
+    </div>
     <div className="Sign-in-container">
         <div className="sign-in-title">SIGN UP</div>
         <div className="sign-in-sub-title">To conitnue order, please sign in</div>
@@ -56,6 +61,7 @@ const SignUpPage:React.FC = () => {
             <button className="sign-up-button" >SIGN UP</button>
         </div>
     </div>
+    </>
  )   
 }
 export default SignUpPage 
