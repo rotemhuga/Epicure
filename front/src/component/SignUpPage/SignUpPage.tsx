@@ -19,12 +19,18 @@ const SignUpPage:React.FC = () => {
         setEmailError('Enter valid Email!')
         }
     }
+
+const userInput:any = (event:any) => {
+    const details = event
+    event.preventDefault()
+    console.log(details)
+}
  return (
     <>
     <div>
         <Navbar />
     </div>
-    <div className="Sign-in-container">
+    <form className="Sign-in-container" onSubmit={userInput}>
         <div className="sign-in-title">SIGN UP</div>
         <div className="sign-in-sub-title">To conitnue order, please sign in</div>
         <div className="names-container">
@@ -58,9 +64,10 @@ const SignUpPage:React.FC = () => {
             </div>
         </div>
         <div className="sign-up-container">
-            <button className="sign-up-button" >SIGN UP</button>
+            {/* <button type="submit" className="sign-up-button" onClick={userInput}>SIGN UP</button> */}
+            <button type="submit" className="sign-up-button">SIGN UP</button>
         </div>
-    </div>
+    </form>
     </>
  )   
 }

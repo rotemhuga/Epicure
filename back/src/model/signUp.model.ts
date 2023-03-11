@@ -17,6 +17,6 @@ export const signUpSchema = new Schema<ISignUpBack>({
     shippingAdress: {type:String},
     password: {type:String},
     confirmPassword: {type:String},
-}, { suppressReservedKeysWarning: true });
+}, { suppressReservedKeysWarning: true});
    
 export const signUpModel = mongoose.model<ISignUpBack>("signUp", signUpSchema);

@@ -1,7 +1,7 @@
 import express, {Request, Response} from "express";
-import {getSignIn} from "../controllers/signIn.controllers"
+import {getControllSignIn} from "../controllers/signIn.controllers"
 
 const router = express.Router();
 
-router.get('/signIn', getSignIn);
+router.get('/signIn', getControllSignIn);
 export default router;

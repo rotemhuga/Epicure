@@ -1,8 +1,8 @@
 import {signUpModel} from "../model/signUp.model"
 
-export const getSignIn = async () => {
+export const getSignUp = async () => {
     try {
-        const signIn = await signUpModel.find();
+        const signUp = await signUpModel.find();
         console.log(signUp)
         return signUp
     } catch (e) {

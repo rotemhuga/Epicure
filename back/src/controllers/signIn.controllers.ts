@@ -1,9 +1,9 @@
 import {getSignIn} from "../services/signIn.service"
 import express, {Request, Response} from "express";
 
-export const getSignIn = async (req: Request, res: Response) => {
+export const getControllSignIn = async (req: Request, res: Response) => {
     try {
-        const signUp = await getSignIn();
+        const signIn = await getSignIn();
         return res
         .status(200)
         .json(signIn);
