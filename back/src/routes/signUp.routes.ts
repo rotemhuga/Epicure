@@ -3,5 +3,5 @@ import {getControllSignUp} from "../controllers/signUp.controllers"
 
 const router = express.Router();
 
-router.get('/signUp', getControllSignUp);
+router.post('/users', getControllSignUp);
 export default router;

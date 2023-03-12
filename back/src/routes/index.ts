@@ -10,7 +10,7 @@ const router = express.Router();
 router.use("/epicure", chefsRoutes);
 router.use("/epicure", restaurantsRoutes);
 router.use("/epicure", DishesRoutes);
-router.use("/epicure", SignUpRoutes);
+router.use("/epicure/signup", SignUpRoutes);
 router.use("/epicure", SignInRoutes);
 
 export default router;
