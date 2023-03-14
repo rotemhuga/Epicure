@@ -7,7 +7,6 @@ export interface ISignUpBack {
     emailAddress?:string,
     shippingAddress?:string,
     password?: string,
-    confirmPassword?: string,
 }
 
 export const signUpSchema = new Schema<ISignUpBack>({
@@ -16,7 +15,6 @@ export const signUpSchema = new Schema<ISignUpBack>({
     emailAddress:{type:String},
     shippingAddress: {type:String},
     password: {type:String},
-    confirmPassword: {type:String},
 });
    
 export const signUpModel = mongoose.model<ISignUpBack>("users", signUpSchema);

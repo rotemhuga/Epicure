@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Card_restaurant.css"
 import { useNavigate } from "react-router-dom";
 
@@ -14,9 +14,31 @@ interface Iprops {
     isOpen?: string,
 }
 
-const CardRestaurant: React.FC<Iprops> = (props:Iprops)=> {
+
+
+const CardRestaurant:React.FC<Iprops>  = (props:Iprops)=> {
 const navigate = useNavigate()
+
+const handleDeleteRest = async (event:any) => {
+    event.preventDefault()
+    const clickedRestaurant = event.target.id      
+    
+  fetch("http://localhost:8000/epicure/restaurantsPage", {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ restaurant: clickedRestaurant })
+    })
+    .then(response => response.json())
+    .then(data => {
+      window.location.reload()
+    })
+    .catch(error => console.error(error));
+  };
+
     return (
+    <div className="card-rest-div">
         <button className={`card popular-rest all-rest`} id={`rest-card ${props.id}`} onClick={() => {navigate(`/RestaurantsPage/${props.id}`);window.scrollTo(0, 0);}} >
             <img src={props.src} alt={props.alt} className="img-card R-popular R-all"/>
             <div className="name-popular-card">{props.restaurantName} </div>
@@ -25,9 +47,27 @@ const navigate = useNavigate()
                 <img src={props.rating} alt="" className="rating-popular-card" />
             </div>
         </button>
-
-        
+        <button onClick={handleDeleteRest} id={props.restaurantName} className="close-button" >X</button>
+    </div>
+   
     ) 
 }
 
 export default CardRestaurant
+
+
+// fetch("http://localhost:8000/epicure/restaurantsPage", {
+//         method: 'DELETE',
+//         headers: {
+//           'Content-Type': 'application/json'
+//         },
+//     })
+//       .then(response => {
+//         if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//         }
+//         // handle success
+//       })
+//       .catch(error => {
+//         console.error('There was a problem with the fetch operation:', error);
+//       });

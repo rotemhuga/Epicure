@@ -1,0 +1,15 @@
+.close-button-chef {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+/* .card-all-chef {
+    position: relative;
+} */
+
+.chef-card-div{
+    position: relative;
+}
