@@ -1,6 +1,10 @@
 .close-button-chef {
     position: absolute;
-    right: 30px;
+    background-color: rgb(212, 184, 184);
+    width: 30px;
+    height: 40px;
+    right: 10px;
+    text-align: center;
     top: 10px;
     color: white;
     font-size: 25px;
