@@ -1,4 +1,5 @@
 import {restaurantModel} from "../model/restaurants.model"
+import {dishModel} from "../model/dishes.model"
 import { Request, Response } from "express";
 
 
@@ -15,8 +16,9 @@ export const deleteRestaurant = async (req:Request , res:Response) => {
     const { restaurant } = req.body;
     try {
       // Delete restaurant from the database
-      await restaurantModel.findOneAndDelete({ name: restaurant });
-  
+      {
+        await restaurantModel.findOneAndDelete({ name: restaurant });
+      }
       res.status(200).json({ message: 'Restaurant deleted successfully' });
     } catch (error) {
       res.status(500).json({ message: 'An error occurred while deleting the restaurant' });

@@ -14,8 +14,6 @@ interface Iprops {
     isOpen?: string,
 }
 
-
-
 const CardRestaurant:React.FC<Iprops>  = (props:Iprops)=> {
 const navigate = useNavigate()
 
@@ -24,6 +22,19 @@ const handleDeleteRest = async (event:any) => {
     const clickedRestaurant = event.target.id      
     
   fetch("http://localhost:8000/epicure/restaurantsPage", {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ restaurant: clickedRestaurant })
+    })
+    .then(response => response.json())
+    .then(data => {
+      window.location.reload()
+    })
+    .catch(error => console.error(error));
+
+  fetch("http://localhost:8000/epicure/dishesPage", {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
