@@ -10,10 +10,12 @@
     font-size: 25px;
 }
 
-/* .card-all-chef {
-    position: relative;
-} */
-
 .chef-card-div{
     position: relative;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #407088;
+    color: white;
 }

@@ -23,7 +23,7 @@ const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
             <div className="info-week-chef-card">{props.info}</div>
             <div className="rest-title-week-chef-card">{props.restTitle}</div>
             <div className="all-rest-week-chef">
-                {
+                {/* {
                     props.chefResturants.map((chefRest:any) => (
                         <button className="rest-card">
                             <img src={require(`../../assets/images/Restaurants/${chefRest.img}.png`)} alt={chefRest.name} className="rest-img one"/>  
@@ -31,7 +31,7 @@ const CardWeekChef: React.FC<Iprops> = (props:Iprops)=> {
                         </button>
                         )
                     )
-                }      
+                }       */}
             </div>
         </>
     ) 

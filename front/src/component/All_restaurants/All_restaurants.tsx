@@ -26,7 +26,7 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
 })
     return (
         <div className="rest-page" >
-            <div className="all-rest-page-container">
+            <div id="all-rest-page-container">
                 {rests}
             </div>
         </div>

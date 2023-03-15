@@ -4,6 +4,7 @@ import "../Filter_rest_options/Filter_rest_options.css"
 import NavButton from "../NavButton_nav/NavButton";
 import vectorDown from "../../../assets/icons/Vector-filter-down.svg"
 import { useState } from "react";
+import AllRestaurants from "../../All_restaurants/All_restaurants";
   
 const FilterRestOptions: React.FC = () => {
 const [modal, setModal] = useState(false);
@@ -12,11 +13,63 @@ const toggleModal = () => {
     setModal(!modal);
   };
 
+  const [addRestInputs, setAddRestInputs] = useState({
+    linkImg: "",
+    restName: "",
+    chefName: "",
+    openHours: "",
+    closeHours: "",
+    address:""
+})
+
+const handleAddRest = async (event:any) => {
+  event.preventDefault()
+    const linkImg = event.target[0].value
+  const restName = event.target[1].value
+  const chefName = event.target[2].value
+  const rating1 = event.target[3].checked
+  const rating2 = event.target[4].checked
+  const rating3 = event.target[5].checked
+  const rating4 = event.target[6].checked
+  const rating5 = event.target[7].checked
+  const openHours = event.target[8].value
+  const closeHours = event.target[9].value
+  const address = event.target[10].value
+  const popularYes = event.target[11].checked
+  const popularNo = event.target[12].checked
+  const isNewYes = event.target[13].checked
+  const isNewNo = event.target[14].checked
+  setAddRestInputs({
+    linkImg: event.target[0].value,
+    restName: event.target[1].value,
+    chefName: event.target[2].value,
+    // rating1 = event.target[3].checked,
+    // rating2 = event.target[4].checked,
+    // rating3 = event.target[5].checked,
+    // rating4 = event.target[6].checked,
+    // rating5 = event.target[7].checked,
+    openHours: event.target[8].value,
+    closeHours: event.target[9].value,
+    address: event.target[10].value,
+    // popularYes = event.target[11].checked,
+    // popularNo = event.target[12].checked,
+    // isNewYes = event.target[13].checked,
+    // isNewNo = event.target[14].checked
+  })
+
+  console.log(event, linkImg, restName, chefName, rating1, rating2,rating3,rating4,rating5, openHours,closeHours, address, popularYes, popularNo, isNewYes, isNewNo)
+}
+
+
+const allRest = document.getElementById('all-rest-page-container')
+
   if(modal) {
     document.body.classList.add('active-modal')
+    allRest!.style.display = 'none';
 
   } else {
     document.body.classList.remove('active-modal')
+    // allRest!.style.display = 'grid';
   }
     
     return (
@@ -42,28 +95,37 @@ const toggleModal = () => {
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <h2>Add Restaurant</h2>
-            <div>
+            <h2>Add New Restaurant</h2>
+            <form onSubmit={handleAddRest} >
+                <div>
                 img: 
+                <label><input type="text" name="name" id="" placeholder="Enter Img Link" /></label>                
+                </div>
                 <label><input type="text" name="name" id="" placeholder="Restaurant Name" /></label>                
                 <label><input type="text" name="chefName" id="" placeholder="Chef Name" /></label>                
                 Rating:
-                <label><input type="radio" name="rating" id=""  /><span>1</span></label>                
-                <label><input type="radio" name="rating" id=""  /><span>2</span></label>                
-                <label><input type="radio" name="rating" id=""  /><span>3</span></label>                
-                <label><input type="radio" name="rating" id=""  /><span>4</span></label>                
-                <label><input type="radio" name="rating" id=""  /><span>5</span></label>                
-                openHours:
+                <label><input type="radio" name="rating" id="" value="1"  /><span>1</span></label>                
+                <label><input type="radio" name="rating" id=""  value="2"  /><span>2</span></label>                
+                <label><input type="radio" name="rating" id="" value="3"   /><span>3</span></label>                
+                <label><input type="radio" name="rating" id=""  value="4"  /><span>4</span></label>                
+                <label><input type="radio" name="rating" id="" value="5"   /><span>5</span></label>                
+                <p>openHours:</p>
+                From:
+                <input type="time" id="appt" name="appt"
+                min="01:00" max="18:00" required/>
+                To:
+                <input type="time" id="appt" name="appt"
+                min="01:00" max="18:00" required/>
                 <label><input type="text" name="chefName" id="" placeholder="Restaurant Address" /></label> 
-                dishes: 
+                {/* <label>Dishes:</label>   */}
                 Popular Restauarnt:
-                <label><input type="radio" name="isPopular" id="" placeholder="Restaurant Name" /><span>Yes</span></label>                
-                <label><input type="radio" name="isPopular" id="" placeholder="Restaurant Name" /><span>No</span></label>                
+                <label><input type="radio" name="isPopular" id="" value="yes" /><span>Yes</span></label>                
+                <label><input type="radio" name="isPopular" id="" value="no"/><span>No</span></label>                
                 New Restauarnt:
-                <label><input type="radio" name="isNew" id="" placeholder="Restaurant Name" /><span>Yes</span></label>                
-                <label><input type="radio" name="isNew" id="" placeholder="Restaurant Name" /><span>No</span></label>                
-                isOpen:
-            </div> 
+                <label><input type="radio" name="isNew" id="" value="yes" /><span>Yes</span></label>                
+                <label><input type="radio" name="isNew" id="" value="no" /><span>No</span></label>    
+                <button type="submit" id="button-add-rest">Add Restaurant</button>
+            </form> 
             <button className="close-modal" onClick={toggleModal}>
             CLOSE
             </button>

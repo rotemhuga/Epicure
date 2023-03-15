@@ -13,7 +13,7 @@ const CardAllChef: React.FC<Iprops> = (props:Iprops)=> {
         const handleDeleteChef = async (event:any) => {
         event.preventDefault()
         const clickedChef = event.target.id   
-            
+        alert("Are You Share You Want To Delete?")    
         fetch("http://localhost:8000/epicure/chefsPage", {
               method: 'DELETE',
               headers: {
