@@ -81,7 +81,7 @@ return (
             <div className="chef-rest-details-card">{restobj?.chef}</div> 
             <div className="open-rest-details-card">
                 <img src={clockLogo} alt="clock-icon" />
-                <span>{restobj?.isOpen? "open now":"close"}</span>
+                {/* <span>{restobj?.isOpen? "open now":"close"}</span> */}
             </div> 
         </div>
         <div className="all-buttons-one-rest">

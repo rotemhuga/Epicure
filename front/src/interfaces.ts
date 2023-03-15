@@ -30,7 +30,6 @@ export interface IrestaurantsValue {
     dishes?: number[],
     isPopular?: boolean,
     isNew?: boolean,
-    isOpen?: boolean,
     map?: boolean,
 }
 

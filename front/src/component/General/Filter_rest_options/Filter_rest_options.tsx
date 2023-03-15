@@ -5,6 +5,7 @@ import NavButton from "../NavButton_nav/NavButton";
 import vectorDown from "../../../assets/icons/Vector-filter-down.svg"
 import { useState } from "react";
 import AllRestaurants from "../../All_restaurants/All_restaurants";
+import { useEffect } from "react";
   
 const FilterRestOptions: React.FC = () => {
 const [modal, setModal] = useState(false);
@@ -14,52 +15,104 @@ const toggleModal = () => {
   };
 
   const [addRestInputs, setAddRestInputs] = useState({
-    linkImg: "",
-    restName: "",
-    chefName: "",
-    openHours: "",
-    closeHours: "",
-    address:""
+    id: "",
+    img: "",
+    name: "",
+    chef: "",
+    rating: "",
+    openHour: "",
+    closeHour: "",
+    address:"",
+    dishes: [-1],
+    isPopular:false,
+    isNew:false,
+    isOpen:false,
+    map:false
 })
 
 const handleAddRest = async (event:any) => {
   event.preventDefault()
-    const linkImg = event.target[0].value
-  const restName = event.target[1].value
-  const chefName = event.target[2].value
-  const rating1 = event.target[3].checked
-  const rating2 = event.target[4].checked
-  const rating3 = event.target[5].checked
-  const rating4 = event.target[6].checked
-  const rating5 = event.target[7].checked
-  const openHours = event.target[8].value
-  const closeHours = event.target[9].value
-  const address = event.target[10].value
-  const popularYes = event.target[11].checked
-  const popularNo = event.target[12].checked
-  const isNewYes = event.target[13].checked
-  const isNewNo = event.target[14].checked
+  // const linkImg = event.target[0].value
+  // const restName = event.target[1].value
+  // const chefName = event.target[2].value
+  // const rating1 = event.target[3].checked
+  // const rating2 = event.target[4].checked
+  // const rating3 = event.target[5].checked
+  // const rating4 = event.target[6].checked
+  // const rating5 = event.target[7].checked
+  // const openHours = event.target[8].value
+  // const closeHours = event.target[9].value
+  // const address = event.target[10].value
+  // const popularYes = event.target[11].checked
+  // const popularNo = event.target[12].checked
+  // const isNewYes = event.target[13].checked
+  // const isNewNo = event.target[14].checked
   setAddRestInputs({
-    linkImg: event.target[0].value,
-    restName: event.target[1].value,
-    chefName: event.target[2].value,
+    id: "1",
+    img: event.target[0].value,
+    name: event.target[1].value,
+    chef: event.target[2].value,
+    rating: "1",
+    openHour: event.target[8].value,
+    closeHour: event.target[9].value,
+    address: event.target[10].value,
+    dishes: [1,4,6],
+    isPopular: true,
+    isNew: true,
+    isOpen: true,
+    map:false
     // rating1 = event.target[3].checked,
     // rating2 = event.target[4].checked,
     // rating3 = event.target[5].checked,
     // rating4 = event.target[6].checked,
     // rating5 = event.target[7].checked,
-    openHours: event.target[8].value,
-    closeHours: event.target[9].value,
-    address: event.target[10].value,
     // popularYes = event.target[11].checked,
     // popularNo = event.target[12].checked,
     // isNewYes = event.target[13].checked,
     // isNewNo = event.target[14].checked
   })
-
-  console.log(event, linkImg, restName, chefName, rating1, rating2,rating3,rating4,rating5, openHours,closeHours, address, popularYes, popularNo, isNewYes, isNewNo)
+  console.log(addRestInputs)
+  fetch("http://localhost:8000/epicure/restaurantsPage", {
+    method: 'POST',
+    body: JSON.stringify(addRestInputs),
+    headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+        },
+    })
+    .then ((response) => {
+    return response.json()
+    }) 
+    .then ((data) => {
+        return data;
+    }) 
+    .catch((error)=> {
+        console.log(error.massage);
+    })
 }
 
+  // console.log(event, linkImg, restName, chefName, rating1, rating2,rating3,rating4,rating5, openHours,closeHours, address, popularYes, popularNo, isNewYes, isNewNo)
+
+
+// useEffect(()=> {
+//   console.log("use effect happend");
+
+// fetch("http://localhost:8000/epicure/restaurantsPage", {
+//       method: 'POST',
+//       body: JSON.stringify(addRestInputs),
+//       headers: {
+//       'Content-type': 'application/json; charset=UTF-8',
+//           },
+//       })
+//       .then ((response) => {
+//       return response.json()
+//       }) 
+//       .then ((data) => {
+//           return data;
+//       }) 
+//       .catch((error)=> {
+//           console.log(error.massage);
+//       })
+// },[addRestInputs])
 
 const allRest = document.getElementById('all-rest-page-container')
 

@@ -33,11 +33,11 @@ export const restaurantsSlice = createSlice({
               state.value = state.value.filter(
                   (restaurant:any) => restaurant.isPopular === true); 
               break;
-          case "openNow":
-              state.value = restaurant
-              state.value = state.value.filter(
-                  (restaurant:any) => restaurant.isOpen === true); 
-              break;
+        //   case "openNow":
+        //       state.value = restaurant
+        //       state.value = state.value.filter(
+        //           (restaurant:any) => restaurant.isOpen === true); 
+        //       break;
           case "mapView":
               state.value =restaurant
               state.value = state.value.filter(
