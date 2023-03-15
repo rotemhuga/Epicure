@@ -97,34 +97,37 @@ const allRest = document.getElementById('all-rest-page-container')
           <div className="modal-content">
             <h2>Add New Restaurant</h2>
             <form onSubmit={handleAddRest} >
-                <div>
-                img: 
-                <label><input type="text" name="name" id="" placeholder="Enter Img Link" /></label>                
+                <div className="inputs-content" >
+                  <div className="img-div">
+                    img: 
+                    <label><input type="text" name="name" id="" placeholder="Enter Img Link" /></label> 
+                  </div>
+                
+                  <label><input type="text" name="name" id="" placeholder="Restaurant Name" /></label>                
+                  <label><input type="text" name="chefName" id="" placeholder="Chef Name" /></label>                
+                  Rating:
+                  <label><input type="radio" name="rating" id="" value="1"  /><span>1</span></label>                
+                  <label><input type="radio" name="rating" id=""  value="2"  /><span>2</span></label>                
+                  <label><input type="radio" name="rating" id="" value="3"   /><span>3</span></label>                
+                  <label><input type="radio" name="rating" id=""  value="4"  /><span>4</span></label>                
+                  <label><input type="radio" name="rating" id="" value="5"   /><span>5</span></label>                
+                  <p>openHours:</p>
+                  From:
+                  <input type="time" id="appt" name="appt"
+                  min="01:00" max="18:00" required/>
+                  To:
+                  <input type="time" id="appt" name="appt"
+                  min="01:00" max="18:00" required/>
+                  <label><input type="text" name="chefName" id="" placeholder="Restaurant Address" /></label> 
+                  {/* <label>Dishes:</label>   */}
+                  Popular Restauarnt:
+                  <label><input type="radio" name="isPopular" id="" value="yes" /><span>Yes</span></label>                
+                  <label><input type="radio" name="isPopular" id="" value="no"/><span>No</span></label>                
+                  New Restauarnt:
+                  <label><input type="radio" name="isNew" id="" value="yes" /><span>Yes</span></label>                
+                  <label><input type="radio" name="isNew" id="" value="no" /><span>No</span></label>    
+                  <button type="submit" id="button-add-rest">Add Restaurant</button>
                 </div>
-                <label><input type="text" name="name" id="" placeholder="Restaurant Name" /></label>                
-                <label><input type="text" name="chefName" id="" placeholder="Chef Name" /></label>                
-                Rating:
-                <label><input type="radio" name="rating" id="" value="1"  /><span>1</span></label>                
-                <label><input type="radio" name="rating" id=""  value="2"  /><span>2</span></label>                
-                <label><input type="radio" name="rating" id="" value="3"   /><span>3</span></label>                
-                <label><input type="radio" name="rating" id=""  value="4"  /><span>4</span></label>                
-                <label><input type="radio" name="rating" id="" value="5"   /><span>5</span></label>                
-                <p>openHours:</p>
-                From:
-                <input type="time" id="appt" name="appt"
-                min="01:00" max="18:00" required/>
-                To:
-                <input type="time" id="appt" name="appt"
-                min="01:00" max="18:00" required/>
-                <label><input type="text" name="chefName" id="" placeholder="Restaurant Address" /></label> 
-                {/* <label>Dishes:</label>   */}
-                Popular Restauarnt:
-                <label><input type="radio" name="isPopular" id="" value="yes" /><span>Yes</span></label>                
-                <label><input type="radio" name="isPopular" id="" value="no"/><span>No</span></label>                
-                New Restauarnt:
-                <label><input type="radio" name="isNew" id="" value="yes" /><span>Yes</span></label>                
-                <label><input type="radio" name="isNew" id="" value="no" /><span>No</span></label>    
-                <button type="submit" id="button-add-rest">Add Restaurant</button>
             </form> 
             <button className="close-modal" onClick={toggleModal}>
             CLOSE
