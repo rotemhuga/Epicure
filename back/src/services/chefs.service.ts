@@ -12,8 +12,7 @@ export const getChefs = async () => {
 
 export const deleteChef = async (req:Request , res:Response) => {
     const { chef } = req.body;
-    console.log(chef)
-    try {
+     try {
       // Delete restaurant from the database
       await chefModel.findOneAndDelete({ name: chef });
   

@@ -2,7 +2,6 @@ import {restaurantModel} from "../model/restaurants.model"
 import {dishModel} from "../model/dishes.model"
 import { Request, Response } from "express";
 
-
 export const getRestaurants = async () => {
     try {
         const restaurants = await restaurantModel.find();
@@ -23,7 +22,7 @@ export const deleteRestaurant = async (req:Request , res:Response) => {
     } catch (error) {
       res.status(500).json({ message: 'An error occurred while deleting the restaurant' });
     }
-  };
+};
 
 export const getOneNewRest = async (req:Request , res:Response) => {
     const { restaurant } = req.body;
@@ -35,5 +34,5 @@ export const getOneNewRest = async (req:Request , res:Response) => {
     } catch (error) {
       res.status(500).json({ message: 'An error occurred while adding the restaurant' });
     }
-  };
+};
 

@@ -72,7 +72,7 @@ const handleAddRest = async (event:any) => {
     // isNewNo = event.target[14].checked
   })
   console.log(addRestInputs)
-  fetch("http://localhost:8000/epicure/restaurantsPage", {
+  await fetch("http://localhost:8000/epicure/restaurantsPage", {
     method: 'POST',
     body: JSON.stringify(addRestInputs),
     headers: {
