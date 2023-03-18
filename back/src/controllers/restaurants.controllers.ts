@@ -22,7 +22,6 @@ export const deleteClickedRest = async (req: Request, res: Response) => {
 export const getNewRest = async (req: Request, res: Response) => {
     try {
         const newRest = await getOneNewRest(req, res);
-        console.log({newRest})
         return res.status(200).json(newRest);
     } catch (err: any) {
         return res.status(400).json({ status: 400, message: err.message });

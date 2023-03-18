@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Card_restaurant.css"
 import { useNavigate } from "react-router-dom";
 
@@ -65,20 +65,3 @@ const handleDeleteRest = async (event:any) => {
 }
 
 export default CardRestaurant
-
-
-// fetch("http://localhost:8000/epicure/restaurantsPage", {
-//         method: 'DELETE',
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//     })
-//       .then(response => {
-//         if (!response.ok) {
-//           throw new Error('Network response was not ok');
-//         }
-//         // handle success
-//       })
-//       .catch(error => {
-//         console.error('There was a problem with the fetch operation:', error);
-//       });

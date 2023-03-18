@@ -1,7 +1,6 @@
 import React from "react";
 import "./SignInPage.css";
 import validator from 'validator';
-import PasswordChecklist from "react-password-checklist"
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import Navbar from "../navbar/all_navbar/navbar";
@@ -10,7 +9,6 @@ const SignInPage:React.FC = () => {
         const navigate = useNavigate();
         const [emailError, setEmailError] = useState('')
         const [password, setPassword] = useState("")
-        const [passwordAgain, setPasswordAgain] = useState("")
         const validateEmail = (e:any) => {
         const email = e.target.value
         if (validator.isEmail(email)) {

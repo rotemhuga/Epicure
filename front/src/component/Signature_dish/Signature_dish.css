@@ -29,7 +29,6 @@
 @media (min-width: 375px) and (max-width: 700px) {
     .all-dish-container{
         overflow: auto;
-        /* white-space: nowrap;   */
         padding: 14px;
         text-decoration: none;
         gap:20px;

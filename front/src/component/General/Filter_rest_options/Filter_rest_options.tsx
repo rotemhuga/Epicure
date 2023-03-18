@@ -55,8 +55,6 @@ const handleAddRest = async (event:any) => {
 }
 
   useEffect(()=> {
-    console.log("use effect happened");
-    console.log(addRestInputs)
     if (count >= 1) {
       fetch("http://localhost:8000/epicure/restaurantsPage", {
         method: 'POST',
@@ -127,7 +125,6 @@ const allRest = document.getElementById('all-rest-page-container')
                     <option value="nitan-thai-9">9</option>
                     <option value="ya-pan">10</option>
                   </select>
-                    {/* <label><input type="text" name="name" id="" placeholder="Enter Img Link" className="input-add-rest" /></label>  */}
                   </div>
                   <label><input type="text" name="name" id="" placeholder="Restaurant Name" className="input-add-rest" /></label>                
                   <label><input type="text" name="chefName" id="" placeholder="Chef Name" className="input-add-rest" /></label>                

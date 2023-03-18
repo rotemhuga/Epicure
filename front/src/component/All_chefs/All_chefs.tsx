@@ -1,8 +1,6 @@
-import react from "react"
 import "./All_chefs.css"
 import CardAllChef from "../Card_all_chef/Card_all_chef"
 import { useSelector } from "react-redux"
-import { Interface } from "readline"
 import { IchefsValue, IRootState } from "../../interfaces"
 
 const All_chefs:React.FC = () => {

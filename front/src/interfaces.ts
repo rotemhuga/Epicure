@@ -30,6 +30,7 @@ export interface IrestaurantsValue {
     dishes?: number[],
     isPopular?: boolean,
     isNew?: boolean,
+    isOpen?:string,
     map?: boolean,
 }
 
@@ -73,6 +74,7 @@ export interface IdishesValue {
     optionalSides?: string[],
     optionalChanges?: string[],
     isPopular?: boolean
+    onClick?:  React.MouseEventHandler<HTMLButtonElement> 
 }
 
 

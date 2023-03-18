@@ -26,7 +26,6 @@ export const deleteRestaurant = async (req:Request , res:Response) => {
 
 export const getOneNewRest = async (req:Request , res:Response) => {
     const restaurant  = req.body;
-    console.log(restaurant)
     try {
       {
        const cardRest = await restaurantModel.create(restaurant);

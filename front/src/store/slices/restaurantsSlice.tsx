@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { IrestaurantsValue } from "../../interfaces";
 
 const getData = fetch("http://localhost:8000/epicure/restaurantsPage")
     .then((response) => response.json())
@@ -26,22 +27,22 @@ export const restaurantsSlice = createSlice({
           case "new":
               state.value = restaurant
               state.value = state.value.filter(
-                  (restaurant:any) => restaurant.isNew === true); 
+                  (restaurant:IrestaurantsValue) => restaurant.isNew === true); 
               break;
           case "mostPopular":
               state.value = restaurant
               state.value = state.value.filter(
-                  (restaurant:any) => restaurant.isPopular === true); 
+                  (restaurant:IrestaurantsValue) => restaurant.isPopular === true); 
               break;
-        //   case "openNow":
-        //       state.value = restaurant
-        //       state.value = state.value.filter(
-        //           (restaurant:any) => restaurant.isOpen === true); 
-        //       break;
+          case "openNow":
+              state.value = restaurant
+              state.value = state.value.filter(
+                  (restaurant:any) => restaurant.isOpen === true); 
+              break;
           case "mapView":
               state.value =restaurant
               state.value = state.value.filter(
-                  (restaurant:any) => restaurant.isNew === true); 
+                  (restaurant:IrestaurantsValue) => restaurant.isNew === true); 
               break;
           
           default:

@@ -42,7 +42,7 @@ const OneRestDetails: React.FC = ()=> {
     },[])      
     
     useEffect(() => {
-        setDishCard(allDishes?.map((dish:any) => (
+        setDishCard(allDishes?.map((dish:IdishesValue) => (
             <CardDish 
             class={"single-rest-card-dish"}
             name={dish.name}
@@ -75,13 +75,11 @@ const OneRestDetails: React.FC = ()=> {
 return (
     <div className={"one-rest-details-all"}>
         <div className={`one-rest-details-container`} id={`rest-card ${restobj?.id}`} onClick = {update} >
-            {/* <img src={require(`../../../assets/images/Restaurants/${restobj?.img}.png`)} alt={restobj?.alt} className="img-one-rest"/> */}
             <img src={restImg} alt={restobj?.alt} className="img-one-rest"/>
             <div className="name-rest-details-card">{restobj?.name} </div>
             <div className="chef-rest-details-card">{restobj?.chef}</div> 
             <div className="open-rest-details-card">
                 <img src={clockLogo} alt="clock-icon" />
-                {/* <span>{restobj?.isOpen? "open now":"close"}</span> */}
             </div> 
         </div>
         <div className="all-buttons-one-rest">
@@ -105,7 +103,6 @@ return (
                     ingredients={clickedDish?.ingredients}
                     price={clickedDish?.price}
                     key={clickedDish?.id}
-                    // onClick={() => toggleModal(clickedDish)} 
                     sideDishes={clickedDish?.sideDishes.map((side:string[]) => (
                         <div>
                             <label>

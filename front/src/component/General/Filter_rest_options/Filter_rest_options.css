@@ -71,14 +71,14 @@ body.active-modal {
     background: #f1f1f1;
     padding: 14px 28px;
     border-radius: 3px;
-    max-width: 600px;
+    max-width: 700px;
     min-width: 300px;
 }
 
 .inputs-content{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 2px;
     font-family: "Helvetica Neue Bold";
     font-size: 14px;
 }
@@ -99,7 +99,7 @@ body.active-modal {
 
 #button-add-rest{
     position: absolute;
-    top: 85%;
+    top: 90%;
     left: 50%;
     transform: translate(-50% );
     background-color: rgb(142, 181, 168);
