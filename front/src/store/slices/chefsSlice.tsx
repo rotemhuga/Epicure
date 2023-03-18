@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { IchefsValue } from "../../interfaces";
 
 const getChefsData = fetch("http://localhost:8000/epicure/chefsPage")
     .then((response) => response.json())
@@ -26,12 +27,12 @@ export const chefsSlice = createSlice({
           case "new":
             state.value = chef
             state.value = state.value.filter(
-              (chef:any) => chef.isNew === true);
+              (chef:IchefsValue) => chef.isNew === true);
             break;
           case "mostViewed":
             state.value = chef
             state.value = state.value.filter(
-              (chef:any) => chef.mostViewed === true);
+              (chef:IchefsValue) => chef.mostViewed === true);
             break;
 
           default:

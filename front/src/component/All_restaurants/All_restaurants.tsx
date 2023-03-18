@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import react, { useEffect, useState } from "react";
 import CardRestaurant from "../Card_restaurant/Card_restaurant";
 import "./All_restaurants.css";
 import { IrestaurantsValue, IRootState } from "../../interfaces"
@@ -26,7 +25,7 @@ const rests = restaurants.map((rest:IrestaurantsValue) => {
 })
     return (
         <div className="rest-page" >
-            <div className="all-rest-page-container">
+            <div id="all-rest-page-container">
                 {rests}
             </div>
         </div>

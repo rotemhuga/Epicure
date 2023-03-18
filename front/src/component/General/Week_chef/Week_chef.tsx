@@ -1,6 +1,5 @@
 import React from "react";
 import "../Week_chef/Week_chef.css"
-import data from "../../../epicure.json"
 import CardWeekChef from "../../Card_week_chef/Card_week_chef"
 import { IchefsValue, IRootState, IrestaurantsValue} from "../../../interfaces";
 import { useSelector } from "react-redux";

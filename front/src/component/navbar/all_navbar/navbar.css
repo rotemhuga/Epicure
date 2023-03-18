@@ -4,8 +4,6 @@
     padding: 0;
 }
 
-/* Navbar */
-
 #all-navbar {
     display: flex;
     flex-direction: row;

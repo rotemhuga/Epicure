@@ -1,6 +1,6 @@
 import search from '../../../assets/icons/search.svg';
 import "../Search_nav/SearchNav.css";
-import { useState, useRef, useEffect } from "react";
+import { useState} from "react";
 
 const SearchNav: React.FC = () => {
 const [showSearchInput, setshowSearchInput]  = useState<boolean>(false);  
