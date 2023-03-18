@@ -6,6 +6,9 @@ import vectorDown from "../../../assets/icons/Vector-filter-down.svg"
 import { useState } from "react";
 import AllRestaurants from "../../All_restaurants/All_restaurants";
 import { useEffect } from "react";
+import axios from "axios";
+import {TextInput} from 'react-native';
+
   
 const FilterRestOptions: React.FC = () => {
 const [modal, setModal] = useState(false);
@@ -13,6 +16,12 @@ const [modal, setModal] = useState(false);
 const toggleModal = () => {
     setModal(!modal);
   };
+
+  // const [id, setId] = useState("");
+  // const [lastName, setLastName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [userName, setUserName] = useState("");
+  // const [password, setPassword] = useState("");
 
   const [addRestInputs, setAddRestInputs] = useState({
     id: "",
@@ -193,3 +202,4 @@ const allRest = document.getElementById('all-rest-page-container')
 }
 
 export default FilterRestOptions
+
