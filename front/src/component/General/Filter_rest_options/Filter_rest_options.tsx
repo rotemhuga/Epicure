@@ -4,14 +4,14 @@ import "../Filter_rest_options/Filter_rest_options.css"
 import NavButton from "../NavButton_nav/NavButton";
 import vectorDown from "../../../assets/icons/Vector-filter-down.svg"
 import { useState } from "react";
-import AllRestaurants from "../../All_restaurants/All_restaurants";
 import { useEffect } from "react";
-import axios from "axios";
-import {TextInput} from 'react-native';
+import { useNavigate } from "react-router-dom";
 
   
 const FilterRestOptions: React.FC = () => {
+const navigate = useNavigate();
 const [modal, setModal] = useState(false);
+const [count, setCount] = useState(0);
 
 const toggleModal = () => {
     setModal(!modal);
@@ -80,48 +80,50 @@ const handleAddRest = async (event:any) => {
     // isNewYes = event.target[13].checked,
     // isNewNo = event.target[14].checked
   })
-  console.log(addRestInputs)
-  await fetch("http://localhost:8000/epicure/restaurantsPage", {
-    method: 'POST',
-    body: JSON.stringify(addRestInputs),
-    headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-        },
-    })
-    .then ((response) => {
-    return response.json()
-    }) 
-    .then ((data) => {
-        return data;
-    }) 
-    .catch((error)=> {
-        console.log(error.massage);
-    })
+//   await fetch("http://localhost:8000/epicure/restaurantsPage", {
+//     method: 'POST',
+//     body: JSON.stringify(addRestInputs),
+//     headers: {
+//     'Content-type': 'application/json; charset=UTF-8',
+//         },
+//     })
+//     .then ((response) => {
+//     return response.json()
+//     }) 
+//     .then ((data) => {
+//         return data;
+//     }) 
+//     .catch((error)=> {
+//         console.log(error.massage);
+//     })
+  setCount(prevCount => prevCount + 1);
+  // window.location.href = "http://localhost:3000/RestaurantsPage";
 }
 
   // console.log(event, linkImg, restName, chefName, rating1, rating2,rating3,rating4,rating5, openHours,closeHours, address, popularYes, popularNo, isNewYes, isNewNo)
 
-
-// useEffect(()=> {
-//   console.log("use effect happend");
-
-// fetch("http://localhost:8000/epicure/restaurantsPage", {
-//       method: 'POST',
-//       body: JSON.stringify(addRestInputs),
-//       headers: {
-//       'Content-type': 'application/json; charset=UTF-8',
-//           },
-//       })
-//       .then ((response) => {
-//       return response.json()
-//       }) 
-//       .then ((data) => {
-//           return data;
-//       }) 
-//       .catch((error)=> {
-//           console.log(error.massage);
-//       })
-// },[addRestInputs])
+  useEffect(()=> {
+    console.log("use effect happened");
+    console.log(addRestInputs)
+    if (count >= 1) {
+      fetch("http://localhost:8000/epicure/restaurantsPage", {
+        method: 'POST',
+        body: JSON.stringify(addRestInputs),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+      .then((response) => {
+        return response.json();
+      }) 
+      .then((data) => {
+        return data;
+      }) 
+      .catch((error)=> {
+        console.log(error.message);
+      });
+    }
+  }, [addRestInputs, count]);
 
 const allRest = document.getElementById('all-rest-page-container')
 
