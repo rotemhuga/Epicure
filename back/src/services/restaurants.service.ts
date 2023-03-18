@@ -25,12 +25,14 @@ export const deleteRestaurant = async (req:Request , res:Response) => {
 };
 
 export const getOneNewRest = async (req:Request , res:Response) => {
-    const { restaurant } = req.body;
+    const restaurant  = req.body;
+    console.log(restaurant)
     try {
       {
-        await restaurantModel.create({ restaurant });
+       const cardRest = await restaurantModel.create(restaurant);
+       return cardRest;
       }
-      res.status(200).json({ restaurant});
+      res.status(200).json(restaurant);
     } catch (error) {
       res.status(500).json({ message: 'An error occurred while adding the restaurant' });
     }
