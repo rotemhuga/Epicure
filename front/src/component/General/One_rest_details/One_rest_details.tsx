@@ -17,7 +17,27 @@ const OneRestDetails: React.FC = ()=> {
     const [clickedDish, setClickedDish] = useState<any>(null);
     const [dishCard, setDishCard] = useState<any>()
     const [clicked, setClicked] = useState("all");
-    
+   
+    // const date = new Date();
+    // const showTime = date.getHours();
+    // console.log(showTime)
+    // const checkOpen = () => {
+    //     const singleRest =  allRestaurants.map((rest:IrestaurantsValue) => 
+    //         if(showTime>= rest.openHour >= && showTime <= rest.closeHour){
+    //             return allRestaurants.isOpen === true
+    //         } else {
+    //             return allRestaurants.isOpen === false
+    //         }
+    //     )}
+
+// const checkOpen = () => {
+//     if (showTime>= restaurant.openHour && showTime <= restaurant.closeHour){
+//         return restaurant.isOpen === true
+//     } else {
+//         return restaurant.isOpen === false
+//     }
+// }
+
     //Modal
     const [modal, setModal] = useState(false);
     const allRestaurants = useSelector(
@@ -79,6 +99,7 @@ return (
             <div className="name-rest-details-card">{restobj?.name} </div>
             <div className="chef-rest-details-card">{restobj?.chef}</div> 
             <div className="open-rest-details-card">
+                <span></span>                
                 <img src={clockLogo} alt="clock-icon" />
             </div> 
         </div>

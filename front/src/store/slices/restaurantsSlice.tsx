@@ -11,6 +11,8 @@ const getData = fetch("http://localhost:8000/epicure/restaurantsPage")
     });
 
 const restaurant:any = await getData;
+const date = new Date();
+const showTime = date.getHours();
 
 export const restaurantsSlice = createSlice({
     name: "restaurants",
@@ -36,6 +38,7 @@ export const restaurantsSlice = createSlice({
               break;
           case "openNow":
               state.value = restaurant
+            //   state.value = checkOpen
               state.value = state.value.filter(
                   (restaurant:any) => restaurant.isOpen === true); 
               break;
